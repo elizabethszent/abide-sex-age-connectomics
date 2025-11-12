@@ -1,0 +1,11 @@
+AGE_GROUP,DX_GROUP,count
+child,Control,28
+child,ASD,35
+teen,Control,18
+teen,ASD,40
+young_adult,Control,10
+young_adult,ASD,19
+adult,Control,6
+adult,ASD,1
+older,Control,0
+older,ASD,0
