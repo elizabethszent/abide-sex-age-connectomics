@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 
 # paths 
-PHENO_PATH = r"data\processed\Phenotypic_V1_0b_preprocessed1.csv"
-MATRIX_DIR = r"data\connectivity_matrices"
-OUT_DIR = r"data\female"
+PHENO_PATH = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\processed\Phenotypic_V1_0b_preprocessed1.csv"
+MATRIX_DIR = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\connectivity_matrices"
+OUT_DIR = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\female"
 
 os.makedirs(OUT_DIR, exist_ok=True)
 

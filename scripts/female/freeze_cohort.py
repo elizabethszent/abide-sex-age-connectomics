@@ -3,9 +3,9 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-PHENOS = Path("data/processed//Phenotypic_V1_0b_preprocessed1.csv")
-CONN_DIR = Path("data/connectomes/cpac/nofilt_noglobal/cc200_z")
-OUT = Path("data/female"); OUT.mkdir(exist_ok=True)
+PHENOS = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/Phenotypic_V1_0b_preprocessed1.csv")
+CONN_DIR = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/connectomes/cpac/nofilt_noglobal/cc200_z")
+OUT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female"); OUT.mkdir(exist_ok=True)
 
 phenos = pd.read_csv(PHENOS)
 phenos.columns = [c.strip() for c in phenos.columns]

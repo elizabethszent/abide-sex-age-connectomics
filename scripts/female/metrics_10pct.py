@@ -4,9 +4,9 @@ import numpy as np
 import pandas as pd
 from scipy.sparse.csgraph import shortest_path
 
-CONN_DIR = Path("data/connectomes/cpac/nofilt_noglobal/cc200_z")
-IN_IDS = Path("data/female/female_subjects_included.txt")
-OUT = Path("results"); OUT.mkdir(exist_ok=True)
+CONN_DIR = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/connectomes/cpac/nofilt_noglobal/cc200_z")
+IN_IDS = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/female_subjects_included.txt")
+OUT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/results/female"); OUT.mkdir(exist_ok=True)
 
 ids = [line.strip() for line in IN_IDS.read_text().splitlines() if line.strip()]
 rows = []

@@ -5,9 +5,9 @@ from scipy.stats import pearsonr
 from tqdm import tqdm
 
 # Paths
-ROI_DIR = r"data\roi_timeseries\cpac\nofilt_noglobal\rois_cc200"
-OUTPUT_DIR = r"data\connectivity_matrices"
-PHENO_PATH = r"data\female\processed\Phenotypic_V1_0b_preprocessed1.csv"
+ROI_DIR = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\roi_timeseries\cpac\nofilt_noglobal\rois_cc200"
+OUTPUT_DIR = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\connectivity_matrices"
+PHENO_PATH = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\Phenotypic_V1_0b_preprocessed1.csv"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

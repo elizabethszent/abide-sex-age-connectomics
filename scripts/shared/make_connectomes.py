@@ -4,8 +4,8 @@ import pandas as pd
 from pathlib import Path
 import glob, os
 
-TS_DIR  = "data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200"
-OUT_DIR = "data/connectomes/cpac/nofilt_noglobal/cc200_z"
+TS_DIR  = "C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200"
+OUT_DIR = "C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/connectomes/cpac/nofilt_noglobal/cc200_z"
 Path(OUT_DIR).mkdir(parents=True, exist_ok=True)
 
 def fisher_z(r):

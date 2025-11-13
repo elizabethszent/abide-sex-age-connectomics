@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 PKEEP = 0.10  #top |r| density already used in your pipeline
-DATA_ROOT = Path("data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
-META = Path("data/female/metrics_merged.csv")
+DATA_ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
+META = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/metrics_merged.csv")
 R = 100
 rng = random.Random(123)
 
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     plt.title(f"{fid} — clustering nulls (empirical dashed)")
     plt.legend(loc="upper right")
     plt.tight_layout()
-    plt.savefig(f"results/female/figs/unweighted_clustering_nulls_{fid}.png", dpi=200)
+    plt.savefig(f"C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/results/female/figs/unweighted_clustering_nulls_{fid}.png", dpi=200)
 
     plt.figure(figsize=(6,4))
     plt.boxplot([er_L, dp_L], tick_labels=["ER", "DP"], showfliers=False)
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     plt.title(f"{fid} — path length nulls (empirical dashed)")
     plt.legend(loc="upper right")
     plt.tight_layout()
-    plt.savefig(f"results/female/figs/unweighted_path_nulls_{fid}.png", dpi=200)
+    plt.savefig(f"C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/results/female/figs/unweighted_path_nulls_{fid}.png", dpi=200)
 
     #save a small summary table
     out = pd.DataFrame([{
@@ -141,5 +141,5 @@ if __name__ == "__main__":
         "ER_C_mu": er_C_mu, "ER_C_sd": er_C_sd, "ER_L_mu": er_L_mu, "ER_L_sd": er_L_sd,
         "DP_C_mu": dp_C_mu, "DP_C_sd": dp_C_sd, "DP_L_mu": dp_L_mu, "DP_L_sd": dp_L_sd
     }])
-    out.to_csv(f"data/female/unweighted_metrics_{fid}.csv", index=False)
+    out.to_csv(f"C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/unweighted_metrics_{fid}.csv", index=False)
     print(f"\nSaved figures + CSV in results/ for {fid}")

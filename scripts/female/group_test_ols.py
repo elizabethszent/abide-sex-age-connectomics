@@ -2,7 +2,7 @@
 import pandas as pd
 import statsmodels.formula.api as smf
 
-df = pd.read_csv("data/female/metrics_merged.csv")#from earlier merge
+df = pd.read_csv("data/female/metrics_merged.csv")
 #map labels for readability
 df["group"] = df["DX_GROUP"].map({1:"ASD", 2:"Control"})
 #center age & FD to help stability
