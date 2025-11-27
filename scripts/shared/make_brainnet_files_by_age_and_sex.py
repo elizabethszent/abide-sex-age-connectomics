@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-# === PATHS ===
 ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject")
 
 CONN_DIR = ROOT / "data/connectomes/cpac/nofilt_noglobal/cc200_z"
@@ -146,14 +145,12 @@ def make_node_files(sex: str, age: str):
 
 
 def process_sex(sex: str, meta_path: Path):
-    print(f"\n=== {sex.upper()} ===")
+    print(f"\n {sex.upper()}")
     meta = pd.read_csv(meta_path)
-
-    # strip whitespace off *all* column names once here
     meta.columns = meta.columns.str.strip()
-
-    # add AGE_GROUP if needed
+    meta["FILE_ID"] = meta["FILE_ID"].astype(str).str.strip()
     meta = add_age_group_column(meta)
+
 
     for age in AGE_GROUPS:
         sub = meta[meta["AGE_GROUP"] == age]

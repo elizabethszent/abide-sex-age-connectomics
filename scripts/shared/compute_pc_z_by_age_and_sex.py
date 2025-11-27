@@ -5,11 +5,11 @@ from pathlib import Path
 
 ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject")
 
-CONN_DIR    = ROOT / "data/connectomes/cpac/nofilt_noglobal/cc200_z"
+CONN_DIR = ROOT / "data/connectomes/cpac/nofilt_noglobal/cc200_z"
 MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules.txt"
 
 FEMALE_META = ROOT / "data/female/female_metadata_included.csv"
-MALE_META   = ROOT / "data/male/male_metadata_included.csv"
+MALE_META = ROOT / "data/male/male_metadata_included.csv"
 
 OUT_DIR = ROOT / "results/hubs"
 OUT_DIR.mkdir(exist_ok=True, parents=True)
@@ -120,6 +120,7 @@ def process_sex(sex_label: str, meta_path: Path):
 
     meta = pd.read_csv(meta_path)
     meta.columns = meta.columns.str.strip()
+    meta["FILE_ID"] = meta["FILE_ID"].astype(str).str.strip()
     meta = add_age_group_column(meta)
 
     required = {"FILE_ID", "DX_GROUP", "AGE_AT_SCAN", "func_mean_fd", "AGE_GROUP"}
