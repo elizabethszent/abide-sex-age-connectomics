@@ -1,4 +1,3 @@
-# scripts/plot_unweighted_path_by_group_male.py
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.formula.api as smf

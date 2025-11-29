@@ -1,5 +1,3 @@
-# scripts/female/analyze_network_connectivity.py
-
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
@@ -13,15 +11,15 @@ OUT_CSV = BASE / r"results\network_level\female_network_stats.csv"
 
 df = pd.read_csv(NET_CSV)
 
-# keep only rows with all needed covariates
+#keep only rows with all needed covariates
 df = df.dropna(subset=["DX_GROUP", "AGE_AT_SCAN", "func_mean_fd"])
 
-# ABIDE codes: 1 = ASD, 2 = Control
+#ABIDE codes: 1 = ASD, 2 = Control
 df["group"] = df["DX_GROUP"].map({1: "ASD", 2: "Control"}).astype("category")
 # ensure Control is baseline
 df["group"] = df["group"].cat.reorder_categories(["Control", "ASD"])
 
-# all network-pair columns (net_0_0, net_0_1, ..., net_6_6)
+#all network-pair columns (net_0_0, net_0_1, ..., net_6_6)
 net_cols = [c for c in df.columns if c.startswith("net_")]
 print(f"Found {len(net_cols)} network-pair columns")
 
@@ -31,7 +29,7 @@ for col in net_cols:
     formula = f"{col} ~ C(group) + AGE_AT_SCAN + func_mean_fd"
     m = smf.ols(formula, data=df).fit()
 
-    beta = m.params.get("C(group)[T.ASD]", np.nan)   # ASD vs Control
+    beta = m.params.get("C(group)[T.ASD]", np.nan) #ASD vs Control
     pval = m.pvalues.get("C(group)[T.ASD]", np.nan)
 
     rows.append({
@@ -53,7 +51,7 @@ rank = np.empty_like(order)
 rank[order] = np.arange(1, N + 1)
 
 q = p_clean * N / rank
-# enforce monotone decreasing q on sorted p
+#enforce monotone decreasing q on sorted p
 q_sorted = np.minimum.accumulate(q[order][::-1])[::-1]
 q_adj = np.empty_like(q)
 q_adj[order] = q_sorted

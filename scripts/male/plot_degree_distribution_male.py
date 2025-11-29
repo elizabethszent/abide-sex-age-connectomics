@@ -1,4 +1,3 @@
-# scripts/plot_degree_distribution_from_saved.py
 import glob
 import numpy as np
 import pandas as pd
@@ -11,11 +10,10 @@ if not deg_files:
     raise FileNotFoundError("No files found in results/degrees/*.csv")
 D = pd.concat((pd.read_csv(f) for f in deg_files), ignore_index=True)
 
-#expect at least FILE_ID, node, degree
 if not {"FILE_ID", "degree"}.issubset(D.columns):
     raise ValueError(f"Degree files missing required columns. Found: {D.columns.tolist()}")
 
-#attach group labels (1=ASD, 2=Control) from your metadata
+#attach group labels (1=ASD, 2=Control)
 meta_path = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metrics_merged.csv")
 if not meta_path.exists():
     raise FileNotFoundError("not found. Re-run your metrics merge step.")
@@ -23,7 +21,7 @@ if not meta_path.exists():
 META = pd.read_csv(meta_path, usecols=["FILE_ID", "DX_GROUP"])
 D = D.merge(META, on="FILE_ID", how="left")
 
-#clean + map to labels
+#clean and map to labels
 missing = D["DX_GROUP"].isna().sum()
 if missing:
     print(f"Warning: {missing} rows missing DX_GROUP after merge. They will be dropped.")
@@ -37,8 +35,8 @@ ctl_deg = D.loc[D["group"].eq("Control"), "degree"].to_numpy()
 
 print("ASD mean degree:", asd_deg.mean().round(3), "| Control mean degree:", ctl_deg.mean().round(3))
 
-#histogram on linear bins (degrees are small integers at 10% density)
-bins = np.arange(0, 61, 1)  # 0..60 is plenty for CC200 @ 10% density
+#histogram on linear bins
+bins = np.arange(0, 61, 1) 
 asd_pdf, edges = np.histogram(asd_deg, bins=bins, density=True)
 ctl_pdf, _     = np.histogram(ctl_deg, bins=bins, density=True)
 x = 0.5 * (edges[1:] + edges[:-1])  # correct midpoints for linear bins

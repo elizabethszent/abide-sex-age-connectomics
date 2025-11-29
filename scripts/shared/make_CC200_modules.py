@@ -23,7 +23,7 @@ def main():
         mat = np.load(p)
         mats.append(mat)
 
-    # Grand mean connectivity
+    #grand mean connectivity
     A = np.mean(mats, axis=0)
     if A.shape[0] != A.shape[1]:
         raise ValueError(f"Grand mean matrix not square: {A.shape}")
@@ -31,19 +31,19 @@ def main():
     n = A.shape[0]
     print(f"Grand mean matrix shape: {A.shape}")
 
-    # Keep only positive weights, zero diagonal
+    #keep only positive weights, zero diagonal
     A = A.copy()
     A[A < 0] = 0.0
     np.fill_diagonal(A, 0.0)
 
-    # Build weighted graph
+    #build weighted graph
     G = nx.from_numpy_array(A)  # nodes 0..n-1, 'weight' attribute
 
     print("Running greedy modularity community detection...")
     comms = list(greedy_modularity_communities(G, weight="weight"))
     print(f"Found {len(comms)} modules")
 
-    # Map node -> module ID (1..K)
+    # Map node to module ID (1..K)
     modules = np.zeros(n, dtype=int)
     for mid, nodes in enumerate(comms, start=1):
         for node in nodes:

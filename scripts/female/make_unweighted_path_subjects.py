@@ -1,8 +1,5 @@
-# scripts/make_unweighted_path_subjects.py
-
 import os
 from pathlib import Path
-
 import numpy as np
 import pandas as pd
 import networkx as nx
@@ -34,15 +31,15 @@ def load_ts_for_subject(file_id: str) -> np.ndarray:
         dtype=str,
     ).apply(pd.to_numeric, errors="coerce")
 
-    # drop columns that are all NaN
+    #drop columns that are all NaN
     df = df.dropna(axis=1, how="all")
 
-    # drop zero-variance columns
+    #drop zero-variance columns
     std = df.std(axis=0, numeric_only=True)
     good = std > 0
     df = df.loc[:, good]
 
-    # final TS as float
+    #final TS as float
     ts = df.to_numpy(dtype=float)
     return ts
 

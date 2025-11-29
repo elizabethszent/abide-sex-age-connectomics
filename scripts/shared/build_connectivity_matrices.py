@@ -27,5 +27,5 @@ for f in tqdm(files):
     # Compute correlation matrix
     corr = np.corrcoef(ts.T)
 
-    # Save as numpy binary
+    #Save as numpy binary
     np.save(os.path.join(OUTPUT_DIR, f"{file_id}_corr.npy"), corr)

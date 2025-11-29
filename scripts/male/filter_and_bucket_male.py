@@ -23,7 +23,7 @@ males = males[males['FILE_ID'].isin(all_files)]
 print(f"maless with available matrices: {len(males)}")
 
 
-bins = [0, 13, 18, 30, 45, 100]  # adjust if you want finer control
+bins = [0, 13, 18, 30, 45, 100] 
 labels = ['child', 'teen', 'young_adult', 'adult', 'older']
 males['AGE_GROUP'] = pd.cut(males['AGE_AT_SCAN'], bins=bins, labels=labels)
 

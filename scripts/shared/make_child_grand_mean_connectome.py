@@ -1,4 +1,4 @@
-# scripts/shared/make_child_grand_mean_connectome.py
+
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -21,10 +21,7 @@ N_ROI = 200 #CC200
 f_meta = pd.read_csv(F_CHILD)
 m_meta = pd.read_csv(M_CHILD)
 
-meta = pd.concat(
-    [f_meta[["FILE_ID"]], m_meta[["FILE_ID"]]],
-    ignore_index=True
-).drop_duplicates()
+meta = pd.concat([f_meta[["FILE_ID"]], m_meta[["FILE_ID"]]],ignore_index=True).drop_duplicates()
 
 print(f"Total child subjects (F+M, included in metadata): {len(meta)}")
 

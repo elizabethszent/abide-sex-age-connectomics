@@ -3,16 +3,15 @@ import numpy as np
 import statsmodels.formula.api as smf
 from patsy import bs
 
-#load the metrics you already created
 df = pd.read_csv('data/female/metrics_merged.csv')
 
-#keep rows with required fields and ensure numeric dtypes
+
 df = df.dropna(subset=['DX_GROUP','AGE_AT_SCAN','func_mean_fd'])
 for col in ['AGE_AT_SCAN','func_mean_fd','mean_degree','global_clustering','global_efficiency']:
     df[col] = pd.to_numeric(df[col], errors='coerce')
 df = df.dropna(subset=['mean_degree','global_clustering','global_efficiency'])
 
-#treat group as categorical (1=ASD, 2=Control in ABIDE I)
+#treat group as categorical (1=ASD, 2=Control)
 df['DX_GROUP'] = df['DX_GROUP'].astype('category')
 
 outcomes = ['mean_degree','global_clustering','global_efficiency']
@@ -33,7 +32,7 @@ for y in outcomes:
         ft = m.f_test(R)
         print("  group × age-spline: F p =", float(ft.pvalue))
 
-    #main effect of group (overall ASD vs Control difference)
+    #main effect of group
     grp_ps = [p for name, p in m.pvalues.items()
               if name.startswith("C(DX_GROUP)") and ":bs(" not in name]
     if grp_ps:

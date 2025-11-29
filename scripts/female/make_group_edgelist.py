@@ -1,11 +1,10 @@
-# scripts/make_group_edgelist.py
 import os, argparse, glob, sys
 from collections import Counter
 import numpy as np
 import pandas as pd
 
 TS_DIR = os.path.join("data", "roi_timeseries", "cpac", "nofilt_noglobal", "rois_cc200")
-META_CSV = os.path.join("data","female" "metrics_merged.csv")#FILE_ID, DX_GROUP, AGE_AT_SCAN, func_mean_fd
+META_CSV = os.path.join("data","female" "metrics_merged.csv")
 OUT_DIR  = "data/female/processed"
 
 def read_timeseries(file_id):
@@ -13,12 +12,12 @@ def read_timeseries(file_id):
     if not os.path.exists(fp):
         return None
     ts = pd.read_csv(fp, delim_whitespace=True, header=None)
-    #robust: coerce non-numeric junk to NaN, then drop any bad rows
+
     ts = ts.apply(pd.to_numeric, errors="coerce").dropna(axis=0, how="any")
-    #drop columns with zero variance (rare in your included set)
+
     good_cols = ts.std(axis=0) > 0
     ts = ts.loc[:, good_cols.values]
-    #remember original ROI indices after dropping any bad columns
+
     roi_idx = np.where(good_cols.values)[0]
     return ts.values, roi_idx
 
@@ -27,10 +26,10 @@ def subject_edges(file_id, top_prop=0.10):
     if out is None:
         return None
     ts, roi_idx = out
-    #corr over ROIs (columns)
+
     C = np.corrcoef(ts, rowvar=False)
     np.fill_diagonal(C, 0.0)
-    #threshold top X% by absolute value on upper triangle
+
     iu = np.triu_indices(C.shape[0], k=1)
     vals = np.abs(C[iu])
     if np.all(np.isnan(vals)):
@@ -39,9 +38,9 @@ def subject_edges(file_id, top_prop=0.10):
     keep = vals >= thr
     ui = iu[0][keep]
     uj = iu[1][keep]
-    #map back to original ROI indices (0..199 for CC200)
+
     edges = [(int(roi_idx[i]), int(roi_idx[j])) for i, j in zip(ui, uj)]
-    #ensure i<j for undirected consistency
+
     edges = [(i, j) if i < j else (j, i) for i, j in edges]
     return edges
 

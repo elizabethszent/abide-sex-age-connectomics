@@ -3,13 +3,11 @@ import os
 import requests
 from tqdm import tqdm
 
-# --- CONFIG ---
 PHENO_PATH = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\Phenotypic_V1_0b_preprocessed1.csv" 
 OUT_DIR    = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\roi_timeseries"
 PIPELINE   = "cpac"
 STRATEGY   = "nofilt_noglobal" 
 ATLAS      = "cc200"             
-# --------------
 
 BASE = "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs"
 

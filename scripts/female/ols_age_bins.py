@@ -1,4 +1,3 @@
-# scripts/ols_age_bins.py
 import os, pandas as pd
 import statsmodels.formula.api as smf
 

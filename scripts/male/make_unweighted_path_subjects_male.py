@@ -1,5 +1,3 @@
-# scripts/make_unweighted_path_subjects.py
-
 import os
 from pathlib import Path
 
@@ -7,15 +5,15 @@ import numpy as np
 import pandas as pd
 import networkx as nx
 
-# Time series directory (same as for make_connectomes.py)
+#time series directory
 TS_DIR = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\roi_timeseries\cpac\nofilt_noglobal\rois_cc200")
 
-# Metadata for the cohort you want to analyze
+#Metadata for the cohort you want to analyze
 META_CSV = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\male\male_metadata_included.csv")
 
 OUT_CSV = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\male\unweighted_path_subjects_male.csv")
 
-PKEEP = 0.10 #keep top 10% |r| edges (same as before)
+PKEEP = 0.10 #keep top 10% |r| edges 
 R = 100  #number of null graphs per subject
 RNG_SEED = 1234
 
@@ -49,7 +47,7 @@ def load_ts_for_subject(file_id: str) -> np.ndarray:
     return ts
 
  
-#Given time-series (T x n), compute correlation matrix and build binary graph with top pkeep proportion of edges (by |r| or r).
+#Given time-series (T x n), compute correlation matrix and build binary graph with top pkeep proportion of edges 
 def build_binary_graph_from_ts(ts: np.ndarray, pkeep: float = PKEEP, use_abs: bool = True) -> nx.Graph:
 
     #n_rois = ts.shape[1]
@@ -90,7 +88,7 @@ def largest_cc_subgraph(G: nx.Graph) -> nx.Graph:
 
 
 
-#degree-preserving (Maslov–Sneppen) randomization:performs double edge swaps on an unweighted graph.
+#degree-preserving Maslov–Sneppen randomization:performs double edge swaps on an unweighted graph.
 def dp_sample(G_base: nx.Graph, nswap_factor: float = 10.0, keep_connected: bool = False) -> nx.Graph:
     H = G_base.copy()
     M = H.number_of_edges()
@@ -122,7 +120,7 @@ def main():
     if "DX_GROUP" in meta.columns:
         meta["group"] = meta["DX_GROUP"].map({1: "ASD", 2: "Control"}).astype("category")
     elif "group" in meta.columns:
-        # already labeled
+        #already labeled
         pass
     else:
         raise ValueError("Need either DX_GROUP or group column in metadata.")

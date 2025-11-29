@@ -1,4 +1,3 @@
-# scripts/metrics_10pct.py
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -13,7 +12,7 @@ rows = []
 
 for sid in ids:
     Z = np.load(CONN_DIR / f"{sid}.npy")
-    R = np.tanh(Z)#fisher z -> r
+    R = np.tanh(Z)#fisher z to r
     np.fill_diagonal(R, 0.0)
     n = R.shape[0]
 
@@ -28,12 +27,12 @@ for sid in ids:
     #degree
     deg = A.sum(0)
 
-    #global clustering (transitivity)
+    #global clustering 
     T = np.trace(np.linalg.matrix_power(A, 3)) / 6.0
     K = (deg * (deg - 1)).sum() / 2.0
     C = (3 * T) / K if K > 0 else np.nan
 
-    #global efficiency on weighted graph (distance = 1/|r|)
+    #global efficiency on weighted graph 
     W = np.zeros_like(R)
     W[A > 0] = np.abs(R[A > 0])
     eps = 1e-9

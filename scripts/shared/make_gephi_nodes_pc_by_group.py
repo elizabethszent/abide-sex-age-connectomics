@@ -7,7 +7,7 @@ BASE = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 TEMPLATE_NODE = BASE / r"results\vis\brainnet\CC200_base.node"
 MODULES_FILE  = BASE / r"results\group_connectomes\CC200_modules.npy"
 
-# Use your group Z-mean matrices here
+#use your group Z-mean matrices here
 GROUP_MATS = {
     "F_ASD":  BASE / r"results\group_connectomes\F_ASD_Zmean.npy",
     "F_CTL":  BASE / r"results\group_connectomes\F_CTL_Zmean.npy",
@@ -20,10 +20,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 #participation coefficient
 def participation_coefficient(A: np.ndarray, modules: np.ndarray) -> np.ndarray:
-    """
-    PC_i = 1 - sum_s (k_is / k_i)^2 over modules s.
-    Uses positive weights only, zero diagonal.
-    """
+
     A = np.array(A, copy=True, dtype=float)
     A[A < 0] = 0.0
     np.fill_diagonal(A, 0.0)
@@ -51,7 +48,7 @@ template = np.loadtxt(TEMPLATE_NODE, dtype=str)
 if template.shape[1] < 6:
     raise ValueError(f"{TEMPLATE_NODE} should have at least 6 columns")
 
-labels = template[:, 5]        # CC200_ROI_001, etc.
+labels = template[:, 5] #CC200_ROI_001, etc.
 n_rois = labels.shape[0]
 print(f"Template has {n_rois} nodes")
 
@@ -67,8 +64,8 @@ for short_name, mat_path in GROUP_MATS.items():
         continue
 
     print(f"\nProcessing group: {short_name}")
-    # If your group matrices are saved as .edge instead of .npy:
-    # A = np.loadtxt(mat_path)
+    #if your group matrices are saved as .edge instead of .npy:
+    #A = np.loadtxt(mat_path)
     A = np.load(mat_path)   # Z-mean matrix, shape (200,200)
 
     if A.shape[0] != n_rois or A.shape[1] != n_rois:
@@ -80,7 +77,7 @@ for short_name, mat_path in GROUP_MATS.items():
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("Id,Module,pc,Label\n")
         for i in range(n_rois):
-            # Id is 0-based (to match your gephi_nodes_PC example)
+            #Id is 0-based (to match your gephi_nodes_PC example)
             node_id = i
             module_id = int(modules[i])
             pc_i = float(pc[i])

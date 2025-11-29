@@ -1,9 +1,8 @@
-# scripts/unweighted_metrics_and_nulls.py
 import argparse, random, numpy as np, pandas as pd, networkx as nx
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-PKEEP = 0.10  #top |r| density already used in your pipeline
+PKEEP = 0.10 
 DATA_ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
 META = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metrics_merged.csv")
 R = 100
@@ -71,7 +70,7 @@ if __name__ == "__main__":
     fid = args.file or meta["FILE_ID"].iloc[0]
     ts_path = DATA_ROOT / f"{fid}_rois_cc200.1D"
 
-    #build subject graph (weighted) then drop weights -> unweighted Gb
+    #build subject graph weighted then drop weights to unweighted Gb
     G_w = top_p_graph_from_ts(ts_path, pkeep=PKEEP, use_abs=True)
     Gb = to_binary(G_w)
 
@@ -86,7 +85,7 @@ if __name__ == "__main__":
     print(f"  (a) Avg clustering (binary): {C_emp:.4f}")
     print(f"  (b) Avg shortest path (LCC n={n_lcc}): {L_emp:.4f}")
 
-    #ER null (same N and density)
+    #ER null 
     p = density
     er_C, er_L = [], []
     for r_ in range(R):
@@ -97,7 +96,7 @@ if __name__ == "__main__":
     er_C_mu, er_C_sd = float(np.mean(er_C)), float(np.std(er_C, ddof=1))
     er_L_mu, er_L_sd = float(np.mean(er_L)), float(np.std(er_L, ddof=1))
 
-    #DP null (degree-preserving rewires)
+    #DP null 
     dp_C, dp_L = [], []
     for _ in range(R):
         Gdp = dp_sample(Gb, nswap_factor=10, keep_connected=False)

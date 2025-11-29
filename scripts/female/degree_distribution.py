@@ -1,20 +1,19 @@
-# scripts/degree_distribution.py
 import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-#settings
-DENSITY = 0.10 # 10% strongest |r| edges
+
+DENSITY = 0.10 #10% strongest |r| edges
 TS_DIR = os.path.join("data", "roi_timeseries", "cpac", "nofilt_noglobal", "rois_cc200")
-METRICS_CSV = os.path.join("data","female", "metrics_merged.csv") #has FILE_ID and DX_GROUP
+METRICS_CSV = os.path.join("data","female", "metrics_merged.csv") 
 OUT_DIR = os.path.join("results","female" "degrees")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 #binarize to an undirected graph keeping top-|r| edges at the given density
 def corr_to_adj_topk(C, density=0.10):
     n = C.shape[0]
-    k = max(1, int(density * n * (n - 1) / 2)) #number of edges to keep (upper triangle)
+    k = max(1, int(density * n * (n - 1) / 2)) #number of edges to keep
     iu = np.triu_indices(n, 1)
     vals = np.abs(C[iu])
     idx_top = np.argpartition(vals, -k)[-k:]#indices of top-k by |r|
@@ -56,7 +55,7 @@ def degrees_for_subject(file_id):
 
 
 df = pd.read_csv(METRICS_CSV)  # columns
-# ABIDE I code: 1=ASD, 2=Control
+#ABIDE I code: 1=ASD, 2=Control
 df["group"] = df["DX_GROUP"].map({1: "ASD", 2: "Control"})
 
 all_rows = []

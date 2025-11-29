@@ -18,7 +18,6 @@ AGE_GROUPS = ["child", "teen", "young_adult"]
 N_MOD = 7 
 
 def cohen_d(x_asd, x_ctl):
-    """Cohen's d (CTL - ASD)."""
     n1, n2 = len(x_asd), len(x_ctl)
     if n1 < 2 or n2 < 2:
         return np.nan

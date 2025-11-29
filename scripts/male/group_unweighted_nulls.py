@@ -1,5 +1,4 @@
-# scripts/group_unweighted_nulls.py
-# Unweighted binary graph analysis with ER & degree-preserving nulls
+
 import os, math, random, warnings
 from pathlib import Path
 
@@ -17,12 +16,11 @@ SEED = 1234
 rng = random.Random(SEED)
 
 DATA_ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
-META_CSV  = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metrics_merged.csv")#fILE_ID, DX_GROUP, AGE_AT_SCAN, func_mean_fd
+META_CSV  = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metrics_merged.csv")
 OUT_CSV   = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/unweighted_subject_nulls.csv")
 FIG_DIR   = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/results/male/figs"); FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 #helpers
-#Robust read of a subject's CC200 ROI time-series -> float array [T x 200-ish]
 def load_ts_by_id(file_id: str) -> np.ndarray:
     ts_path = DATA_ROOT / f"{file_id}_rois_cc200.1D"
     df = pd.read_csv(
@@ -36,7 +34,7 @@ def load_ts_by_id(file_id: str) -> np.ndarray:
     df = df.loc[:, good]
     return df.to_numpy(dtype=float)
 
-#Correlation -> keep top p% |r| (upper-tri) -> unweighted undirected graph
+# keep top p% |r| (upper-tri)  unweighted undirected graph
 def binary_graph_from_ts(ts: np.ndarray, pkeep: float = PKEEP, use_abs: bool = True) -> nx.Graph:
     C = np.corrcoef(ts, rowvar=False)
     W = np.abs(C) if use_abs else C.copy()
@@ -95,7 +93,7 @@ def degree_preserving_sample(Gb: nx.Graph, nswap_factor=10, rng=None, keep_conne
         else:
             nx.double_edge_swap(H, nswap=nswap, max_tries=max_tries, seed=rng.randint(1, 10_000_000))
     except Exception:
-        #if swap fails (rare), return original copy
+        #if swap fails return original copy
         pass
     return H
 
@@ -133,7 +131,7 @@ def main():
             M = Gb.number_of_edges()
             density = 2.0 * M / (N * (N - 1)) if N > 1 else np.nan
 
-            #empirical metrics (binary)
+            #empirical metrics 
             C_emp = nx.average_clustering(Gb)
             H = lcc(Gb)
             L_emp = nx.average_shortest_path_length(H) if H.number_of_nodes() >= 2 else np.nan
@@ -145,7 +143,7 @@ def main():
             erC_mu, erC_sd = mean_sd(erC); erL_mu, erL_sd = mean_sd(erL)
             dpC_mu, dpC_sd = mean_sd(dpC); dpL_mu, dpL_sd = mean_sd(dpL)
 
-            #z-scores (handle sd=0 safely)
+            #z-scores 
             zC_ER = (C_emp - erC_mu) / erC_sd if erC_sd > 0 else np.nan
             zL_ER = (L_emp - erL_mu) / erL_sd if erL_sd > 0 else np.nan
             zC_DP = (C_emp - dpC_mu) / dpC_sd if dpC_sd > 0 else np.nan

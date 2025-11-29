@@ -1,10 +1,9 @@
-# scripts/plot_unweighted_path_by_group.py
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.formula.api as smf
 
 #load per-subject unweighted path lengths
-P = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/unweighted_path_subjects.csv")   # expects FILE_ID, L_emp, (maybe group)
+P = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/unweighted_path_subjects.csv") 
 
 #load phenotype/meta to get DX_GROUP, AGE_AT_SCAN, motion
 M = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/metrics_merged.csv")

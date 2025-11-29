@@ -1,13 +1,12 @@
-# scripts/analyze_weighted_clustering.py
 import pandas as pd
 import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-W = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_weighted_clustering_subjects.csv")   # has FILE_ID, Cw_emp, group
-M = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metadata_included.csv")       # FILE_ID, DX_GROUP, AGE_AT_SCAN, func_mean_fd, (maybe SITE_ID)
+W = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_weighted_clustering_subjects.csv")  
+M = pd.read_csv("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metadata_included.csv")  
 
-# Choose merge columns that exist
+#choose merge columns that exist
 need = ["FILE_ID","DX_GROUP","AGE_AT_SCAN","func_mean_fd"]
 have = [c for c in need if c in M.columns]
 use_site = "SITE_ID" in M.columns
@@ -19,7 +18,7 @@ if not set(need).issubset(M.columns):
 
 df = pd.merge(W, M[cols], on="FILE_ID", how="inner")
 
-# If group isn’t present in W, map it from DX_GROUP
+#group isn’t present in W, map it from DX_GROUP
 if "group" not in df.columns and "DX_GROUP" in df.columns:
     df["group"] = df["DX_GROUP"].map({1:"ASD", 2:"Control"}).astype("category")
 
@@ -27,19 +26,19 @@ print("N after merge:", len(df))
 print("\nGroup means (weighted clustering):")
 print(df.groupby("group")["Cw_emp"].mean())
 
-# Build formula
+#build formula
 formula = "Cw_emp ~ C(group) + AGE_AT_SCAN + func_mean_fd"
 if use_site:
     formula += " + C(SITE_ID)"
 else:
     print("Note: SITE_ID not found; running model without site fixed effects.")
 
-# Fit OLS
+#fit OLS
 model = smf.ols(formula, data=df).fit()
 print("\n=== OLS (Cw_emp) ===")
 print(model.summary())
 
-# Save compact line for slides
+#save compact line for slides
 p = model.pvalues.get("C(group)[T.Control]", float("nan"))
 diff = df.loc[df.group=="Control","Cw_emp"].mean() - df.loc[df.group=="ASD","Cw_emp"].mean()
 Path("results").mkdir(exist_ok=True, parents=True)
@@ -47,7 +46,7 @@ with open("results/weighted_clustering_group_test.txt","w") as f:
     f.write(f"Cw (CTL–ASD) = {diff:.4f}  |  p={p:.4f}  "
             f"{'(age, motion, site controlled)' if use_site else '(age, motion controlled)'}\n")
 
-# Simple boxplot for the slide
+#simple boxplot for the slide
 plt.figure(figsize=(5,4))
 df[["group","Cw_emp"]].boxplot(by="group", grid=False)
 plt.suptitle("")

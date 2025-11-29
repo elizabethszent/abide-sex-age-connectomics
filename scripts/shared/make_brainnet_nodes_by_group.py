@@ -1,5 +1,3 @@
-# scripts/shared/make_brainnet_nodes_by_group.py
-
 import numpy as np
 from pathlib import Path
 
@@ -19,19 +17,19 @@ MODULES_FILE = BASE / r"results\group_connectomes\CC200_modules.npy"
 OUT_DIR = BASE / r"results\vis\brainnet\nodes_by_group"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# === load template node (coords + labels) ===
+#load template node
 template = np.loadtxt(TEMPLATE_NODE, dtype=str)
 if template.shape[1] < 6:
     raise ValueError(
         f"Expected 6 columns in {TEMPLATE_NODE}, found {template.shape[1]}."
     )
 
-coords = template[:, 0:3].astype(float)  # (200, 3)
+coords = template[:, 0:3].astype(float) #(200, 3)
 labels = template[:, 5]
 n_rois = coords.shape[0]
 print(f"Template has {n_rois} nodes")
 
-# === load modules (column 4) ===
+#load modules
 modules = np.load(MODULES_FILE)
 if modules.shape[0] != n_rois:
     raise ValueError(
@@ -48,7 +46,7 @@ def compute_node_strength(mat: np.ndarray) -> np.ndarray:
         )
     M = np.array(mat, copy=True)
     M[M < 0] = 0.0
-    return M.sum(axis=0)   # strength per node
+    return M.sum(axis=0) #strength per node
 
 def scale_to_1_10(x: np.ndarray) -> np.ndarray:
     x = x.astype(float)
@@ -57,7 +55,7 @@ def scale_to_1_10(x: np.ndarray) -> np.ndarray:
         return np.ones_like(x) * 5.0
     return 1.0 + 9.0 * (x - xmin) / (xmax - xmin)
 
-# === one .node per group ===
+#one .node per group
 for name, mat_path in GROUP_MATS.items():
     if not mat_path.exists():
         print(f"[WARN] Missing matrix for {name}: {mat_path}")
@@ -67,7 +65,7 @@ for name, mat_path in GROUP_MATS.items():
     mat = np.load(mat_path)
 
     strength = compute_node_strength(mat)
-    size_col = scale_to_1_10(strength)   # this goes to column 5
+    size_col = scale_to_1_10(strength) #this goes to column 5
 
     out_path = OUT_DIR / f"{name}_strength.node"
 

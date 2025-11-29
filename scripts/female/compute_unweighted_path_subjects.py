@@ -7,13 +7,11 @@ from pathlib import Path
 #config 
 PKEEP = 0.10 #keep top 10% strongest |r| edges
 DATA_ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
-META = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/metrics_merged.csv") #has FILE_ID (+ DX_GROUP etc.)
+META = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/metrics_merged.csv") 
 OUT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/unweighted_path_subjects.csv")
 
 #helpers 
 def load_ts(ts_path: Path) -> np.ndarray:
-    """Read a CPAC .1D time series to float array [T x 200] robustly."""
-    import pandas as pd
     df = pd.read_csv(
         ts_path, sep=r"\s+", header=None, engine="python",
         comment="#", dtype=str
@@ -26,7 +24,6 @@ def load_ts(ts_path: Path) -> np.ndarray:
     return df.to_numpy(dtype=float)
 
 def build_unweighted_graph(ts: np.ndarray, pkeep: float = 0.10, use_abs: bool = True) -> nx.Graph:
-    """From ROI time series -> thresholded **binary** graph at proportional density pkeep."""
     C = np.corrcoef(ts, rowvar=False)
     W = np.abs(C) if use_abs else C.copy()
     np.fill_diagonal(W, 0.0)

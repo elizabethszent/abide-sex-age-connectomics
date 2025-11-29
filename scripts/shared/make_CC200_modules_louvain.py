@@ -5,8 +5,6 @@ from networkx.algorithms.community import louvain_communities
 from networkx.algorithms.community.quality import modularity
 
 BASE = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
-
-# Your group-mean Z matrices (200x200 each)
 GROUP_MATS = [
     BASE / r"results\group_connectomes\F_ASD_Zmean.npy",
     BASE / r"results\group_connectomes\F_CTL_Zmean.npy",
@@ -24,7 +22,7 @@ RES_GRID_COARSE = [0.90, 1.00, 1.05, 1.10, 1.15, 1.20, 1.25, 1.30]
 RES_GRID_EXPAND = np.linspace(0.6, 2.0, 29)
 
 def build_graph_from_matrix(A: np.ndarray) -> nx.Graph:
-    """Build weighted undirected graph from symmetric matrix A."""
+
     n = A.shape[0]
     G = nx.Graph()
     G.add_nodes_from(range(n))
@@ -36,14 +34,12 @@ def build_graph_from_matrix(A: np.ndarray) -> nx.Graph:
     return G
 
 def louvain_best_in_range(G: nx.Graph):
-    """Sweep resolution, target 7–20 modules, keep highest Q."""
+
     cands = []
 
     # coarse grid
     for gamma in RES_GRID_COARSE:
-        comms = louvain_communities(
-            G, weight="weight", resolution=float(gamma), seed=SEED
-        )
+        comms = louvain_communities(G, weight="weight", resolution=float(gamma), seed=SEED)
         Q = modularity(G, comms, weight="weight")
         cands.append((float(gamma), len(comms), Q, comms))
 
@@ -52,7 +48,7 @@ def louvain_best_in_range(G: nx.Graph):
 
     elig = [c for c in cands if in_range(c[1])]
 
-    # if nothing in range, expand grid
+    #if nothing in range, expand grid
     if not elig:
         for gamma in RES_GRID_EXPAND:
             comms = louvain_communities(
@@ -63,13 +59,13 @@ def louvain_best_in_range(G: nx.Graph):
         elig = [c for c in cands if in_range(c[1])]
 
     if elig:
-        # pick: highest Q, then fewer modules
+        #pick: highest Q, then fewer modules
         gamma, k, Q, comms = sorted(
             elig, key=lambda t: (-t[2], t[1])
         )[0]
         return gamma, k, Q, comms
 
-    # fallback: closest K to [TARGET_MIN,TARGET_MAX], then highest Q
+    #fallback: closest K to [TARGET_MIN,TARGET_MAX], then highest Q
     def dist_to_range(k: int) -> int:
         if k < TARGET_MIN:
             return TARGET_MIN - k
@@ -83,7 +79,7 @@ def louvain_best_in_range(G: nx.Graph):
     return gamma, k, Q, comms
 
 def assign_modules(comms):
-    """Sort communities and map node index -> module id 1..K."""
+
     comms_sorted = sorted(comms, key=lambda s: (-len(s), min(s)))
     n2m = {}
     for mid, comm in enumerate(comms_sorted, start=1):
@@ -92,7 +88,7 @@ def assign_modules(comms):
     return n2m
 
 def main():
-    # 1) load and average Z matrices
+    #load and average Z matrices
     mats = []
     for p in GROUP_MATS:
         if not p.exists():
@@ -106,20 +102,20 @@ def main():
     n = A.shape[0]
     print(f"Grand mean matrix shape: {A.shape}")
 
-    # 2) keep positive weights, zero diagonal
+    #keep positive weights, zero diagonal
     A = np.maximum(A, 0.0)
     np.fill_diagonal(A, 0.0)
 
-    # 3) build graph and run Louvain + resolution sweep
+    #build graph and run Louvain + resolution sweep
     G = build_graph_from_matrix(A)
     gamma, k, Q, comms = louvain_best_in_range(G)
     print(f"Louvain: gamma={gamma:.4f}, modules={k}, Q={Q:.4f}")
 
-    # 4) assign module ids 1..K for each node index 0..n-1
+    #assign module ids 1..K for each node index 0..n-1
     n2m = assign_modules(comms)
     modules = np.array([n2m[i] for i in range(n)], dtype=int)
 
-    # 5) save modules
+    #save modules
     OUT_NPY.parent.mkdir(parents=True, exist_ok=True)
     np.save(OUT_NPY, modules)
     print(f"Saved modules to {OUT_NPY}")

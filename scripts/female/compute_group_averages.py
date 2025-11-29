@@ -3,17 +3,17 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-# Paths
+#Paths
 MATRIX_DIR = r"data\connectivity_matrices"
 PHENO_PATH = r"data\females_all.csv"
 OUT_DIR = r"data\female\group_averages"
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
-# Load filtered phenotypic data
+#Load filtered phenotypic data
 pheno = pd.read_csv(PHENO_PATH)
 
-# Define helper function to load and average matrices
+#Define helper function to load and average matrices
 def average_matrices(file_ids):
     matrices = []
     for fid in file_ids:
@@ -26,7 +26,7 @@ def average_matrices(file_ids):
     matrices = np.stack(matrices)
     return np.nanmean(matrices, axis=0)
 
-# Get unique combinations of age group + diagnosis
+#get unique combinations of age group + diagnosis
 groups = pheno[['AGE_GROUP', 'DX_GROUP']].dropna().drop_duplicates()
 
 for _, row in tqdm(groups.iterrows(), total=len(groups)):

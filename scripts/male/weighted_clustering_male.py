@@ -1,5 +1,3 @@
-# scripts/weighted_clustering_male.py
-
 import math
 import random
 from collections import Counter
@@ -16,12 +14,12 @@ PKEEP = 0.10
 #where your CPAC ROI time-series live
 DATA_ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
 
-#merged metadata you already produced (has FILE_ID, DX_GROUP, AGE_AT_SCAN, func_mean_fd, …)
+#merged metadata you already produced 
 META = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/male/male_metrics_merged.csv")
 
 #null model settings
-NSWAP_FACTOR = 5 #Maslov–Sneppen swaps ~ NSWAP_FACTOR * M (edges)
-R = 20 #number of null draws per subject (bump to 50–100 later if time allows)
+NSWAP_FACTOR = 5 #Maslov–Sneppen swaps ~ NSWAP_FACTOR * M 
+R = 20 #number of null draws per subject 
 
 SEED = 1234
 rng = random.Random(SEED)
@@ -106,7 +104,7 @@ def safe_avg_clustering(G: nx.Graph, use_weight: bool = True) -> float:
         print(f"[warn] weighted clustering failed ({e}); falling back to unweighted.")
         return nx.average_clustering(H, weight=None)
 
-#Average shortest path on LCC given edge length attribute (e.g., length_inv = 1/weight).
+#Average shortest path on LCC given edge length attribute
 def safe_weighted_aspl(G: nx.Graph, length_attr: str = "length_inv") -> float:
     if G.number_of_nodes() == 0:
         return float("nan")

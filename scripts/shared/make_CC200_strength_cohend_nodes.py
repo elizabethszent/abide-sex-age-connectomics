@@ -15,12 +15,12 @@ MALE_META   = ROOT / "data/male/male_metadata_included.csv"
 OUT_DIR = ROOT / "results/vis/brainnet"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-DENSITY = 0.10  # top 10% absolute edges
+DENSITY = 0.10  #top 10% absolute edges
 AGE_GROUPS = ["child", "teen", "young_adult"]
 
 
 def threshold_top_density(mat: np.ndarray, density: float = 0.10) -> np.ndarray:
-    """Keep top |density| of absolute edges, symmetric, zero diagonal."""
+
     if mat.shape[0] != mat.shape[1]:
         raise ValueError(f"Matrix not square: {mat.shape}")
     n = mat.shape[0]
@@ -47,7 +47,7 @@ def threshold_top_density(mat: np.ndarray, density: float = 0.10) -> np.ndarray:
 
 
 def cohen_d(asd_vals, ctl_vals):
-    """Cohen's d (CTL - ASD)."""
+
     asd = np.asarray(asd_vals, dtype=float)
     ctl = np.asarray(ctl_vals, dtype=float)
     asd = asd[~np.isnan(asd)]
@@ -109,7 +109,7 @@ def process_sex(sex_label: str, meta_path: Path):
         print(f"\n  [{sex_label} {age_group}] N = {len(sub)}")
         print(sub["DX_GROUP"].value_counts().rename({1: "ASD", 2: "CTL"}))
 
-        # Collect node strengths per subject
+        #collect node strengths per subject
         all_rows = []
         n_bad = 0
 
@@ -130,7 +130,7 @@ def process_sex(sex_label: str, meta_path: Path):
                 continue
 
             W = threshold_top_density(mat, density=DENSITY)
-            strength = W.sum(axis=1)   # node strength
+            strength = W.sum(axis=1) #node strength
 
             for node_idx in range(N_ROI):
                 all_rows.append({
@@ -146,7 +146,7 @@ def process_sex(sex_label: str, meta_path: Path):
 
         df_strength = pd.DataFrame(all_rows)
 
-        # Compute Cohen's d per node (CTL - ASD)
+        #compute Cohen's d per node (CTL - ASD)
         cohend = []
         for node_id in range(1, N_ROI + 1):
             sub_node = df_strength[df_strength["node"] == node_id]
@@ -156,7 +156,7 @@ def process_sex(sex_label: str, meta_path: Path):
 
         cohend = np.array(cohend)
 
-        # Build node table: x y z ModuleID CohenD Label
+        #build node table: x y z ModuleID CohenD Label
         node_df = base_nodes.copy()
         node_df["ModuleID"] = roi2mod
         node_df["CohenD"] = cohend

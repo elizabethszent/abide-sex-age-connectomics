@@ -1,4 +1,3 @@
-#scripts/group_test.py
 import pandas as pd
 from scipy import stats
 from pathlib import Path

@@ -1,4 +1,3 @@
-# scripts/degree_distribution_male.py
 import os
 from pathlib import Path
 import numpy as np
@@ -8,14 +7,14 @@ import matplotlib.pyplot as plt
 #settings
 DENSITY = 0.10 # 10% strongest |r| edges
 TS_DIR = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\roi_timeseries\cpac\nofilt_noglobal\rois_cc200")
-METRICS_CSV = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\male\male_metrics_merged.csv") #has FILE_ID and DX_GROUP
+METRICS_CSV = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\data\male\male_metrics_merged.csv") 
 OUT_DIR = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\results\male\degrees")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 #binarize to an undirected graph keeping top-|r| edges at the given density
 def corr_to_adj_topk(C, density=0.10):
     n = C.shape[0]
-    k = max(1, int(density * n * (n - 1) / 2)) #number of edges to keep (upper triangle)
+    k = max(1, int(density * n * (n - 1) / 2)) #number of edges to keep
     iu = np.triu_indices(n, 1)
     vals = np.abs(C[iu])
     idx_top = np.argpartition(vals, -k)[-k:]#indices of top-k by |r|
@@ -28,7 +27,7 @@ def corr_to_adj_topk(C, density=0.10):
 
 def degrees_for_subject(file_id):
     ts_path = os.path.join(TS_DIR, f"{file_id}_rois_cc200.1D")
-    #robust numeric load: ignore comment lines and coerce to float
+    #ignore comment lines and coerce to float
     try:
         X = np.loadtxt(ts_path, dtype=float, comments="#")
     except Exception:
@@ -38,7 +37,7 @@ def degrees_for_subject(file_id):
         df = df.dropna(axis=1, how="all")
         X = df.values.astype(float)
 
-    #drop any zero-variance columns (rare but defensive)
+    #drop any zero-variance columns 
     std = X.std(axis=0)
     good = std > 0
     if not np.all(good):
@@ -56,8 +55,8 @@ def degrees_for_subject(file_id):
     return deg
 
 
-df = pd.read_csv(METRICS_CSV)  # columns
-# ABIDE I code: 1=ASD, 2=Control
+df = pd.read_csv(METRICS_CSV)  #columns
+#ABIDE I code: 1=ASD, 2=Control
 df["group"] = df["DX_GROUP"].map({1: "ASD", 2: "Control"})
 
 all_rows = []
@@ -69,7 +68,7 @@ for _, row in df.iterrows():
         print(f"[WARN] missing time series for {fid} – skipping")
         continue
 
-    #save per-subject degrees (200 values)
+    #save per-subject degrees 
     pd.Series(deg, name="degree").to_csv(os.path.join(OUT_DIR, f"{fid}_degrees.csv"),
                                          index=False)
     #store for group histograms
@@ -80,7 +79,7 @@ for _, row in df.iterrows():
 agg = pd.DataFrame(all_rows)
 agg.to_csv(os.path.join(OUT_DIR, "all_degrees_long.csv"), index=False)
 
-#plot: degree distribution by group (overlayed hist) 
+#plot: degree distribution by group
 bins = np.arange(-0.5, 200.5, 1)  #integer bins
 plt.figure(figsize=(7,5))
 for g, color in [("ASD", "tab:blue"), ("Control", "tab:orange")]:

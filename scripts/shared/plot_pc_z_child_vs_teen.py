@@ -8,10 +8,8 @@ HUB_DIR = ROOT / "results/hubs"
 OUT_DIR = ROOT / "results/hubs"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# ---------- helpers ----------
-
+#helpers
 def cohen_d(asd, ctl):
-    """Cohen's d (CTL - ASD)."""
     asd = np.asarray(asd, dtype=float)
     ctl = np.asarray(ctl, dtype=float)
     asd = asd[~np.isnan(asd)]
@@ -24,27 +22,24 @@ def cohen_d(asd, ctl):
     sp = np.sqrt(((n1 - 1) * s1**2 + (n2 - 1) * s2**2) / (n1 + n2 - 2))
     if sp == 0 or np.isnan(sp):
         return np.nan
-    return (m2 - m1) / sp   # CTL - ASD
+    return (m2 - m1) / sp #CTL -ASD
 
 
 def guess_column(df, kind: str) -> str:
-    """
-    Try to find the column name for 'pc' or 'z' in df.
-    kind: 'pc' or 'z'
-    """
+
     cols_lower = {c.lower(): c for c in df.columns}
 
-    # 1) obvious exact matches
+    #obvious exact matches
     if kind == "pc":
         for key in ["pc", "pc_mean", "participation", "participation_coeff"]:
             if key in cols_lower:
                 return cols_lower[key]
-    else:  # kind == "z"
+    else:  #kind == "z"
         for key in ["z", "z_mean", "within_z", "within_module_z"]:
             if key in cols_lower:
                 return cols_lower[key]
 
-    # 2) fallback: any column containing substring
+    #fallback: any column containing substring
     if kind == "pc":
         candidates = [c for c in df.columns if "pc" in c.lower()
                       or "particip" in c.lower()]
@@ -56,16 +51,12 @@ def guess_column(df, kind: str) -> str:
         raise ValueError(
             f"Could not guess {kind} column. Available columns:\n{df.columns}"
         )
-    # if multiple, just take the first
+    #if multiple, just take the first
     return candidates[0]
 
 
 def effects_by_module(df, metric_col: str) -> dict:
-    """
-    df: pc_z table for one sex/age
-    metric_col: name of the column with PC or z
-    returns: dict {module_id -> d}
-    """
+
     out = {}
     for m in sorted(df["module"].unique()):
         sub = df[df["module"] == m]
@@ -83,7 +74,7 @@ def load_pc_z(sex, age):
     if not path.exists():
         raise FileNotFoundError(path)
     df = pd.read_csv(path)
-    # make sure module & DX_GROUP exist
+    #make sure module & DX_GROUP exist
     needed = {"module", "DX_GROUP"}
     missing = needed - set(df.columns)
     if missing:
@@ -92,7 +83,7 @@ def load_pc_z(sex, age):
 
 
 def nice_age_label(age_key: str) -> str:
-    """Map internal age keys to pretty labels."""
+
     mapping = {
         "child": "Child",
         "teen": "Teen",
@@ -102,7 +93,7 @@ def nice_age_label(age_key: str) -> str:
 
 
 def plot_sex(sex):
-    # Try to load each age group
+    #Try to load each age group
     age_dfs = {}
     for age in ["child", "teen", "young_adult"]:
         try:
@@ -117,13 +108,13 @@ def plot_sex(sex):
         print(f"[{sex}] Not enough age groups to plot (need ≥ 2).")
         return
 
-    # Use CHILD (if present) or the first df we have to guess PC/Z columns
+    #use CHILD or the first df we have to guess PC/Z columns
     sample_df = age_dfs.get("child", next(iter(age_dfs.values())))
     pc_col = guess_column(sample_df, "pc")
     z_col = guess_column(sample_df, "z")
     print(f"[{sex}] Using PC column '{pc_col}', Z column '{z_col}'")
 
-    # Only modules that appear in *all* available age groups
+    #only modules that appear in all available age groups
     common_modules = None
     for df in age_dfs.values():
         mods = set(df["module"].unique())
@@ -137,11 +128,11 @@ def plot_sex(sex):
         print(f"[{sex}] No common modules across age groups, skipping.")
         return
 
-    # Restrict each df to the common modules
+    #restrict each df to the common modules
     for age in age_dfs:
         age_dfs[age] = age_dfs[age][age_dfs[age]["module"].isin(common_modules)]
 
-    # Compute Cohen's d per age × metric
+    #compute Cohen's d per age × metric
     age_pc = {}
     age_z = {}
     for age, df_age in age_dfs.items():
@@ -151,14 +142,14 @@ def plot_sex(sex):
     x = np.arange(len(common_modules))
     labels = [f"M{m}" for m in common_modules]
 
-    # Styling (cyclical if more than 3 ages, but we only have 3)
+    #styling
     markers = ["o", "s", "^", "D"]
     linestyles = ["-", "--", ":", "-."]
 
-    # Sorted so order is child, teen, young_adult if present
+    #sorted so order is child, teen, young_adult if present
     age_keys = sorted(age_dfs.keys(), key=lambda a: ["child", "teen", "young_adult"].index(a))
 
-    # -------- PC plot --------
+    #PC plot 
     plt.figure(figsize=(8, 4))
     plt.axhline(0, color="black", linewidth=1)
 
@@ -182,7 +173,7 @@ def plot_sex(sex):
     plt.savefig(OUT_DIR / out_name_pc, dpi=300)
     plt.close()
 
-    # -------- Z plot --------
+    #Z plot 
     plt.figure(figsize=(8, 4))
     plt.axhline(0, color="black", linewidth=1)
 

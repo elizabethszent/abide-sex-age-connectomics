@@ -16,7 +16,7 @@ modules = np.load(MODULE_PATH).astype(int)
 if modules.ndim != 1 or modules.shape[0] != 200:
     raise ValueError("Expected modules of shape (200,)")
 
-# relabel to 0..K-1
+#relabel to 0..K-1
 uniq = np.unique(modules)
 mapping = {old: i for i, old in enumerate(uniq)}
 modules = np.array([mapping[x] for x in modules], dtype=int)
@@ -24,11 +24,10 @@ K = len(uniq)
 print(f"K = {K} modules")
 
 def fisher_to_weight(Z):
-    # convert Fisher-z back to r
+    #convert Fisher-z back to r
     return np.tanh(Z)
 
 def modularity_Q(W, comm):
-    """Weighted undirected modularity with fixed community labels."""
     W = W.copy()
     W[W < 0] = 0.0
     k = W.sum(axis=1)
@@ -43,7 +42,6 @@ def modularity_Q(W, comm):
     return Q / (2 * m)
 
 def participation_coefficient(W, comm):
-    """Participation coefficient per node, positive weights only."""
     W = W.copy()
     W[W < 0] = 0.0
     k = W.sum(axis=1)
@@ -62,7 +60,6 @@ def participation_coefficient(W, comm):
     return PC
 
 def within_module_z(W, comm):
-    """Within-module degree z-score per node."""
     W = W.copy()
     W[W < 0] = 0.0
     z = np.zeros(len(W))
@@ -81,7 +78,7 @@ def within_module_z(W, comm):
     return z
 
 def conn_path(fid):
-    # adjust if needed
+    #adjust if needed
     return CONN_DIR / f"{fid}.npy"
 
 def process_group(label, meta_csv):

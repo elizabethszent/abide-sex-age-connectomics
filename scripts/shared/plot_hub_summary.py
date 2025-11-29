@@ -1,4 +1,3 @@
-# scripts/figures/plot_hub_summary.py
 
 import pandas as pd
 import numpy as np
@@ -18,22 +17,22 @@ FIG_DIR.mkdir(parents=True, exist_ok=True)
 female = pd.read_csv(F_HUB)
 male   = pd.read_csv(M_HUB)
 
-# add sex labels
+#add sex labels
 female["sex"] = "F"
 male["sex"] = "M"
 
-# concatenate
+#concatenate
 all_hubs = pd.concat([female, male], ignore_index=True)
 
-# map DX_GROUP to labels (ABIDE: 1 = ASD, 2 = Control)
+#map DX_GROUP to labels (ABIDE: 1 = ASD, 2 = Control)
 dx_map = {1: "ASD", 2: "Control"}
 all_hubs["dx_label"] = all_hubs["DX_GROUP"].map(dx_map)
 
-# drop rows with missing DX_GROUP just in case
+#drop rows with missing DX_GROUP just in case
 all_hubs = all_hubs.dropna(subset=["DX_GROUP"])
 
 
-# define groups in the order you want on the x-axis
+#define groups in the order you want on the x-axis
 group_order = [("F", "ASD"), ("F", "Control"),
                ("M", "ASD"), ("M", "Control")]
 labels = ["F-ASD", "F-Control", "M-ASD", "M-Control"]
@@ -57,7 +56,7 @@ plt.close()
 
 print(f"Saved Figure 1: {fig1_path}")
 
-# Also print a small summary table in the console
+#also print a small summary table in the console
 summary = (
     all_hubs
     .groupby(["sex", "dx_label"])["Q_fixed"]
@@ -68,10 +67,10 @@ print("\nQ_fixed summary by sex × diagnosis:")
 print(summary.to_string(index=False))
 
 
-# work only with females for this plot
+#work only with females for this plot
 female_only = all_hubs[all_hubs["sex"] == "F"].copy()
 
-# make sure dx_label is there
+#make sure dx_label is there
 female_only["dx_label"] = female_only["DX_GROUP"].map(dx_map)
 
 data_f = []

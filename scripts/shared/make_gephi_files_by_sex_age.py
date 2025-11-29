@@ -15,7 +15,7 @@ MALE_META   = ROOT / "data/male/male_metadata_included.csv"
 OUT_DIR = ROOT / "results/vis/gephi"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-DENSITY = 0.10  # top 10% absolute edges
+DENSITY = 0.10  #top 10% absolute edges
 AGE_GROUPS = ["child", "teen", "young_adult"]
 
 
@@ -29,10 +29,7 @@ def add_age_group_column(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def threshold_top_density(mat: np.ndarray, density: float = 0.10) -> np.ndarray:
-    """
-    Keep the top 'density' fraction of absolute edges in a symmetric matrix.
-    Diagonal is set to 0.
-    """
+
     if mat.shape[0] != mat.shape[1]:
         raise ValueError(f"Matrix not square: {mat.shape}")
     n = mat.shape[0]
@@ -118,12 +115,12 @@ def process_sex(sex_label: str, meta_path: Path):
         mats = np.stack(mats, axis=0)  # (N_sub, 200, 200)
         print(f"  [{sex_label} {age_group}] Usable subjects: {mats.shape[0]}, skipped: {n_bad}")
 
-        #Group-mean connectome
+        #group-mean connectome
         group_mat = mats.mean(axis=0)
         group_mat = (group_mat + group_mat.T) / 2.0
         np.fill_diagonal(group_mat, 0.0)
 
-        #Threshold to top 10% absolute edges
+        #threshold to top 10% absolute edges
         W = threshold_top_density(group_mat, density=DENSITY)
 
    
@@ -134,15 +131,14 @@ def process_sex(sex_label: str, meta_path: Path):
         edges_df = pd.DataFrame({
             "Source": iu[mask] + 1, #ROI indices start at 1
             "Target": ju[mask] + 1,
-            "Weight": weights[mask],
-        })
+            "Weight": weights[mask],})
 
         edges_path = OUT_DIR / f"{sex_label}_{age_group}_edges_gephi.csv"
         edges_df.to_csv(edges_path, index=False)
         print(f"  [{sex_label} {age_group}] Saved edges -> {edges_path}")
 
 
-        # Degree = node strength in this group-level W
+        #degree = node strength in this group-level W
         degree = W.sum(axis=1)
 
         nodes_df = pd.DataFrame({

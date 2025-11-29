@@ -1,4 +1,3 @@
-# scripts/plot_weighted_path_by_group.py
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,9 +5,9 @@ import statsmodels.formula.api as smf
 from pathlib import Path
 
 #load the per-subject weighted results you already made
-W = pd.read_csv("results/weighted_clustering_subjects.csv")  #has FILE_ID, group?, Lw_emp, etc.
+W = pd.read_csv("results/weighted_clustering_subjects.csv")  
 
-#If group label isn't present, merge it from metrics_merged.csv
+
 if "group" not in W.columns:
     Mgrp = pd.read_csv("data/female/metrics_merged.csv")[["FILE_ID", "DX_GROUP"]]
     Mgrp["group"] = Mgrp["DX_GROUP"].map({1: "ASD", 2: "Control"})

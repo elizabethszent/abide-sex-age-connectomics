@@ -1,4 +1,3 @@
-# scripts/make_connectomes.py
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -17,9 +16,6 @@ print(f"Found {len(files)} ROI time-series files")
 
 for fp in files:
     sub = Path(fp).stem.replace("_rois_cc200", "")
-
-    #ignore header lines that start with '#', split on whitespace,
-    #parse as numeric (coerce bad values to NaN)
     df = pd.read_csv(
         fp,
         sep=r"\s+",
@@ -29,15 +25,15 @@ for fp in files:
         dtype=str
     ).apply(pd.to_numeric, errors="coerce")
 
-    #drop all-NaN columns (e.g., if there’s a trailing blank column)
+    #drop all-NaN columns
     df = df.dropna(axis=1, how="all")
 
-    #drop constant columns (zero variance)
+    #drop constant columns
     std = df.std(axis=0, numeric_only=True)
     good_cols = std[std > 0].index
     ts = df[good_cols].to_numpy()
 
-    #correlation across ROIs (columns)
+    #correlation across ROIs
     C = np.corrcoef(ts.T)
     Z = fisher_z(C)
 

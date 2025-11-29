@@ -1,14 +1,10 @@
-# scripts/group_unweighted_nulls.py
-# Unweighted binary graph analysis with ER & degree-preserving nulls
 import os, math, random, warnings
 from pathlib import Path
-
 import numpy as np
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 
 PKEEP = 0.10#keep top 10% |r| edges
@@ -36,7 +32,7 @@ def load_ts_by_id(file_id: str) -> np.ndarray:
     df = df.loc[:, good]
     return df.to_numpy(dtype=float)
 
-#Correlation -> keep top p% |r| (upper-tri) -> unweighted undirected graph
+#keep top p% |r| (upper-tri) unweighted undirected graph
 def binary_graph_from_ts(ts: np.ndarray, pkeep: float = PKEEP, use_abs: bool = True) -> nx.Graph:
     C = np.corrcoef(ts, rowvar=False)
     W = np.abs(C) if use_abs else C.copy()
@@ -145,7 +141,7 @@ def main():
             erC_mu, erC_sd = mean_sd(erC); erL_mu, erL_sd = mean_sd(erL)
             dpC_mu, dpC_sd = mean_sd(dpC); dpL_mu, dpL_sd = mean_sd(dpL)
 
-            #z-scores (handle sd=0 safely)
+            #z-scores 
             zC_ER = (C_emp - erC_mu) / erC_sd if erC_sd > 0 else np.nan
             zL_ER = (L_emp - erL_mu) / erL_sd if erL_sd > 0 else np.nan
             zC_DP = (C_emp - dpC_mu) / dpC_sd if dpC_sd > 0 else np.nan

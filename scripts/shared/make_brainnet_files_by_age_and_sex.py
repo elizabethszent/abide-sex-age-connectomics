@@ -19,17 +19,12 @@ SEXES = ["female", "male"]
 AGE_GROUPS = ["child", "teen", "young_adult"]
 
 
-# === AGE GROUP HELPER ===
 def add_age_group_column(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Add AGE_GROUP from AGE_AT_SCAN using same bins as before.
-    Also strips whitespace from column names.
-    """
     df = df.copy()
-    # strip stray spaces/commas in column names
+    #strip stray spaces/commas in column names
     df.columns = df.columns.str.strip()
 
-    # if AGE_GROUP already exists, just return
+    #if AGE_GROUP already exists, just return
     if "AGE_GROUP" in df.columns:
         return df
 
@@ -45,7 +40,7 @@ def add_age_group_column(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-# === LOAD MODULE ASSIGNMENTS ===
+#LOAD MODULE ASSIGNMENTS 
 mods = pd.read_csv(MODULE_FILE, sep=r"\s+")
 mods = mods.sort_values("ROI_index")
 
@@ -127,7 +122,7 @@ def make_node_files(sex: str, age: str):
     base.columns = ["x", "y", "z", "size", "color", "label"]
     modules = roi2mod
 
-    # --- PC ---
+    #PC 
     pc_nodes = base.copy()
     pc_nodes["size"] = [float(d_pc_map.get(int(m), 0.0)) for m in modules]
     pc_nodes["color"] = [int(m) for m in modules]
@@ -135,7 +130,7 @@ def make_node_files(sex: str, age: str):
     pc_nodes.to_csv(out_pc, header=False, index=False, sep="\t")
     print(f"  Saved BrainNet node file (PC) -> {out_pc}")
 
-    # --- Z ---
+    #Z
     z_nodes = base.copy()
     z_nodes["size"] = [float(d_z_map.get(int(m), 0.0)) for m in modules]
     z_nodes["color"] = [int(m) for m in modules]

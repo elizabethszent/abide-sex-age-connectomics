@@ -1,4 +1,3 @@
-# scripts/shared/group_mean_connectomes.py
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -43,7 +42,7 @@ for name, meta_path, dx in GROUPS:
     )
     print(f"Candidates in metadata: {len(subs)}")
 
-    #first pass: inspect shapes
+    #first pass inspect shapes
     shapes = []
     shape_by_sub = {}
     missing = 0
@@ -71,7 +70,7 @@ for name, meta_path, dx in GROUPS:
     if len(counts) > 1:
         print("[NOTE] Some subjects have odd-sized matrices and will be excluded from the group mean.")
 
-    #Second pass: actually collect only matrices with target_shape
+    #Second pass actually collect only matrices with target_shape
     mats = []
     used_subs = []
     skipped_shape = 0

@@ -1,4 +1,3 @@
-# scripts/group_test_ols.py
 import pandas as pd
 import statsmodels.formula.api as smf
 

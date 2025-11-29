@@ -1,4 +1,3 @@
-# scripts/weighted_clustering.py
 import math
 import random
 from collections import Counter
@@ -12,15 +11,15 @@ import pandas as pd
 #keep top p% strongest |r| edges
 PKEEP = 0.10
 
-#where your CPAC ROI time-series live
+
 DATA_ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/roi_timeseries/cpac/nofilt_noglobal/rois_cc200")
 
-#merged metadata you already produced (has FILE_ID, DX_GROUP, AGE_AT_SCAN, func_mean_fd, …)
+
 META = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/female/metrics_merged.csv")
 
-#null model settings
+
 NSWAP_FACTOR = 5#Maslov–Sneppen swaps ~ NSWAP_FACTOR * M (edges)
-R = 20 #number of null draws per subject (bump to 50–100 later if time allows)
+R = 20 #number of null draws per subject
 
 SEED = 1234
 rng = random.Random(SEED)
@@ -67,7 +66,7 @@ def corr_top_p_graph(ts: np.ndarray, pkeep: float = PKEEP, use_abs: bool = True)
     m = vals.size
     k = int(np.floor(pkeep * m))
     if k < 1:
-        # fallback: connect nothing
+        #fallback connect nothing
         return nx.Graph()
 
     thresh = np.partition(vals, -k)[-k]
@@ -82,7 +81,7 @@ def corr_top_p_graph(ts: np.ndarray, pkeep: float = PKEEP, use_abs: bool = True)
             G.add_edge(i, j, weight=w)
     return G
 
-#Return a simple graph with consecutive int labels and float weights; self-loops removed
+#Return a simple graph with consecutive int labels and float weights self-loops removed
 def relabel_simple_float(G: nx.Graph) -> nx.Graph:
     H = nx.Graph()
     for u, v, d in G.edges(data=True):
@@ -93,7 +92,7 @@ def relabel_simple_float(G: nx.Graph) -> nx.Graph:
     H = nx.convert_node_labels_to_integers(H, ordering="sorted")
     return H
 
-#Average clustering with defensive relabeling; falls back to unweighted if weighted fails
+#Average clustering with defensive relabeling falls back to unweighted if weighted fails
 def safe_avg_clustering(G: nx.Graph, use_weight: bool = True) -> float:
     H = relabel_simple_float(G)
     if H.number_of_edges() == 0:
@@ -172,7 +171,7 @@ def mean_sd(a):
 
 
 
-# Main
+#main
 def main():
     if not META.exists():
         raise FileNotFoundError(f"Missing metadata CSV: {META}")

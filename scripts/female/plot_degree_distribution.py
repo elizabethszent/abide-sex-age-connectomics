@@ -1,4 +1,3 @@
-# scripts/plot_degree_distribution_from_saved.py
 import glob
 import numpy as np
 import pandas as pd
@@ -23,7 +22,7 @@ if not meta_path.exists():
 META = pd.read_csv(meta_path, usecols=["FILE_ID", "DX_GROUP"])
 D = D.merge(META, on="FILE_ID", how="left")
 
-#clean + map to labels
+#clean and map to labels
 missing = D["DX_GROUP"].isna().sum()
 if missing:
     print(f"Warning: {missing} rows missing DX_GROUP after merge. They will be dropped.")
@@ -41,7 +40,7 @@ print("ASD mean degree:", asd_deg.mean().round(3), "| Control mean degree:", ctl
 bins = np.arange(0, 61, 1)  # 0..60 is plenty for CC200 @ 10% density
 asd_pdf, edges = np.histogram(asd_deg, bins=bins, density=True)
 ctl_pdf, _     = np.histogram(ctl_deg, bins=bins, density=True)
-x = 0.5 * (edges[1:] + edges[:-1])  # correct midpoints for linear bins
+x = 0.5 * (edges[1:] + edges[:-1])  #correct midpoints for linear bins
 
 #plot
 plt.figure(figsize=(6,4))

@@ -1,4 +1,3 @@
-# scripts/freeze_cohort_male.py
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -21,10 +20,10 @@ male = phenos[phenos["SEX"] == 1].copy()
 #has saved connectome?
 male["has_matrix"] = male["FILE_ID"].apply(lambda s: (CONN_DIR / f"{s}.npy").exists())
 
-#functional QC must be OK (your printout shows many 'fail')
+
 male["qc_ok"] = male["qc_func_rater_3"].astype(str).str.upper().eq("OK")
 
-#motion threshold (mean FD); use ≤ 0.30 to start
+#motion threshold use ≤ 0.30 to start
 male["fd_ok"] = male["func_mean_fd"].fillna(np.inf) <= 0.30
 
 #final include
