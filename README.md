@@ -20,7 +20,7 @@ The project builds whole-brain functional networks, computes graph-theoretic mea
    Do females with ASD show differences in **modularity (Q)** and **hub roles**  
    (participation coefficient, within-module degree *z*) compared to controls?
 
-**Short answer (from current results)**
+**Short answer**
 
 - Networks in all groups show **strong small-world organization** and broadly similar large-scale topology.
 - **Female ASD** shows **age-dependent, network-specific** connectivity differences  
