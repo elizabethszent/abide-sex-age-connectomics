@@ -7,7 +7,7 @@ import community as community_louvain  #python-louvain package
 
 GRAND_MEAN_PATH = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/results/shared/child_grand_mean_connectome.npy")
 
-OUT_CSV = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/parcellation/CC200_Louvain7_modules.csv")
+OUT_CSV = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/parcellation/CC200_Louvain7_modules1000.csv")
 
 
 BRAINNET_NODE = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject/data/parcellation/CC200_base.node")
@@ -51,7 +51,7 @@ def build_graph_from_matrix(C: np.ndarray, threshold: float = None) -> nx.Graph:
     return G
 
 
-def louvain_with_k_approx(G: nx.Graph, k_target: int, n_trials: int = 50, random_state_base: int = 42):
+def louvain_with_k_approx(G: nx.Graph, k_target: int, n_trials: int = 1000, random_state_base: int = 42):
     best_part = None
     best_k = None
     best_diff = None
@@ -107,7 +107,7 @@ def main():
     print(f"Graph: N={G.number_of_nodes()}, M={G.number_of_edges()}")
 
     #Louvain, searching for ~7 modules
-    part, k_found = louvain_with_k_approx(G, k_target=N_MODULES_TARGET, n_trials=50)
+    part, k_found = louvain_with_k_approx(G, k_target=N_MODULES_TARGET, n_trials=1000)
     print(f"Louvain found {k_found} communities (target={N_MODULES_TARGET})")
 
     #Relabel modules to 1..K and build ROI->module table

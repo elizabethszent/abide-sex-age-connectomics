@@ -1,10 +1,10 @@
 import os, pandas as pd
 import statsmodels.formula.api as smf
 
-df = pd.read_csv("data/female/metrics_merged.csv")
+df = pd.read_csv("C:\\Users\\eliza\\CPSC_599_CONNECTOMICS\\TERMProject\\data\\female\\metrics_merged.csv")
 
 if "SITE_ID" not in df.columns:
-    ph_path = os.path.join("data","processed","Phenotypic_V1_0b_preprocessed1.csv")
+    ph_path = os.path.join("data","Phenotypic_V1_0b_preprocessed1.csv")
     ph = pd.read_csv(ph_path)
     df = df.merge(ph[["FILE_ID","SITE_ID"]].drop_duplicates(), on="FILE_ID", how="left")
 
