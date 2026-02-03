@@ -14,7 +14,8 @@ N_MOD      = 7
 
 
 def run_stats_for_group(sex: str, age_group: str):
-    in_path = IN_DIR / f"{sex}_{age_group}_pc_z.csv"
+    #in_path = IN_DIR / f"{sex}_{age_group}_pc_z.csv"
+    in_path = IN_DIR / f"{sex}_{age_group}_pc_z_revised.csv"
     if not in_path.exists():
         print(f"[SKIP] {in_path} not found")
         return
@@ -127,7 +128,8 @@ def run_stats_for_group(sex: str, age_group: str):
     stats_df["p_FDR"] = p_fdr
     stats_df["FDR_significant"] = reject
 
-    out_stats = OUT_DIR / f"{sex}_{age_group}_pc_z_module_stats.csv"
+    #out_stats = OUT_DIR / f"{sex}_{age_group}_pc_z_module_stats.csv
+    out_stats = OUT_DIR / f"{sex}_{age_group}_pc_z_module_stats_revised.csv"
     stats_df.to_csv(out_stats, index=False)
     print(f"  Saved stats -> {out_stats}")
 

@@ -18,15 +18,13 @@ TARGET_MIN, TARGET_MAX = 7, 20
 N_TRIALS = 1000
 SEED_BASE = 42
 
-# Louvain resolution parameter (gamma). Higher -> more/smaller modules.
+
 GAMMA = 1.1
 
-# Scale negative weights by a factor < 1 so they influence modularity less.
-# 1.0 = treat negatives equally strong as given
-# 0.5 = negatives count half as much as their magnitude
+
 NEG_SCALE = 0.5
 
-# Signed modularity option (asymmetric)
+
 SIGNED_MODE = "negative_asym"
 
 
@@ -50,12 +48,12 @@ def preprocess_signed_weights(A: np.ndarray, neg_scale: float) -> np.ndarray:
     W = A.astype(float).copy()
     np.fill_diagonal(W, 0.0)
 
-    # down-weight negatives so positives matter more
+    # down weight negatives so positives matter more
     if neg_scale < 1.0:
         neg_mask = W < 0
         W[neg_mask] *= float(neg_scale)
 
-    # symmetrize (protect against tiny asymmetry)
+    # symmetrize 
     W = 0.5 * (W + W.T)
 
     # sanity checks

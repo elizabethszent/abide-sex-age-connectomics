@@ -6,7 +6,9 @@ from pathlib import Path
 ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject")
 
 CONN_DIR = ROOT / "data/connectomes/cpac/nofilt_noglobal/cc200_z"
-MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules.txt"
+#MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules.txt"
+
+MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules_signed_asym1000.txt"
 
 FEMALE_META = ROOT / "data/female/female_metadata_included.csv"
 MALE_META = ROOT / "data/male/male_metadata_included.csv"
@@ -178,7 +180,8 @@ def process_sex(sex_label: str, meta_path: Path):
             continue
 
         out_df  = pd.DataFrame(rows)
-        out_path = OUT_DIR / f"{sex_label}_{age_group}_pc_z.csv"
+        #out_path = OUT_DIR / f"{sex_label}_{age_group}_pc_z.csv"
+        out_path = OUT_DIR / f"{sex_label}_{age_group}_pc_z_revised.csv"
         out_df.to_csv(out_path, index=False)
         print(
             f"  [{sex_label} {age_group}] "
