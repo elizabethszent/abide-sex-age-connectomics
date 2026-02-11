@@ -58,8 +58,8 @@ def threshold_top_density(mat: np.ndarray, density: float = 0.10) -> np.ndarray:
 
 
 def add_age_group_column(df: pd.DataFrame) -> pd.DataFrame:
-    bins   = [0, 13, 18, 30, 45, 120]
-    labels = ["child", "teen", "young_adult", "adult", "older"]
+    bins   = [0, 10, 13, 18, 30, 45, 120]
+    labels = ["child", "preteeen", "teen", "young_adult", "adult", "older"]
     df = df.copy()
     df["AGE_GROUP"] = pd.cut(df["AGE_AT_SCAN"], bins=bins,
                              labels=labels, right=False)

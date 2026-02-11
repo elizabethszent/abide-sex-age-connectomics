@@ -13,6 +13,7 @@ MATS = {
     "F_CTL": GROUP_DIR / "F_CTL_Zmean.npy",
     "M_ASD": GROUP_DIR / "M_ASD_Zmean.npy",
     "M_CTL": GROUP_DIR / "M_CTL_Zmean.npy",
+    "all":GROUP_DIR / "ALL_SUBJECTS_Zmean.npy"
 }
 
 

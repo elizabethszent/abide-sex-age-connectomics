@@ -8,7 +8,8 @@ ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject")
 CONN_DIR = ROOT / "data/connectomes/cpac/nofilt_noglobal/cc200_z"
 #MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules.txt"
 
-MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules_signed_asym1000.txt"
+#MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules_signed_asym1000.txt"
+MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules_ALLSUBJ_signed_asym1000.txt"
 
 FEMALE_META = ROOT / "data/female/female_metadata_included.csv"
 MALE_META = ROOT / "data/male/male_metadata_included.csv"
@@ -16,10 +17,12 @@ MALE_META = ROOT / "data/male/male_metadata_included.csv"
 OUT_DIR = ROOT / "results/hubs"
 OUT_DIR.mkdir(exist_ok=True, parents=True)
 
-DENSITY = 0.10 #top 10% absolute edges
+#DENSITY = 0.10 #top 10% absolute edges
+DENSITY = 0.0797
 
 #age groups we care about
-AGE_GROUPS = ["child", "teen", "young_adult"]
+AGE_GROUPS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
+
 
 
 # CC200_modules.txt format: ROI_index  Module
@@ -109,8 +112,9 @@ def compute_pc_z_weighted(W: np.ndarray, roi2mod: np.ndarray):
 
 
 def add_age_group_column(df: pd.DataFrame) -> pd.DataFrame:
-    bins   = [0, 13, 18, 30, 45, 120]
-    labels = ["child", "teen", "young_adult", "adult", "older"]
+    bins = [0, 10, 13, 18, 120]
+    labels = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
+    right=False
     df = df.copy()
     df["AGE_GROUP"] = pd.cut(df["AGE_AT_SCAN"], bins=bins,
                              labels=labels, right=False)
