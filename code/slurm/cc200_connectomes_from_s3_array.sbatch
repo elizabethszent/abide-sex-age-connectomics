@@ -45,9 +45,9 @@ echo "PREFIX=$prefix"
 echo "WORKROOT=$WORKROOT"
 
 # download the two required inputs (mask optional)
-aws s3 cp --no-sign-request "$S3ROOT/${prefix}_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz" "$bold"
-aws s3 cp --no-sign-request "$S3ROOT/${prefix}_desc-confounds_regressors.tsv" "$conf"
-aws s3 cp --no-sign-request "$S3ROOT/${prefix}_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz" "$mask" || true
+python -m awscli s3 cp --no-sign-request "$S3ROOT/${prefix}_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz" "$bold"
+python -m awscli s3 cp --no-sign-request "$S3ROOT/${prefix}_desc-confounds_regressors.tsv" "$conf"
+python -m awscli s3 cp --no-sign-request "$S3ROOT/${prefix}_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz" "$mask" || true
 
 OUTDIR="$REPO/connectomes/CC200/$TAG"
 
