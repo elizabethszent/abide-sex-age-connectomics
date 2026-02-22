@@ -21,3 +21,4 @@ code/licenses/
 # python caches anywhere
 **/__pycache__/
 **/*.pyc
+code/slurm/*.bak.*
