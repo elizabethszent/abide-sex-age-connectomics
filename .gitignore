@@ -1,0 +1,23 @@
+# virtualenvs
+.venv/
+**/.venv/
+
+# python junk
+__pycache__/
+*.pyc
+
+# big pipeline outputs / datasets (keep OUT of git)
+raw_bids/
+derivatives/
+atlases/templateflow/
+containers/*.sif
+logs/
+connectomes/
+
+# secrets / local-only
+code/licenses/
+**/license*.txt
+
+# python caches anywhere
+**/__pycache__/
+**/*.pyc
