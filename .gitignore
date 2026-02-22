@@ -12,7 +12,6 @@ derivatives/
 atlases/templateflow/
 containers/*.sif
 logs/
-connectomes/
 
 # secrets / local-only
 code/licenses/
@@ -22,3 +21,7 @@ code/licenses/
 **/__pycache__/
 **/*.pyc
 code/slurm/*.bak.*
+
+# connectome temp/work (keep final matrices trackable)
+connectomes/_tmp/
+connectomes/_work/
