@@ -1,0 +1,27 @@
+# virtualenvs
+.venv/
+**/.venv/
+
+# python junk
+__pycache__/
+*.pyc
+
+# big pipeline outputs / datasets (keep OUT of git)
+raw_bids/
+derivatives/
+atlases/templateflow/
+containers/*.sif
+logs/
+
+# secrets / local-only
+code/licenses/
+**/license*.txt
+
+# python caches anywhere
+**/__pycache__/
+**/*.pyc
+code/slurm/*.bak.*
+
+# connectome temp/work (keep final matrices trackable)
+connectomes/_tmp/
+connectomes/_work/
