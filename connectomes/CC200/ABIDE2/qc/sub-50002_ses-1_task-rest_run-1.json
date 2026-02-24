@@ -1,0 +1,21 @@
+{
+  "run_id": "sub-50002_ses-1_task-rest_run-1",
+  "prefix": "data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-50002/ses-1/func/sub-50002_ses-1_task-rest_run-1",
+  "bucket": "fcp-indi",
+  "keys": {
+    "preproc": "data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-50002/ses-1/func/sub-50002_ses-1_task-rest_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz",
+    "confounds": "data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-50002/ses-1/func/sub-50002_ses-1_task-rest_run-1_desc-confounds_regressors.tsv",
+    "mask": "data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-50002/ses-1/func/sub-50002_ses-1_task-rest_run-1_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz"
+  },
+  "fd_thresholds": [
+    0.2,
+    0.3
+  ],
+  "status": "fail_not_200_rois",
+  "have_mask": true,
+  "n_volumes": 200,
+  "confounds_rows": 200,
+  "tr": 1.5,
+  "n_rois": 191,
+  "note": "Expected 200 ROIs, got 191"
+}
