@@ -9,8 +9,11 @@ BASE = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 # =========================
 # INPUT: ALL-SUBJECTS GRAND MEAN (new)
 # =========================
-ALL_MEAN = BASE / r"results\group_connectomes\ALL_SUBJECTS_Zmean.npy"
-ALL_IDS  = BASE / r"results\group_connectomes\ALL_SUBJECTS_file_ids.csv"
+#ALL_MEAN = BASE / r"results\group_connectomes\ALL_SUBJECTS_Zmean.npy"
+ALL_MEAN = BASE / r"results\group_connectomes\ABIDE1_CC200\OVERALL_ageSexMatched_fd-0.2_mean_r.npy"
+
+#ALL_IDS  = BASE / r"results\group_connectomes\ALL_SUBJECTS_file_ids.csv"
+ALL_IDS  = BASE / r"results\group_connectomes\ABIDE1_CC200\OVERALL_ageSexMatched_fd-0.2_selected_subjects.csv"
 
 # =========================
 # OUTPUTS (renamed so we don't overwrite your prior run)
@@ -25,7 +28,7 @@ N_TRIALS = 1000
 SEED_BASE = 42
 
 # Louvain resolution (gamma) — tune this to hit your desired K
-GAMMA = 1.19
+GAMMA = 1.55
 
 # Make positives count more than negatives (0.5 = negatives half strength)
 NEG_SCALE = 0.5
