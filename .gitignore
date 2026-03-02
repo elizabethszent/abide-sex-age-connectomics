@@ -26,18 +26,19 @@ code/slurm/*.bak.*
 connectomes/_tmp/
 connectomes/_work/
 
-
-# connectome outputs (generated; keep OUT of git by default)
+# connectome outputs (generated; keep OUT of git)
 connectomes/**
 
-# allow lightweight placeholders/docs
+# allow lightweight placeholders/docs + curated CC200 outputs
+!connectomes/
 !connectomes/.gitkeep
 !connectomes/README.md
+
 !connectomes/CC200/
 !connectomes/CC200/.gitkeep
 
-# allow curated final connectomes + meta (these are what we want in git)
 !connectomes/CC200/abide1/
 !connectomes/CC200/abide1/**
+
 !connectomes/CC200/abide2/
 !connectomes/CC200/abide2/**
