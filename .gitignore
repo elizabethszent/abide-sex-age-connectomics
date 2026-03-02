@@ -25,3 +25,12 @@ code/slurm/*.bak.*
 # connectome temp/work (keep final matrices trackable)
 connectomes/_tmp/
 connectomes/_work/
+
+
+# connectome outputs (generated; keep OUT of git)
+connectomes/**
+
+# allow lightweight placeholders/docs
+!connectomes/.gitkeep
+!connectomes/README.md
+!connectomes/CC200/.gitkeep
