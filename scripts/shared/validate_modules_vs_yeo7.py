@@ -9,10 +9,10 @@ from nilearn import datasets, image
 # ------------------ PATHS (EDIT THESE) ------------------
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
-CC200_ATLAS = ROOT / r"abide\preprocessing\resources\abide_rois\CC200.nii.gz"
+CC200_ATLAS = ROOT / r"atlases\cc200\cc200_roi_atlas.nii.gz"
 
 # Use ONE of these:
-MODULE_TXT = ROOT / r"results\group_connectomes\CC200_modules_signed_asym1000.txt"
+MODULE_TXT = ROOT / r"results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.txt"
 MODULE_NPY = None  # e.g., ROOT / r"results\group_connectomes\CC200_modules_signed_asym1000.npy"
 
 OUT_DIR = ROOT / r"results\qc\module_validation"

@@ -28,7 +28,7 @@ N_TRIALS = 1000
 SEED_BASE = 42
 
 # Louvain resolution (gamma) — tune this to hit your desired K
-GAMMA = 1.55
+GAMMA = 1.64
 
 # Make positives count more than negatives (0.5 = negatives half strength)
 NEG_SCALE = 0.5
