@@ -1,0 +1,5 @@
+dataset,age_group,Female_ASD,Female_Control,Male_ASD,Male_Control,Total
+ABIDE12,child_0_9,11,50,70,76,207
+ABIDE12,preteen_10_12,14,48,83,128,273
+ABIDE12,teen_13_17,21,43,115,126,305
+ABIDE12,adult_18_plus,16,35,116,139,306

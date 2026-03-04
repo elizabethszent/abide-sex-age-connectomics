@@ -1,0 +1,5 @@
+fd_threshold,age_group,Female_ASD,Female_Control,Male_ASD,Male_Control,Total
+fd-0.2,child_0_9,5,18,32,38,93
+fd-0.2,preteen_10_12,10,15,53,75,153
+fd-0.2,teen_13_17,14,33,93,110,250
+fd-0.2,adult_18_plus,14,22,76,108,220

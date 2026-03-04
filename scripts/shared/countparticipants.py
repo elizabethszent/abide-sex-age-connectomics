@@ -3,13 +3,12 @@ import glob
 import pandas as pd
 from pathlib import Path
 
-# --- DYNAMIC PATH DETECTION ---
 ROOT = Path(__file__).resolve().parents[2]
 
 CONN_DIR = ROOT / "connectomes" / "CC200" / "ABIDE2"
 PHENO_DIR = ROOT / "phenotypes" / "ABIDE2"
 
-# --- requested bins ---
+
 BINS   = [0, 10, 13, 18, 200]
 LABELS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
 
@@ -24,7 +23,7 @@ def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
 
     dfs = []
     for fp in files:
-        # FIX: Added encoding="latin1" to handle non-UTF-8 characters
+        #Added encoding="latin1" to handle non-UTF-8 characters
         df = pd.read_csv(fp, encoding="latin1")
         
         # Strip spaces from column names (handles 'AGE_AT_SCAN ')
