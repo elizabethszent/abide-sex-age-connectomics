@@ -1,4 +1,5 @@
 # scripts/shared/buildconnectome/validate_louvain_vs_yeo7.py
+# Prints dominant Yeo7 per Louvain module in the exact format you want.
 
 import numpy as np
 import pandas as pd
@@ -13,21 +14,14 @@ from nilearn import datasets, image
 # =========================
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
-# CC200 atlas path
 CC200_ATLAS = ROOT / r"atlases\cc200\cc200_roi_atlas.nii.gz"
 
-# Where to look for Louvain module files by default
 DEFAULT_MODULE_DIRS = [
-    ROOT / r"results\group_connectomes",     # <- your louvian3.0 outputs live here
+    ROOT / r"results\group_connectomes",
     ROOT / r"results\louvain_compare",
     ROOT / r"results\louvain_bestK7_vs_yeo",
 ]
 
-# What module files look like
-# Supports:
-#   - "ROI_index Module" .txt (like CC200_modules_ALLSUBJ_signed_asym1000.txt)
-#   - a 200-line vector .txt
-#   - a 200-length vector .npy
 MODULE_GLOBS = [
     "CC200_modules_*.txt",
     "CC200_modules_*.npy",
@@ -40,7 +34,6 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 EXPECTED_N = 200
 
-# Yeo7 names we use for scoring (exclude Background from 1-to-1 matching)
 YEO7_LABELS = [
     "Visual",
     "Somatomotor",
@@ -63,39 +56,29 @@ def discover_module_files() -> list[Path]:
         for g in MODULE_GLOBS:
             files.extend(sorted(d.glob(g)))
 
-    # de-dupe, keep order
     seen = set()
     out = []
     for f in files:
-        if f.resolve() in seen:
+        r = f.resolve()
+        if r in seen:
             continue
-        seen.add(f.resolve())
+        seen.add(r)
         out.append(f)
     return out
 
 
 def load_modules(path: Path) -> np.ndarray:
-    """
-    Returns modules as length-N int vector (ROI_index order 1..N).
-    Supports:
-      - .npy vector
-      - .txt with header "ROI_index Module"
-      - .txt one int per line
-    """
     if not path.exists():
         raise FileNotFoundError(path)
 
     if path.suffix.lower() == ".npy":
         v = np.load(path)
-        v = np.asarray(v).reshape(-1).astype(int)
-        return v
+        return np.asarray(v).reshape(-1).astype(int)
 
-    # txt
     lines = path.read_text(encoding="utf-8", errors="replace").strip().splitlines()
     if not lines:
         raise ValueError(f"Empty module file: {path}")
 
-    # "ROI_index Module" table
     if ("ROI_index" in lines[0]) and ("Module" in lines[0]):
         df = pd.read_csv(path, sep=r"\s+", engine="python")
         if "ROI_index" not in df.columns or "Module" not in df.columns:
@@ -103,32 +86,22 @@ def load_modules(path: Path) -> np.ndarray:
         df = df.sort_values("ROI_index")
         return df["Module"].to_numpy().astype(int)
 
-    # else: one int per line
     vals = []
     for ln in lines:
         ln = ln.strip()
-        if not ln:
-            continue
-        vals.append(int(float(ln)))
+        if ln:
+            vals.append(int(float(ln)))
     return np.array(vals, dtype=int)
 
 
 def pick_yeo7_path(yeo_bunch) -> str:
-    """
-    Robustly select a 7-network NIfTI from nilearn fetch_atlas_yeo_2011().
-    """
-    candidates = [
-        "thin_7", "thick_7",
-        "yeo_7", "maps_7",
-        "thin7", "thick7",
-    ]
+    candidates = ["thin_7", "thick_7", "yeo_7", "maps_7", "thin7", "thick7"]
     for k in candidates:
         if hasattr(yeo_bunch, k):
             p = getattr(yeo_bunch, k)
             if isinstance(p, str) and (p.endswith(".nii") or p.endswith(".nii.gz")):
                 return p
 
-    # fallback: search dict-like
     if hasattr(yeo_bunch, "keys"):
         for key in yeo_bunch.keys():
             v = yeo_bunch[key]
@@ -148,7 +121,6 @@ def yeo7_to_cc200_space(cc200_img: nib.Nifti1Image):
     yeo_img = nib.load(yeo_7_path)
     yeo_rs = image.resample_to_img(yeo_img, cc200_img, interpolation="nearest")
 
-    # Yeo7 label map (nilearn's Yeo atlas uses integer labels)
     label_map = {
         0: "Background",
         1: "Visual",
@@ -177,37 +149,28 @@ def roi_majority_vote(cc200_data: np.ndarray, yeo_data: np.ndarray, roi_label: i
 
 
 # =========================
-# MATCH METRICS
+# MATCH METRICS (optional)
 # =========================
 def compute_match_metrics(ctab: pd.DataFrame, n_total: int):
-    """
-    Returns:
-      purity_hits, purity_pct
-      best_hits, best_pct, best_mapping (module -> yeo7)
-    """
     if n_total <= 0:
-        return 0, 0.0, 0, 0.0, {}
+        return 0, 0.0, float("nan"), float("nan"), {}
 
-    # Ensure columns exist
     ctab = ctab.copy()
     for y in YEO7_LABELS:
         if y not in ctab.columns:
             ctab[y] = 0
 
-    # Purity = sum of row-wise max overlap / N
     purity_hits = int(ctab.max(axis=1).sum())
     purity_pct = 100.0 * purity_hits / n_total
 
-    # Best 1-to-1 mapping (unique Yeo7 label per module), K must be <= 7
     modules_sorted = list(ctab.index.astype(int))
     K = len(modules_sorted)
 
-    best_hits = None
+    best_hits = float("nan")
     best_map = {}
 
     if K <= len(YEO7_LABELS):
         counts = {(int(m), y): int(ctab.loc[m, y]) for m in modules_sorted for y in YEO7_LABELS}
-
         best_total = -1
         best_mapping = None
         for perm in permutations(YEO7_LABELS, r=K):
@@ -217,15 +180,10 @@ def compute_match_metrics(ctab: pd.DataFrame, n_total: int):
             if total > best_total:
                 best_total = total
                 best_mapping = dict(zip(modules_sorted, perm))
-
         best_hits = int(best_total)
         best_map = best_mapping if best_mapping is not None else {}
-    else:
-        # Too many modules for unique 7-label assignment
-        best_hits = int(np.nan)
-        best_map = {}
 
-    best_pct = (100.0 * best_hits / n_total) if (isinstance(best_hits, int) and best_hits >= 0) else float("nan")
+    best_pct = (100.0 * best_hits / n_total) if isinstance(best_hits, int) else float("nan")
     return purity_hits, purity_pct, best_hits, best_pct, best_map
 
 
@@ -255,7 +213,6 @@ def main():
     roi_labels = np.unique(cc200_data)
     roi_labels = roi_labels[roi_labels != 0]
     roi_labels = np.sort(roi_labels)
-
     print(f"CC200 atlas nonzero ROI labels found: {len(roi_labels)}")
 
     yeo_rs, label_map = yeo7_to_cc200_space(cc200_img)
@@ -276,7 +233,6 @@ def main():
 
         if len(modules) != EXPECTED_N:
             print(f"[WARN] modules length is {len(modules)} (expected {EXPECTED_N})")
-
         if len(roi_labels) != EXPECTED_N:
             print(f"[WARN] atlas ROI count is {len(roi_labels)} (expected {EXPECTED_N})")
 
@@ -284,7 +240,7 @@ def main():
 
         roi_to_yeo = np.zeros(N, dtype=int)
         for i in range(N):
-            roi_label_i = int(roi_labels[i])  # robust even if atlas labels aren’t 1..N
+            roi_label_i = int(roi_labels[i])
             roi_to_yeo[i] = roi_majority_vote(cc200_data, yeo_data, roi_label_i)
 
         per_roi = pd.DataFrame({
@@ -299,34 +255,28 @@ def main():
         per_roi.to_csv(out_per_roi, index=False)
 
         ctab = pd.crosstab(per_roi["Louvain_module"], per_roi["Yeo7_name"])
-
-        # Save counts and row%
         (out_subdir / "louvain_module_x_yeo7_counts.csv").write_text(ctab.to_csv(), encoding="utf-8")
 
         ctab_pct = ctab.div(ctab.sum(axis=1), axis=0) * 100.0
         (out_subdir / "louvain_module_x_yeo7_rowpct.csv").write_text(ctab_pct.to_csv(), encoding="utf-8")
 
-        # Dominant label per module
-        print("Dominant Yeo7 per module:")
+        # --- EXACT FORMAT YOU ASKED FOR ---
+        print("\n=== Louvain module -> dominant Yeo7 network ===")
         for m in sorted(per_roi["Louvain_module"].unique()):
             sub = per_roi[per_roi["Louvain_module"] == m]
             vc = sub["Yeo7_name"].value_counts()
             top = vc.index[0]
-            print(f"  Module {m}: {top} ({vc.iloc[0]}/{len(sub)} ROIs)")
+            hits = int(vc.iloc[0])
+            total = int(len(sub))
+            pct = 100.0 * hits / total if total > 0 else 0.0
+            print(f"Module {m}: {top} ({hits}/{total} ROIs, {pct:.1f}%)")
 
-        # % match metrics
+        # Optional: overall metrics
         purity_hits, purity_pct, best_hits, best_pct, best_map = compute_match_metrics(ctab, n_total=N)
-
         print("\n=== Overall match % ===")
         print(f"Purity (dominant overlap): {purity_hits}/{N}  ->  {purity_pct:.1f}%")
-
         if isinstance(best_hits, int):
             print(f"Best 1-to-1 mapping:       {best_hits}/{N}  ->  {best_pct:.1f}%")
-            print("Best mapping (module -> Yeo7):")
-            for m in sorted(best_map.keys()):
-                print(f"  Module {m}: {best_map[m]}")
-        else:
-            print("Best 1-to-1 mapping:       skipped (K > 7)")
 
         summary_rows.append({
             "label": label,
@@ -339,16 +289,8 @@ def main():
             "best_1to1_pct": best_pct,
         })
 
-        # Save mapping as JSON too (nice to have)
-        if best_map:
-            (out_subdir / "best_1to1_mapping.json").write_text(
-                pd.Series(best_map).to_json(indent=2),
-                encoding="utf-8"
-            )
+        print(f"\nSaved -> {out_subdir}")
 
-        print(f"Saved -> {out_subdir}")
-
-    # Combined summary
     if summary_rows:
         summary = pd.DataFrame(summary_rows)
         out_summary = OUT_DIR / "module_vs_yeo7_match_summary.csv"

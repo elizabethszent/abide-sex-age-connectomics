@@ -1,0 +1,8 @@
+scenario,sex,age_group,metric,module,mean_ASD,mean_CTL,beta_CTL_minus_ASD,p_DX,p_SITE,r2,n_ASD,n_CTL,note,p_DX_FDR,DX_FDR_significant
+ABIDE2_fd2,female,adult_18_plus,PC_neg,1,0.062464424289774,0.0305700595655134,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,PC_neg,2,0.007569193602809,0.0032046330484426,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,PC_neg,3,0.0294430621414381,0.0185318490278379,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,PC_neg,4,0.0106513930879585,0.0222673048561447,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,PC_neg,5,0.0334242517012226,0.0267427228977957,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,PC_neg,6,0.0094632982498134,0.0250788886790984,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,PC_neg,7,0.0,0.0091703624670401,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False

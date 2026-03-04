@@ -1,0 +1,8 @@
+scenario,sex,age_group,metric,module,mean_ASD,mean_CTL,beta_CTL_minus_ASD,p_DX,p_SITE,r2,n_ASD,n_CTL,note,p_DX_FDR,DX_FDR_significant
+ABIDE2_fd2,female,adult_18_plus,z_neg,1,0.0,0.0,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,z_neg,2,2.6914497566670465e-17,0.0,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,z_neg,3,6.167905692361981e-18,0.0,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,z_neg,4,0.0,5.628753096875793e-18,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,z_neg,5,0.0,8.896017825522088e-18,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,z_neg,6,0.0,-2.135044278125301e-18,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False
+ABIDE2_fd2,female,adult_18_plus,z_neg,7,0.0,0.0,,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects,1.0,False

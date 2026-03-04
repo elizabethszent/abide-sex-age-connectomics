@@ -1,0 +1,8 @@
+module,mean_CTL,mean_ASD,beta_CTL_minus_ASD,p_DX,p_DX_FDR,sig_DX_FDR,p_SITE,r2,n_ASD,n_CTL,note
+1,0.283,0.618,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects
+2,0.518,0.499,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects
+3,0.546,0.44,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects
+4,0.342,0.458,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects
+5,0.387,0.423,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects
+6,0.411,0.382,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects
+7,0.546,0.469,,,1.0,,,,2,13,only_one_site_in_this_module_metric;too_few_subjects

@@ -1,0 +1,3 @@
+label,module_file,N_rois_used,K_modules,purity_hits,purity_pct,best_1to1_hits,best_1to1_pct
+CC200_modules_ALLSUBJ_signed_asym1000,C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.txt,200,7,109,54.5,101,50.5
+CC200_modules_ALLSUBJ_signed_asym1000,C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.npy,200,7,109,54.5,101,50.5
