@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
 # --- where your ABIDE1 CC200 connectomes live (.npy) ---
-CONN_DIR = ROOT / "connectomes" / "CC200" / "ABIDE1" / "FDpersubject"
+CONN_DIR = ROOT / "connectomes" / "CC200" / "ABIDE1" / "FDpersubject2"
 
 # --- where your phenotype CSVs live ---
 PHENO_DIR = ROOT / "phenotypes" / "ABIDE1"
@@ -83,8 +83,8 @@ def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
 
 
 def subject_ids_with_threshold(conn_dir: Path) -> set[int]:
-    """Finds unique SUB_IDs from the .npy files."""
-    files = list(conn_dir.rglob("sub-*_task-rest_run-1.npy"))
+    """Find unique SUB_IDs from ANY run .npy files."""
+    files = list(conn_dir.rglob("sub-*_task-rest_run-*.npy"))
 
     ids = set()
     rx = re.compile(r"sub-(\d+)")
