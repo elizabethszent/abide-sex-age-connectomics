@@ -5,8 +5,8 @@ from pathlib import Path
 
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
-# --- where your ABIDE1 CC200 connectomes live (.npz) ---
-CONN_DIR = ROOT / "connectomes" / "CC200" / "ABIDE1"
+# --- where your ABIDE1 CC200 connectomes live (.npy) ---
+CONN_DIR = ROOT / "connectomes" / "CC200" / "ABIDE1" / "FDpersubject"
 
 # --- where your phenotype CSVs live ---
 PHENO_DIR = ROOT / "phenotypes" / "ABIDE1"
@@ -15,26 +15,31 @@ PHENO_DIR = ROOT / "phenotypes" / "ABIDE1"
 BINS   = [0, 10, 13, 18, 200]
 LABELS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
 
-# ABIDE convention: SEX 1=male, 2=female
+# ABIDE conventions
 SEX_MAP = {1: "Male", 2: "Female"}
+DX_MAP = {1: "ASD", 2: "Control"}
 
-# which thresholds you want to report
-THRESHOLDS = ["0.2", "0.3"]
+THRESHOLDS = ["0.2"]
 
 
 def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
-    files = sorted(glob.glob(str(pheno_dir / "phenotypic_*.csv")))
+    files = sorted(glob.glob(str(pheno_dir / "Phenotypic_*.csv")))
     if not files:
-        raise FileNotFoundError(f"No phenotypic_*.csv found in {pheno_dir}")
+        files = sorted(glob.glob(str(pheno_dir / "phenotypic_*.csv")))
+        if not files:
+            raise FileNotFoundError(f"No phenotypic_*.csv found in {pheno_dir}")
 
     dfs = []
     for fp in files:
         df = pd.read_csv(fp)
-        need = {"SUB_ID", "SEX", "AGE_AT_SCAN"}
+        df.columns = [c.upper() for c in df.columns] 
+        
+        need = {"SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"}
         if not need.issubset(df.columns):
             print(f"[WARN] Skipping {Path(fp).name} (missing {need - set(df.columns)})")
             continue
-        keep = ["SITE_ID", "SUB_ID", "SEX", "AGE_AT_SCAN"]
+            
+        keep = ["SITE_ID", "SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"]
         keep = [c for c in keep if c in df.columns]
         df = df[keep].copy()
         df["source_file"] = Path(fp).name
@@ -45,42 +50,41 @@ def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
 
     ph = pd.concat(dfs, ignore_index=True)
 
-    # normalize types
+    # Normalize types and drop rows missing critical info
     ph["SUB_ID"] = pd.to_numeric(ph["SUB_ID"], errors="coerce")
     ph["SEX"] = pd.to_numeric(ph["SEX"], errors="coerce")
     ph["AGE_AT_SCAN"] = pd.to_numeric(ph["AGE_AT_SCAN"], errors="coerce")
-    ph = ph.dropna(subset=["SUB_ID", "SEX", "AGE_AT_SCAN"]).copy()
+    ph["DX_GROUP"] = pd.to_numeric(ph["DX_GROUP"], errors="coerce")
+    
+    ph = ph.dropna(subset=["SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"]).copy()
+    
     ph["SUB_ID"] = ph["SUB_ID"].astype(int)
     ph["SEX"] = ph["SEX"].astype(int)
+    ph["DX_GROUP"] = ph["DX_GROUP"].astype(int)
 
-    # de-duplicate subjects across site files
+    # De-duplicate subjects across site files
     ph = ph.drop_duplicates(subset=["SUB_ID"], keep="first")
 
-    # bin ages
+    # Bin ages
     ph["age_group"] = pd.cut(
         ph["AGE_AT_SCAN"],
         bins=BINS,
         labels=LABELS,
-        right=False,          # [0,10), [10,13), [13,18), [18,200)
+        right=False,
         include_lowest=True,
     )
 
-    # label sex
+    # Label Sex and Diagnosis, then combine them
     ph["sex_name"] = ph["SEX"].map(SEX_MAP).fillna(ph["SEX"].astype(str))
+    ph["dx_name"] = ph["DX_GROUP"].map(DX_MAP).fillna(ph["DX_GROUP"].astype(str))
+    ph["group_label"] = ph["sex_name"] + "_" + ph["dx_name"]
 
     return ph
 
 
-def subject_ids_with_threshold(conn_dir: Path, thr: str) -> set[int]:
-    """
-    Finds unique SUB_IDs that have at least one connectome file with fd-{thr} in the filename.
-    Expected filename includes 'sub-XXXXXXX' somewhere (e.g., sub-0050004_..._fd-0.2_...npz)
-    """
-    patt = f"*fd-{thr}*connectome*.npz"
-    files = list(conn_dir.rglob(patt))
-    if not files:
-        # some pipelines might omit 'connectome' in name; try a looser pattern
-        files = list(conn_dir.rglob(f"*fd-{thr}*.npz"))
+def subject_ids_with_threshold(conn_dir: Path) -> set[int]:
+    """Finds unique SUB_IDs from the .npy files."""
+    files = list(conn_dir.rglob("sub-*_task-rest_run-1.npy"))
 
     ids = set()
     rx = re.compile(r"sub-(\d+)")
@@ -93,39 +97,39 @@ def subject_ids_with_threshold(conn_dir: Path, thr: str) -> set[int]:
 
 def counts_table(ph: pd.DataFrame, ids: set[int], thr: str) -> pd.DataFrame:
     sub = ph[ph["SUB_ID"].isin(ids)].copy()
-
-    # make sure age_group is present (and not NaN)
     sub = sub.dropna(subset=["age_group"])
 
-    # counts by age_group + sex
+    # Group by age_group and our new combined group_label
     g = (
-        sub.groupby(["age_group", "sex_name"])["SUB_ID"]
+        sub.groupby(["age_group", "group_label"])["SUB_ID"]
         .nunique()
         .reset_index(name="n_subjects")
     )
 
-    # pivot to Male/Female columns
     wide = (
-        g.pivot(index="age_group", columns="sex_name", values="n_subjects")
+        g.pivot(index="age_group", columns="group_label", values="n_subjects")
         .fillna(0)
         .astype(int)
         .reset_index()
     )
 
-    # ensure columns exist
-    if "Male" not in wide.columns:
-        wide["Male"] = 0
-    if "Female" not in wide.columns:
-        wide["Female"] = 0
+    # Ensure all 4 core columns exist even if a category has 0 subjects
+    expected_cols = ["Female_ASD", "Female_Control", "Male_ASD", "Male_Control"]
+    for col in expected_cols:
+        if col not in wide.columns:
+            wide[col] = 0
 
-    wide["Total"] = wide["Male"] + wide["Female"]
+    wide["Total"] = wide[expected_cols].sum(axis=1)
     wide.insert(0, "fd_threshold", f"fd-{thr}")
 
-    # order rows by LABELS
     wide["age_group"] = pd.Categorical(wide["age_group"], categories=LABELS, ordered=True)
     wide = wide.sort_values("age_group").reset_index(drop=True)
 
-    return wide
+    # Reorder columns for readability
+    col_order = ["fd_threshold", "age_group"] + expected_cols + ["Total"]
+    final_cols = [c for c in col_order if c in wide.columns]
+    
+    return wide[final_cols]
 
 
 def main():
@@ -136,11 +140,11 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
 
     all_tables = []
+    
     for thr in THRESHOLDS:
-        ids = subject_ids_with_threshold(CONN_DIR, thr)
+        ids = subject_ids_with_threshold(CONN_DIR)
         print(f"[INFO] fd-{thr}: subjects with connectomes found on disk = {len(ids)}")
 
-        # how many connectome subjects are missing phenotype rows?
         missing_pheno = sorted([i for i in ids if i not in set(ph["SUB_ID"])])
         if missing_pheno:
             print(f"[WARN] fd-{thr}: {len(missing_pheno)} subjects have connectomes but no phenotype row (showing first 10): {missing_pheno[:10]}")
@@ -148,11 +152,11 @@ def main():
         tab = counts_table(ph, ids, thr)
         all_tables.append(tab)
 
-        print(f"\n=== Sex counts by age bin (fd-{thr}) ===")
+        print(f"\n=== Sex and Diagnosis counts by age bin (fd-{thr}) ===")
         print(tab.to_string(index=False))
 
     final = pd.concat(all_tables, ignore_index=True)
-    out_csv = out_dir / "sex_by_age_bins_by_fd_threshold.csv"
+    out_csv = out_dir / "sex_dx_by_age_bins.csv"
     final.to_csv(out_csv, index=False)
     print(f"\n[SAVED] {out_csv}")
 

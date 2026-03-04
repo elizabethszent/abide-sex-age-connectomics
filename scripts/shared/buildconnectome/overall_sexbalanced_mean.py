@@ -1,11 +1,11 @@
 import numpy as np
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
-IN_DIR = ROOT / "results" / "group_connectomes" / "ABIDE1_CC200"
-OUT_DIR = IN_DIR
+# Updated path to point directly to where your new .npy files are stored
+IN_DIR = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\connectomes\CC200\ABIDE1\FDpersubject2")
+OUT_DIR = IN_DIR  # This will save the overall average in the same folder
 
-FD_LIST = ["0.2", "0.3"]
+FD_LIST = ["0.2"]
 
 def load_mean(group: str, fd: str) -> np.ndarray:
     p = IN_DIR / f"{group}_fd-{fd}_mean_z.npy"
