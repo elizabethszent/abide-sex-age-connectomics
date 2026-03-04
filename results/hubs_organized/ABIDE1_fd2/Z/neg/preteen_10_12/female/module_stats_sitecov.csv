@@ -1,0 +1,8 @@
+scenario,sex,age_group,metric,module,mean_ASD,mean_CTL,beta_CTL_minus_ASD,p_DX,p_SITE,r2,n_ASD,n_CTL,note,p_DX_FDR,DX_FDR_significant
+ABIDE1_fd2,female,preteen_10_12,z_neg,1,0.0,0.0,1.7023608862128657e-19,0.853065510006371,0.9342495769197786,0.1895604395604395,10,15,,1.0,False
+ABIDE1_fd2,female,preteen_10_12,z_neg,2,0.0,0.0,0.0,,,,10,15,,1.0,False
+ABIDE1_fd2,female,preteen_10_12,z_neg,3,0.0,8.635067969306774e-19,-3.355372078882756e-34,0.7845220506647764,1.4013972521345611e-210,1.0,10,15,,1.0,False
+ABIDE1_fd2,female,preteen_10_12,z_neg,4,0.0,0.0,0.0,,,,10,15,,1.0,False
+ABIDE1_fd2,female,preteen_10_12,z_neg,5,0.0,0.0,0.0,,,,10,15,,1.0,False
+ABIDE1_fd2,female,preteen_10_12,z_neg,6,1.2053849981644556e-17,-2.1147105230955372e-19,3.067492187347393e-18,0.7992196721639399,0.3033206270376695,0.4946974981043965,10,15,,1.0,False
+ABIDE1_fd2,female,preteen_10_12,z_neg,7,0.0,0.0,0.0,,,,10,15,,1.0,False

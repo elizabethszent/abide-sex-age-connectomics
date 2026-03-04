@@ -6,37 +6,24 @@ import bct
 
 BASE = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
-# =========================
-# INPUT: ALL-SUBJECTS GRAND MEAN (new)
-# =========================
-#ALL_MEAN = BASE / r"results\group_connectomes\ALL_SUBJECTS_Zmean.npy"
+
 ALL_MEAN = BASE / r"results\group_connectomes\ABIDE1_CC200\OVERALL_ageSexMatched_fd-0.2_mean_r.npy"
 
 #ALL_IDS  = BASE / r"results\group_connectomes\ALL_SUBJECTS_file_ids.csv"
 ALL_IDS  = BASE / r"results\group_connectomes\ABIDE1_CC200\OVERALL_ageSexMatched_fd-0.2_selected_subjects.csv"
 
-# =========================
-# OUTPUTS (renamed so we don't overwrite your prior run)
-# =========================
+
 OUT_NPY = BASE / r"results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.npy"
 OUT_TXT = BASE / r"results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.txt"
 
-# =========================
-# LOUVAIN SETTINGS
-# =========================
+
 N_TRIALS = 1000
 SEED_BASE = 42
-
-# Louvain resolution (gamma) — tune this to hit your desired K
-GAMMA = 1.64
-
-# Make positives count more than negatives (0.5 = negatives half strength)
+GAMMA = 1.08
 NEG_SCALE = 0.5
 
-# Signed modularity option (asymmetric)
 SIGNED_MODE = "negative_asym"
 
-# Target and balance constraints (to avoid tiny "unrealistic" modules)
 K_TARGET = 7
 MIN_SIZE = 10
 

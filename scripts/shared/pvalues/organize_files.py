@@ -1,7 +1,9 @@
+# scripts/shared/pvalues/organize_files.py
+
 import shutil
+from pathlib import Path
 import re
 import pandas as pd
-from pathlib import Path
 
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
@@ -13,18 +15,11 @@ DEST       = ROOT / "results" / "hubs_organized"
 # Safety switches
 # -------------------------
 DRY_RUN = False        # True = preview only
-MOVE_TABLES = True     # True = move table CSVs, False = copy
-OVERWRITE = True       # True = overwrite existing destination files
+MOVE_TABLES = True     # True = move table CSVs, False = copy (recommended until you're sure)
+OVERWRITE = True       # True = overwrite destination files if they exist
 
-SCENARIOS = [
-    "OVERALL_sexbalanced_fd-0.2",
-    "OVERALL_sexbalanced_fd-0.3",
-    "OVERALL_ageSexMatched_fd-0.2",
-    "OVERALL_ageSexMatched_fd-0.3",
-]
-
-SEXES = ["female", "male"]
-AGE_GROUPS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
+SEXES = {"female", "male"}
+AGE_GROUPS = {"child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"}
 
 # Canonical metrics we organize into folders (and their aliases we accept)
 METRIC_SPECS = {
@@ -39,14 +34,13 @@ METRIC_SPECS = {
     "Strength_pos": ["Strength_pos", "strength_pos", "STR_pos", "str_pos"],
     "Strength_neg": ["Strength_neg", "strength_neg", "STR_neg", "str_neg"],
 }
-
 METRIC_ORDER = ["PC", "PC_pos", "PC_neg", "Z", "Z_pos", "Z_neg", "Strength_pos", "Strength_neg"]
 
-# Build alias->canonical map (case-insensitive)
+# alias -> canonical
 ALIAS_TO_CANON = {}
 for canon, aliases in METRIC_SPECS.items():
     for a in aliases:
-        ALIAS_TO_CANON[a.lower()] = canon
+        ALIAS_TO_CANON[str(a).strip().lower()] = canon
 
 def normalize_metric(m: str):
     if m is None:
@@ -56,14 +50,9 @@ def normalize_metric(m: str):
 def metric_path_parts(metric_canon: str):
     """
     Folder structure:
-      PC/all
-      PC/pos
-      PC/neg
-      Z/all
-      Z/pos
-      Z/neg
-      Strength/pos
-      Strength/neg
+      PC/all, PC/pos, PC/neg
+      Z/all,  Z/pos,  Z/neg
+      Strength/pos, Strength/neg
     """
     if metric_canon == "Strength_pos":
         return ("Strength", "pos")
@@ -95,7 +84,7 @@ def safe_remove_if_exists(p: Path):
     if not p.exists():
         return
     if not OVERWRITE:
-        raise FileExistsError(f"Destination already exists and OVERWRITE=False: {p}")
+        raise FileExistsError(f"Destination exists and OVERWRITE=False: {p}")
     if DRY_RUN:
         print(f"[RM] {p}")
         return
@@ -119,104 +108,119 @@ def do_move(src: Path, dst: Path):
         return
     shutil.move(str(src), str(dst))
 
-def parse_table_filename(name: str):
+def parse_stats_filename(name: str):
     """
-    Supports BOTH:
-      1) scenario__sex__age__metric__table.csv
-      2) scenario_sex_age_metric_table.csv
-
-    Returns (scenario, sex, age, metric_canon) or None.
+    Expect:
+      scenario__sex__age__module_stats_sitecov.csv
+    Example:
+      ABIDE1_fd2__male__adult_18_plus__module_stats_sitecov.csv
+    Returns (scenario, sex, age) or None
     """
     stem = Path(name).stem
+    parts = stem.split("__")
+    if len(parts) != 4:
+        return None
+    scenario, sex, age, tail = parts
+    if tail != "module_stats_sitecov":
+        return None
+    if sex not in SEXES:
+        return None
+    if age not in AGE_GROUPS:
+        return None
+    if not scenario:
+        return None
+    return scenario, sex, age
 
-    # Style 1: double-underscore
-    if "__" in stem:
-        parts = stem.split("__")
-        # expected: scenario, sex, age, metric, table
-        if len(parts) >= 5:
-            scenario, sex, age, metric_raw = parts[0], parts[1], parts[2], parts[3]
-            metric_canon = normalize_metric(metric_raw)
-            if scenario in SCENARIOS and sex in SEXES and age in AGE_GROUPS and metric_canon in METRIC_SPECS:
-                return scenario, sex, age, metric_canon
+def parse_table_filename(name: str):
+    """
+    Expect:
+      scenario__sex__age__metric__table.csv
+    Example:
+      ABIDE1_fd2__male__adult_18_plus__z_pos__table.csv
+    Returns (scenario, sex, age, metric_canon) or None
+    """
+    stem = Path(name).stem
+    parts = stem.split("__")
+    if len(parts) != 5:
+        return None
+    scenario, sex, age, metric_raw, tail = parts
+    if tail.lower() != "table":
+        return None
+    if sex not in SEXES or age not in AGE_GROUPS or not scenario:
+        return None
 
-    # Style 2: underscore style
-    # Example: OVERALL_ageSexMatched_fd-0.2_female_adult_18_plus_PC_pos_table
-    metric_pat = r"(PC|PC_pos|PC_neg|Z|Z_pos|Z_neg|Strength_pos|Strength_neg)"
-    m = re.match(
-        rf"^(OVERALL_(?:sexbalanced|ageSexMatched)_fd-\d\.\d)_(female|male)_(child_0_9|preteen_10_12|teen_13_17|adult_18_plus)_{metric_pat}_table$",
-        stem
-    )
-    if m:
-        scenario, sex, age, metric_raw = m.group(1), m.group(2), m.group(3), m.group(4)
-        metric_canon = normalize_metric(metric_raw)
-        if scenario in SCENARIOS and metric_canon in METRIC_SPECS:
-            return scenario, sex, age, metric_canon
-
-    return None
+    metric_canon = normalize_metric(metric_raw)
+    if metric_canon is None:
+        return None
+    return scenario, sex, age, metric_canon
 
 def organize_stats():
-    """
-    Copies each stats file:
-      scenario__sex__age__module_stats_sitecov.csv
-
-    into:
-      DEST/scenario/<metric_folder>/<posneg>/<age>/<sex>/module_stats_sitecov.csv
-
-    and also keeps a FULL copy at:
-      DEST/scenario/_full/<age>/<sex>/module_stats_sitecov_FULL.csv
-    """
     if not SRC_STATS.exists():
         print(f"[SKIP stats] missing {SRC_STATS}")
-        return
+        return 0
 
-    for scenario in SCENARIOS:
-        for sex in SEXES:
-            for age in AGE_GROUPS:
-                src = SRC_STATS / f"{scenario}__{sex}__{age}__module_stats_sitecov.csv"
-                if not src.exists():
-                    continue
+    stats_files = sorted(SRC_STATS.glob("*__*__*__module_stats_sitecov.csv"))
+    if not stats_files:
+        print(f"[WARN] No stats CSVs found under: {SRC_STATS}")
+        return 0
 
-                df = pd.read_csv(src)
-                df.columns = df.columns.str.strip()
-                if "metric" not in df.columns:
-                    print(f"[WARN] stats file missing 'metric': {src}")
-                    continue
+    wrote = 0
+    for src in stats_files:
+        parsed = parse_stats_filename(src.name)
+        if parsed is None:
+            print(f"[WARN] Unrecognized stats filename (skipping): {src.name}")
+            continue
+        scenario, sex, age = parsed
 
-                # full copy
-                full_dst = DEST / scenario / "_full" / age / sex / "module_stats_sitecov_FULL.csv"
-                do_copy(src, full_dst)
+        df = pd.read_csv(src)
+        df.columns = df.columns.str.strip()
 
-                # normalize metrics in file so z/Z etc work
-                df["_metric_canon"] = df["metric"].apply(normalize_metric)
+        # Full copy
+        full_dst = DEST / scenario / "_full" / age / sex / "module_stats_sitecov_FULL.csv"
+        do_copy(src, full_dst)
+        wrote += 1
 
-                # split by canonical metric
-                for metric_canon in METRIC_ORDER:
-                    sub = df[df["_metric_canon"] == metric_canon].drop(columns=["_metric_canon"], errors="ignore")
-                    if sub.empty:
-                        continue
+        if "metric" not in df.columns:
+            print(f"[WARN] stats file missing 'metric' column (cannot split): {src}")
+            continue
 
-                    metric_folder, posneg = metric_path_parts(metric_canon)
-                    dst = DEST / scenario / metric_folder / posneg / age / sex / "module_stats_sitecov.csv"
+        df["metric"] = df["metric"].astype(str).str.strip()
+        df["_metric_canon"] = df["metric"].apply(normalize_metric)
 
-                    ensure_dir(dst.parent)
-                    if dst.exists():
-                        safe_remove_if_exists(dst)
+        for metric_canon in METRIC_ORDER:
+            sub = df[df["_metric_canon"] == metric_canon].copy()
+            if sub.empty:
+                continue
 
-                    if DRY_RUN:
-                        print(f"[WRITE] {metric_canon} subset -> {dst}")
-                    else:
-                        sub.to_csv(dst, index=False)
+            sub = sub.drop(columns=["_metric_canon"], errors="ignore")
+            metric_folder, posneg = metric_path_parts(metric_canon)
+            dst = DEST / scenario / metric_folder / posneg / age / sex / "module_stats_sitecov.csv"
+
+            ensure_dir(dst.parent)
+            if dst.exists():
+                safe_remove_if_exists(dst)
+
+            if DRY_RUN:
+                print(f"[WRITE] {scenario} {sex} {age} {metric_canon} -> {dst}")
+            else:
+                sub.to_csv(dst, index=False)
+            wrote += 1
+
+    return wrote
 
 def organize_tables():
-    """
-    Moves/copies table files into:
-      DEST/scenario/<metric_folder>/<posneg>/<age>/<sex>/table.csv
-    """
     if not SRC_TABLES.exists():
         print(f"[SKIP tables] missing {SRC_TABLES}")
-        return
+        return 0
 
-    for src in sorted(SRC_TABLES.glob("*.csv")):
+    table_files = sorted(SRC_TABLES.glob("*.csv"))
+    if not table_files:
+        print(f"[WARN] No table CSVs found under: {SRC_TABLES} "
+              f"(if you already ran once with MOVE_TABLES=True, they were moved)")
+        return 0
+
+    moved = 0
+    for src in table_files:
         parsed = parse_table_filename(src.name)
         if parsed is None:
             continue
@@ -229,6 +233,9 @@ def organize_tables():
             do_move(src, dst)
         else:
             do_copy(src, dst)
+        moved += 1
+
+    return moved
 
 def main():
     print(f"DRY_RUN={DRY_RUN} MOVE_TABLES={MOVE_TABLES} OVERWRITE={OVERWRITE}")
@@ -236,10 +243,12 @@ def main():
     print(f"SRC_TABLES={SRC_TABLES}")
     print(f"DEST={DEST}")
 
-    organize_stats()
-    organize_tables()
+    n_stats = organize_stats()
+    n_tables = organize_tables()
 
-    print("\nDone.")
+    print(f"\n[SUMMARY] wrote/copies from stats: {n_stats}")
+    print(f"[SUMMARY] moved/copied tables: {n_tables}")
+    print("Done.")
 
 if __name__ == "__main__":
     main()

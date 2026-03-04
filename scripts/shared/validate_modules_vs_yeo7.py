@@ -6,18 +6,17 @@ import nibabel as nib
 from nilearn import datasets, image
 
 
-# ------------------ PATHS (EDIT THESE) ------------------
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
 CC200_ATLAS = ROOT / r"atlases\cc200\cc200_roi_atlas.nii.gz"
 
 # Use ONE of these:
 MODULE_TXT = ROOT / r"results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.txt"
-MODULE_NPY = None  # e.g., ROOT / r"results\group_connectomes\CC200_modules_signed_asym1000.npy"
+MODULE_NPY = None 
 
 OUT_DIR = ROOT / r"results\qc\module_validation"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-# --------------------------------------------------------
+
 
 
 def load_modules(module_txt: Path | None, module_npy: Path | None) -> np.ndarray:
@@ -65,9 +64,6 @@ def pick_yeo7_path(yeo_bunch) -> str:
             if ("7" in name) and ("17" not in name):
                 return v
 
-    # 3) Last resort: search inside the downloaded dataset directory
-    # yeo_bunch is a sklearn Bunch; it often includes a 'description' and sometimes paths.
-    # We know nilearn downloads into ~/nilearn_data/yeo_2011/... so try that:
     base = Path.home() / "nilearn_data" / "yeo_2011"
     if base.exists():
         nii = list(base.rglob("*.nii*"))
@@ -178,8 +174,15 @@ def main():
     for m in sorted(per_roi["Louvain_module"].unique()):
         sub = per_roi[per_roi["Louvain_module"] == m]
         vc = sub["Yeo7_name"].value_counts()
-        top = vc.index[0]
-        print(f"Module {m}: {top} ({vc.iloc[0]}/{len(sub)} ROIs)")
+        
+        # Calculate percentage data
+        top_network = vc.index[0]
+        top_count = vc.iloc[0]
+        total_rois = len(sub)
+        percentage = (top_count / total_rois) * 100.0
+        
+        # Print with percentage formatted to 1 decimal place
+        print(f"Module {m}: {top_network} ({top_count}/{total_rois} ROIs, {percentage:.1f}%)")
 
     print("\nDone.")
 

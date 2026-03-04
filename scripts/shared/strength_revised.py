@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path("C:/Users/eliza/CPSC_599_CONNECTOMICS/TERMProject")
 
 CONN_DIR = ROOT / "data/connectomes/cpac/nofilt_noglobal/cc200_z"
-MODULE_FILE = ROOT / "results/group_connectomes/CC200_modules_signed_asym1000.txt"
+MODULE_FILE = ROOT / r"results\group_connectomes\CC200_modules_ALLSUBJ_signed_asym1000.txt"
 
 FEMALE_META = ROOT / "data/female/female_metadata_included.csv"
 MALE_META   = ROOT / "data/male/male_metadata_included.csv"
