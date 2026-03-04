@@ -1,0 +1,18 @@
+{
+  "atlas": "/work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/atlases/cc200/cc200_roi_atlas.nii.gz",
+  "bold": "/work/ioannou_lab/elizabeth.szentmiklo/abide_data/tmp/39829878_145_sub-0050162_task-rest_run-2/preproc_bold.nii.gz",
+  "confounds": "/work/ioannou_lab/elizabeth.szentmiklo/abide_data/tmp/39829878_145_sub-0050162_task-rest_run-2/confounds.tsv",
+  "drop_run_mean_fd": true,
+  "fd_col_used": "framewise_displacement",
+  "mean_fd": 0.2116726882682927,
+  "mean_fd_cutoff": 0.2,
+  "n_trs_keep": 76,
+  "n_trs_total": 82,
+  "nonsteady_cols_found": [],
+  "nonsteady_prefix": "non_steady_state_outlier",
+  "pct_trs_keep": 92.6829268292683,
+  "pct_vol_fd_gt_cutoff": 7.317073170731707,
+  "reason": "mean_fd>0.2",
+  "status": "excluded",
+  "vol_fd_cutoff": 0.5
+}

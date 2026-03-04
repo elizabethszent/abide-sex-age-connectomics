@@ -1,0 +1,4 @@
+download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0051259/func/sub-0051259_task-rest_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz to ../abide_data/tmp/39830710_866_sub-0051259_task-rest_run-1/preproc_bold.nii.gz
+download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0051259/func/sub-0051259_task-rest_run-1_desc-confounds_regressors.tsv to ../abide_data/tmp/39830710_866_sub-0051259_task-rest_run-1/confounds.tsv
+WARN: no columns matching 'non_steady_state_outlier' in /work/ioannou_lab/elizabeth.szentmiklo/abide_data/tmp/39830710_866_sub-0051259_task-rest_run-1/confounds.tsv; skipping nonsteady censoring
+EXCLUDE: sub-0051259_task-rest_run-1 mean_fd=0.4555 > 0.2
