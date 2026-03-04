@@ -1,0 +1,9 @@
+fd_threshold,age_group,Female,Male,Total
+fd-0.2,child_0_9,38,79,117
+fd-0.2,preteen_10_12,39,93,132
+fd-0.2,teen_13_17,13,45,58
+fd-0.2,adult_18_plus,14,73,87
+fd-0.3,child_0_9,53,100,153
+fd-0.3,preteen_10_12,43,124,167
+fd-0.3,teen_13_17,14,53,67
+fd-0.3,adult_18_plus,14,82,96
