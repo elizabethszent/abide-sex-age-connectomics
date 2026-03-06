@@ -1,3 +1,0 @@
-download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0050644/func/sub-0050644_task-rest_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz to ../abide_data/tmp/39830219_440_sub-0050644_task-rest_run-1/preproc_bold.nii.gz
-download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0050644/func/sub-0050644_task-rest_run-1_desc-confounds_regressors.tsv to ../abide_data/tmp/39830219_440_sub-0050644_task-rest_run-1/confounds.tsv
-EXCLUDE: sub-0050644_task-rest_run-1 mean_fd=0.2058 > 0.2

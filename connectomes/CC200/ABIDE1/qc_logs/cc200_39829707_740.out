@@ -1,3 +1,0 @@
-download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0051117/func/sub-0051117_task-rest_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz to ../abide_data/tmp/39830560_740_sub-0051117_task-rest_run-1/preproc_bold.nii.gz
-download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0051117/func/sub-0051117_task-rest_run-1_desc-confounds_regressors.tsv to ../abide_data/tmp/39830560_740_sub-0051117_task-rest_run-1/confounds.tsv
-WROTE: /work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/connectomes/CC200/ABIDE1/FDpersubject2/sub-0051117_task-rest_run-1.npy and /work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/connectomes/CC200/ABIDE1/FDpersubject2_meta/sub-0051117_task-rest_run-1.json

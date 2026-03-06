@@ -1,4 +1,0 @@
-/work/ioannou_lab/elizabeth.szentmiklo/abide_data/code/.venv/lib64/python3.11/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
-  c /= stddev[:, None]
-/work/ioannou_lab/elizabeth.szentmiklo/abide_data/code/.venv/lib64/python3.11/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
-  c /= stddev[None, :]

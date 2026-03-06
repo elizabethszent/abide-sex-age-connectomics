@@ -1,4 +1,0 @@
-download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0050813/func/sub-0050813_task-rest_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz to ../abide_data/tmp/39830360_569_sub-0050813_task-rest_run-1/preproc_bold.nii.gz
-download: s3://fcp-indi/data/Projects/ABIDE/Outputs/fmriprep/fmriprep/sub-0050813/func/sub-0050813_task-rest_run-1_desc-confounds_regressors.tsv to ../abide_data/tmp/39830360_569_sub-0050813_task-rest_run-1/confounds.tsv
-WARN: no columns matching 'non_steady_state_outlier' in /work/ioannou_lab/elizabeth.szentmiklo/abide_data/tmp/39830360_569_sub-0050813_task-rest_run-1/confounds.tsv; skipping nonsteady censoring
-WROTE: /work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/connectomes/CC200/ABIDE1/FDpersubject2/sub-0050813_task-rest_run-1.npy and /work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/connectomes/CC200/ABIDE1/FDpersubject2_meta/sub-0050813_task-rest_run-1.json
