@@ -2,35 +2,43 @@ pipeline_name: cc200_connectomes_updated
 pipeline_version: v1.0.0
 project: sex_differences_in_autism_abide12
 input_space: MNI152NLin2009cAsym
+
 atlas:
   name: CC200
-  path: /work/ioannou_lab/$USER/abide-sex-age-connectomics/atlases/cc200/cc200_roi_atlas.nii.gz
+  path: /work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/atlases/cc200/cc200_roi_atlas.nii.gz
   background_label: 0
-bold_input_pattern: '*_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz'
-brain_mask_input_pattern: '*_desc-brain_mask.nii.gz'
+
+bold_input_pattern: "*_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz"
+brain_mask_input_pattern: "*_desc-brain_mask.nii.gz"
+
 confounds_input_pattern_prefer:
-  - '*_desc-confounds_timeseries.tsv'
-  - '*_desc-confounds_regressors.tsv'
+  - "*_desc-confounds_timeseries.tsv"
+  - "*_desc-confounds_regressors.tsv"
+
 confounds_json_pattern:
-  - '*_desc-confounds_timeseries.json'
-  - '*_desc-confounds_regressors.json'
+  - "*_desc-confounds_timeseries.json"
+  - "*_desc-confounds_regressors.json"
+
 subject_level_exclusion:
   fd_metric: mean_fd
   thresholds:
     - 0.2
     - 0.3
+
 volume_censoring:
   fd_metric: framewise_displacement
   threshold_mm: 0.5
   censor_nonsteady_state: true
   min_remaining_segment_trs: 5
+
 post_scrub_retention:
   min_time_sec: 240
   min_pct_kept: null
+
 confound_model:
-  primary: 32P_noGSR
+  primary: 32P_noGSR_plus_cosine
   sensitivity:
-    - 36P_with_GSR
+    - 36P_with_GSR_plus_cosine
   components:
     - 24_motion_terms
     - white_matter
@@ -38,18 +46,21 @@ confound_model:
     - derivatives_of_wm_csf
     - quadratics_of_wm_csf
     - cosine_drifts
+
 signal_processing:
   detrend: true
   standardize: true
   temporal_filter:
     high_pass_hz: 0.01
     low_pass_hz: 0.08
+
 correlation:
   method: pearson
   fisher_z: true
   fisher_z_diagonal: 0.0
+
 outputs:
-  root: /work/ioannou_lab/$USER/abide-sex-age-connectomics/results/connectomes
+  root: /work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/results/connectomes
   layout:
     - ABIDE1/fd_0p2
     - ABIDE2/fd_0p2
@@ -59,6 +70,7 @@ outputs:
     - ABIDE12/fd_0p3
   metadata_json_per_subject: true
   qc_summary_tables: true
+
 analysis_policy:
   primary_dataset: ABIDE12
   primary_fd_cutoff: 0.2
@@ -69,6 +81,7 @@ analysis_policy:
   include_mean_fd_as_covariate: true
   include_site_as_covariate: true
   include_age_as_covariate: true
+
 notes:
   - Keep this file immutable once the main analysis starts.
   - Any change to preprocessing choices requires a new versioned config file.

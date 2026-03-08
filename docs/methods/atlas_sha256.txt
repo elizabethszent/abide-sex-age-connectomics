@@ -1,0 +1,1 @@
+9467afce23ad7197fbbc8c96aadc8c0c2e36d4938445e3c1570a5deac489c650  atlases/cc200/cc200_roi_atlas.nii.gz
