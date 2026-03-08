@@ -144,8 +144,9 @@ def parse_runlist_line(line: str, dataset: str) -> Tuple[str, str, Optional[str]
         key_prefix = line
         if not key_prefix.startswith("s3://"):
             key_prefix = f"s3://fcp-indi/{key_prefix}"
-        run_base = Path(key_prefix).name
-        s3_dir = str(Path(key_prefix).parent)
+        key_prefix = key_prefix.rstrip("/")
+        run_base = key_prefix.rsplit("/", 1)[-1]
+        s3_dir = key_prefix.rsplit("/", 1)[0]
         m_site = re.match(r"([A-Za-z0-9_]+)_sub-", run_base)
         if m_site:
             site_hint = m_site.group(1)
