@@ -78,7 +78,6 @@ python build_cc200_connectomes_pubgrade.py \
   --fisher-z
 """
 
-from __future__ import annotations
 
 import argparse
 import json
@@ -466,7 +465,7 @@ def clean_timeseries(
     cleaned = clean(
         raw_ts,
         detrend=True,
-        standardize="zscore",
+        standardize="zscore_sample",
         sample_mask=keep_idx,
         confounds=confounds_df,
         standardize_confounds=True,

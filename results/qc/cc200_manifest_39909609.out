@@ -1,0 +1,1549 @@
+PY=/work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/.venv_clean/bin/python
+Python 3.11.13
+/usr/bin/python3.11
+WROTE [ABIDE2 fd<0.2] PITT_sub-50002_ses-1_run-1: mean_fd=0.1609, kept=298.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50002_ses-2_run-1: mean_fd=0.1223, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50005_ses-1_run-1: mean_fd>0.2; mean_fd=0.2112, kept=280.5s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50005_ses-2_run-1: mean_fd=0.0730, kept=298.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50006_ses-1_run-1: mean_fd=0.1474, kept=295.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50006_ses-2_run-1: mean_fd=0.1758, kept=298.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50007_ses-1_run-1: mean_fd>0.2; mean_fd=0.2462, kept=259.5s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50007_ses-2_run-1: mean_fd=0.1520, kept=288.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50013_ses-1_run-1: mean_fd>0.2; mean_fd=0.3539, kept=259.5s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50013_ses-2_run-1: mean_fd>0.2; mean_fd=0.3992, kept=190.5s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50026_ses-1_run-1: mean_fd>0.2; mean_fd=0.4844, kept=55.5s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50026_ses-2_run-1: mean_fd>0.2; mean_fd=0.2894, kept=270.0s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50027_ses-1_run-1: mean_fd>0.2; mean_fd=0.2330, kept=268.5s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50027_ses-2_run-1: mean_fd=0.1343, kept=294.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50028_ses-1_run-1: mean_fd>0.2; mean_fd=0.3478, kept=210.0s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50028_ses-2_run-1: mean_fd>0.2; mean_fd=0.2309, kept=280.5s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50029_ses-1_run-1: mean_fd=0.1320, kept=291.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50029_ses-2_run-1: mean_fd=0.1666, kept=289.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50031_ses-1_run-1: mean_fd>0.2; mean_fd=0.2342, kept=268.5s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50031_ses-2_run-1: mean_fd=0.1346, kept=283.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50035_ses-1_run-1: mean_fd>0.2; mean_fd=0.2650, kept=279.0s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50035_ses-2_run-1: mean_fd=0.1712, kept=291.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50038_ses-1_run-1: mean_fd>0.2; mean_fd=0.2170, kept=292.5s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50038_ses-2_run-1: mean_fd>0.2; mean_fd=0.2287, kept=297.0s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50047_ses-1_run-1: mean_fd=0.1849, kept=288.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50047_ses-2_run-1: mean_fd>0.2; mean_fd=0.2869, kept=255.0s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50048_ses-1_run-1: mean_fd>0.2; mean_fd=0.3211, kept=228.0s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50048_ses-2_run-1: mean_fd>0.2; mean_fd=0.2283, kept=270.0s
+EXCLUDE [ABIDE2 fd<0.2] PITT_sub-50049_ses-1_run-1: mean_fd>0.2; mean_fd=0.3046, kept=280.5s
+WROTE [ABIDE2 fd<0.2] PITT_sub-50049_ses-2_run-1: mean_fd=0.0870, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50050_ses-1_run-1: mean_fd=0.1564, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50050_ses-2_run-1: mean_fd=0.1860, kept=280.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50051_ses-1_run-1: mean_fd=0.1748, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] PITT_sub-50051_ses-2_run-1: mean_fd=0.1586, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_1_sub-51270_ses-1_run-1: mean_fd=0.0853, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_1_sub-51270_ses-2_run-1: mean_fd=0.0808, kept=360.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] UCLA_2_sub-51292_ses-1_run-1: mean_fd>0.2; mean_fd=0.8248, kept=150.0s
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51292_ses-2_run-1: mean_fd=0.1147, kept=336.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51312_ses-1_run-1: mean_fd=0.1479, kept=321.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51312_ses-2_run-1: mean_fd=0.0964, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51313_ses-1_run-1: mean_fd=0.0774, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51313_ses-2_run-1: mean_fd=0.1086, kept=342.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51315_ses-1_run-1: mean_fd=0.0853, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] UCLA_2_sub-51315_ses-2_run-1: mean_fd=0.1161, kept=351.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28743_ses-1_run-1: mean_fd=0.1363, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28746_ses-1_run-1: mean_fd=0.0616, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28747_ses-1_run-1: mean_fd=0.1250, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28748_ses-1_run-1: mean_fd=0.0933, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28749_ses-1_run-1: mean_fd=0.1216, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28750_ses-1_run-1: mean_fd=0.1979, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28752_ses-1_run-1: mean_fd=0.0946, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28753_ses-1_run-1: mean_fd=0.1033, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28754_ses-1_run-1: mean_fd=0.1692, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28760_ses-1_run-1: mean_fd=0.0729, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28784_ses-1_run-1: mean_fd>0.2; mean_fd=0.7452, kept=150.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28785_ses-1_run-1: mean_fd=0.1698, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28787_ses-1_run-1: mean_fd=0.0861, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28790_ses-1_run-1: mean_fd>0.2; mean_fd=0.2957, kept=232.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28791_ses-1_run-1: mean_fd=0.1147, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28792_ses-1_run-1: mean_fd=0.0883, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28795_ses-1_run-1: mean_fd=0.0574, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28797_ses-1_run-1: mean_fd=0.0966, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28798_ses-1_run-1: mean_fd=0.1951, kept=286.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28800_ses-1_run-1: mean_fd>0.2; mean_fd=0.3062, kept=268.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28801_ses-1_run-1: mean_fd=0.1344, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28803_ses-1_run-1: mean_fd=0.1248, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28804_ses-1_run-1: mean_fd=0.1382, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28805_ses-1_run-1: mean_fd=0.1856, kept=282.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28806_ses-1_run-1: mean_fd=0.1181, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28807_ses-1_run-1: mean_fd=0.1230, kept=298.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28808_ses-1_run-1: mean_fd>0.2; mean_fd=0.2001, kept=302.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28809_ses-1_run-1: mean_fd>0.2; mean_fd=0.2584, kept=260.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28810_ses-1_run-1: mean_fd=0.0822, kept=302.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28811_ses-1_run-1: mean_fd>0.2; mean_fd=0.4072, kept=262.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28812_ses-1_run-1: mean_fd>0.2; mean_fd=0.6422, kept=162.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28814_ses-1_run-1: mean_fd=0.1670, kept=298.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28815_ses-1_run-1: mean_fd>0.2; mean_fd=0.2552, kept=260.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28817_ses-1_run-1: mean_fd>0.2; mean_fd=0.2020, kept=300.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28819_ses-1_run-1: mean_fd>0.2; mean_fd=1.3382, kept=86.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28820_ses-1_run-1: mean_fd=0.1387, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28821_ses-1_run-1: mean_fd>0.2; mean_fd=0.4428, kept=242.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28822_ses-1_run-1: mean_fd=0.1864, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28824_ses-1_run-1: mean_fd=0.1181, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28825_ses-1_run-1: mean_fd>0.2; mean_fd=0.2863, kept=238.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28826_ses-1_run-1: mean_fd=0.1396, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28827_ses-1_run-1: mean_fd=0.1238, kept=296.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28828_ses-1_run-1: mean_fd=0.0847, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28829_ses-1_run-1: mean_fd=0.1032, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28830_ses-1_run-1: mean_fd>0.2; mean_fd=0.4351, kept=230.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28831_ses-1_run-1: mean_fd>0.2; mean_fd=0.8358, kept=82.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28834_ses-1_run-1: mean_fd>0.2; mean_fd=0.6461, kept=158.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28835_ses-1_run-1: mean_fd>0.2; mean_fd=0.2070, kept=274.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28836_ses-1_run-1: mean_fd>0.2; mean_fd=0.2232, kept=280.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28837_ses-1_run-1: mean_fd=0.0721, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28838_ses-1_run-1: mean_fd>0.2; mean_fd=0.2118, kept=272.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28840_ses-1_run-1: mean_fd>0.2; mean_fd=0.5988, kept=236.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28841_ses-1_run-1: mean_fd>0.2; mean_fd=0.3288, kept=254.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28842_ses-1_run-1: mean_fd>0.2; mean_fd=0.2660, kept=262.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28844_ses-1_run-1: mean_fd=0.1196, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28845_ses-1_run-1: mean_fd=0.0926, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28846_ses-1_run-1: mean_fd=0.1325, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-GU_1_sub-28847_ses-1_run-1: mean_fd=0.1412, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28920_ses-1_run-1: mean_fd=0.1346, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28920_ses-1_run-2: mean_fd=0.1229, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28920_ses-1_run-3: mean_fd=0.1480, kept=277.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28924_ses-1_run-1: mean_fd=0.0913, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28924_ses-1_run-2: mean_fd=0.1043, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28924_ses-1_run-3: mean_fd=0.0722, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28925_ses-1_run-1: mean_fd=0.1709, kept=267.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28925_ses-1_run-2: mean_fd>0.2; mean_fd=0.3725, kept=205.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28925_ses-1_run-3: mean_fd>0.2; mean_fd=1.1869, kept=100.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28931_ses-1_run-1: mean_fd>0.2; mean_fd=0.5203, kept=175.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28931_ses-1_run-2: mean_fd>0.2; mean_fd=0.2051, kept=270.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28931_ses-1_run-3: mean_fd>0.2; mean_fd=0.7105, kept=130.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28933_ses-1_run-1: mean_fd=0.1975, kept=285.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28933_ses-1_run-2: mean_fd>0.2; mean_fd=0.5838, kept=190.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28933_ses-1_run-3: mean_fd>0.2; mean_fd=0.6185, kept=175.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28934_ses-1_run-1: mean_fd=0.1796, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28934_ses-1_run-2: mean_fd=0.1514, kept=290.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28934_ses-1_run-3: mean_fd>0.2; mean_fd=0.4165, kept=155.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28935_ses-1_run-1: mean_fd=0.0841, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28935_ses-1_run-2: mean_fd=0.1454, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28935_ses-1_run-3: mean_fd=0.1576, kept=292.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28937_ses-1_run-1: mean_fd>0.2; mean_fd=0.2726, kept=225.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28937_ses-1_run-2: mean_fd>0.2; mean_fd=0.3328, kept=225.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28937_ses-1_run-3: mean_fd=0.1983, kept=285.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28939_ses-1_run-1: mean_fd=0.1270, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28939_ses-1_run-2: mean_fd=0.1006, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28939_ses-1_run-3: mean_fd=0.0861, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28940_ses-1_run-1: mean_fd=0.1230, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28940_ses-1_run-2: mean_fd=0.0755, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28940_ses-1_run-3: mean_fd=0.1196, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28943_ses-1_run-1: mean_fd=0.0866, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28943_ses-1_run-2: mean_fd=0.1217, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28943_ses-1_run-3: mean_fd=0.1199, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28945_ses-1_run-1: mean_fd=0.1894, kept=267.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28945_ses-1_run-2: mean_fd=0.0618, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28945_ses-1_run-3: mean_fd=0.0850, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28946_ses-1_run-1: mean_fd>0.2; mean_fd=0.3687, kept=215.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28946_ses-1_run-2: mean_fd=0.0637, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28946_ses-1_run-3: mean_fd=0.0554, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28949_ses-1_run-1: mean_fd=0.1552, kept=292.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28949_ses-1_run-2: mean_fd>0.2; mean_fd=0.8988, kept=107.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28949_ses-1_run-3: mean_fd>0.2; mean_fd=0.2389, kept=262.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28956_ses-1_run-1: mean_fd=0.1540, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28956_ses-1_run-2: mean_fd=0.1722, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28956_ses-1_run-3: mean_fd=0.1551, kept=297.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28963_ses-1_run-1: mean_fd>0.2; mean_fd=0.2010, kept=295.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28963_ses-1_run-2: mean_fd=0.1855, kept=287.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28963_ses-1_run-3: mean_fd>0.2; mean_fd=0.2133, kept=275.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28969_ses-1_run-1: mean_fd=0.1711, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28969_ses-1_run-2: mean_fd=0.1672, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28969_ses-1_run-3: mean_fd=0.1630, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28971_ses-1_run-1: mean_fd>0.2; mean_fd=0.3331, kept=225.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28971_ses-1_run-2: mean_fd>0.2; mean_fd=0.2477, kept=252.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28971_ses-1_run-3: mean_fd=0.0926, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28976_ses-1_run-1: mean_fd=0.1705, kept=282.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28976_ses-1_run-2: mean_fd>0.2; mean_fd=0.3410, kept=260.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28976_ses-1_run-3: mean_fd=0.1711, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28977_ses-1_run-1: mean_fd=0.1469, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28977_ses-1_run-2: mean_fd=0.1208, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28977_ses-1_run-3: mean_fd=0.1124, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28980_ses-1_run-1: mean_fd=0.1086, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28980_ses-1_run-2: mean_fd=0.1034, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28980_ses-1_run-3: mean_fd=0.1026, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28983_ses-1_run-1: mean_fd=0.1666, kept=265.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28983_ses-1_run-2: mean_fd>0.2; mean_fd=0.3190, kept=197.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28983_ses-1_run-3: mean_fd=0.1283, kept=270.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28984_ses-1_run-1: mean_fd=0.0891, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28984_ses-1_run-2: mean_fd=0.1032, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28984_ses-1_run-3: mean_fd=0.0872, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28992_ses-1_run-1: mean_fd=0.1984, kept=260.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28992_ses-1_run-2: mean_fd>0.2; mean_fd=0.5005, kept=185.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28992_ses-1_run-3: mean_fd=0.1840, kept=275.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28995_ses-1_run-1: mean_fd=0.0670, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28995_ses-1_run-2: mean_fd=0.0674, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28995_ses-1_run-3: mean_fd=0.0731, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28999_ses-1_run-1: mean_fd=0.0949, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28999_ses-1_run-2: mean_fd=0.0974, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-28999_ses-1_run-3: mean_fd=0.1011, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29000_ses-1_run-1: mean_fd=0.1389, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29000_ses-1_run-2: mean_fd=0.1430, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29000_ses-1_run-3: mean_fd=0.1508, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29003_ses-1_run-1: mean_fd=0.1272, kept=287.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29003_ses-1_run-2: mean_fd>0.2; mean_fd=0.2726, kept=267.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29003_ses-1_run-3: mean_fd=0.1851, kept=267.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29004_ses-1_run-1: mean_fd=0.0845, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29004_ses-1_run-2: mean_fd=0.0890, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-29004_ses-1_run-3: mean_fd=0.0518, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29006_ses-1_run-1: mean_fd>0.2; mean_fd=0.3173, kept=246.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29007_ses-1_run-1: mean_fd=0.1070, kept=357.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29008_ses-1_run-1: mean_fd>0.2; mean_fd=0.2450, kept=357.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29009_ses-1_run-1: mean_fd=0.1952, kept=339.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29010_ses-1_run-1: mean_fd=0.2000, kept=306.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29011_ses-1_run-1: mean_fd=0.1818, kept=294.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29012_ses-1_run-1: mean_fd>0.2; mean_fd=0.8062, kept=15.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29013_ses-1_run-1: mean_fd=0.0885, kept=357.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29014_ses-1_run-1: mean_fd=0.1857, kept=342.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29028_ses-1_run-1: mean_fd>0.2; mean_fd=0.3796, kept=309.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29039_ses-1_run-1: mean_fd>0.2; mean_fd=0.3102, kept=270.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-29040_ses-1_run-1: mean_fd>0.2; mean_fd=0.2274, kept=330.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29057_ses-1_run-1: mean_fd=0.1369, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29058_ses-1_run-1: mean_fd=0.1516, kept=410.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29059_ses-1_run-1: mean_fd=0.0820, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29060_ses-1_run-1: mean_fd=0.1763, kept=378.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29064_ses-1_run-1: mean_fd>0.2; mean_fd=0.8462, kept=182.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29065_ses-1_run-1: mean_fd>0.2; mean_fd=0.9557, kept=118.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29066_ses-1_run-1: mean_fd=0.1063, kept=420.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29067_ses-1_run-1: mean_fd>0.2; mean_fd=0.8726, kept=206.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29068_ses-1_run-1: mean_fd>0.2; mean_fd=0.8562, kept=268.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29069_ses-1_run-1: mean_fd>0.2; mean_fd=0.9785, kept=168.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29071_ses-1_run-1: mean_fd=0.1392, kept=410.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29073_ses-1_run-1: mean_fd=0.1206, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29074_ses-1_run-1: mean_fd=0.0862, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29076_ses-1_run-1: mean_fd=0.0944, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29077_ses-1_run-1: mean_fd=0.1465, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29078_ses-1_run-1: mean_fd=0.1193, kept=402.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29079_ses-1_run-1: mean_fd>0.2; mean_fd=0.7873, kept=120.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29080_ses-1_run-1: mean_fd=0.1282, kept=410.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29081_ses-1_run-1: mean_fd>0.2; mean_fd=0.2389, kept=372.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29082_ses-1_run-1: mean_fd=0.1715, kept=406.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29084_ses-1_run-1: mean_fd=0.1417, kept=412.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29086_ses-1_run-1: mean_fd>0.2; mean_fd=0.2193, kept=406.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29087_ses-1_run-1: mean_fd=0.1506, kept=414.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29088_ses-1_run-1: mean_fd>0.2; mean_fd=0.2789, kept=366.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29089_ses-1_run-1: mean_fd>0.2; mean_fd=0.2785, kept=364.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29090_ses-1_run-1: mean_fd=0.0643, kept=418.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29091_ses-1_run-1: mean_fd>0.2; mean_fd=0.2896, kept=346.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29092_ses-1_run-1: mean_fd=0.0804, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29093_ses-1_run-1: mean_fd=0.1614, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-ETH_1_sub-29094_ses-1_run-1: mean_fd=0.1251, kept=418.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29096_ses-1_run-1: mean_fd>0.2; mean_fd=0.2688, kept=380.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29097_ses-1_run-1: mean_fd>0.2; mean_fd=0.9866, kept=152.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29098_ses-1_run-1: mean_fd>0.2; mean_fd=0.6585, kept=116.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29099_ses-1_run-1: mean_fd>0.2; mean_fd=0.2606, kept=386.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29100_ses-1_run-1: mean_fd>0.2; mean_fd=0.7548, kept=220.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29101_ses-1_run-1: mean_fd>0.2; mean_fd=0.4074, kept=300.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29102_ses-1_run-1: mean_fd>0.2; mean_fd=2.5024, kept=82.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29103_ses-1_run-1: mean_fd>0.2; mean_fd=0.2635, kept=350.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29104_ses-1_run-1: mean_fd=0.1240, kept=318.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29105_ses-1_run-1: mean_fd=0.1292, kept=416.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29106_ses-1_run-1: mean_fd>0.2; mean_fd=0.4617, kept=320.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29107_ses-1_run-1: mean_fd=0.1033, kept=416.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29108_ses-1_run-1: mean_fd>0.2; mean_fd=0.4079, kept=264.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29109_ses-1_run-1: mean_fd>0.2; mean_fd=0.2310, kept=378.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29110_ses-1_run-1: mean_fd>0.2; mean_fd=1.0836, kept=110.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29111_ses-1_run-1: mean_fd=0.1469, kept=398.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29112_ses-1_run-1: mean_fd=0.0947, kept=416.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29113_ses-1_run-1: mean_fd>0.2; mean_fd=0.2213, kept=394.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29114_ses-1_run-1: mean_fd=0.1533, kept=402.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29115_ses-1_run-1: mean_fd=0.1217, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29116_ses-1_run-1: mean_fd=0.1868, kept=392.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29117_ses-1_run-1: mean_fd=0.1365, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29118_ses-1_run-1: mean_fd=0.1905, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29119_ses-1_run-1: mean_fd=0.1118, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29120_ses-1_run-1: mean_fd=0.1158, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29121_ses-1_run-1: mean_fd=0.1601, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29122_ses-1_run-1: mean_fd=0.1457, kept=416.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29123_ses-1_run-1: mean_fd>0.2; mean_fd=0.2005, kept=378.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29124_ses-1_run-1: mean_fd=0.0886, kept=418.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29125_ses-1_run-1: mean_fd>0.2; mean_fd=0.3304, kept=282.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29126_ses-1_run-1: mean_fd>0.2; mean_fd=0.7827, kept=142.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29127_ses-1_run-1: mean_fd=0.0985, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29128_ses-1_run-1: mean_fd=0.1171, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29129_ses-1_run-1: mean_fd=0.1979, kept=378.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29130_ses-1_run-1: mean_fd=0.1216, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29131_ses-1_run-1: mean_fd=0.1546, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29132_ses-1_run-1: mean_fd=0.1502, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29133_ses-1_run-1: mean_fd=0.1883, kept=400.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29134_ses-1_run-1: mean_fd>0.2; mean_fd=0.7764, kept=146.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29135_ses-1_run-1: mean_fd=0.1004, kept=420.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29136_ses-1_run-1: mean_fd>0.2; mean_fd=0.2389, kept=358.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-TCD_1_sub-29137_ses-1_run-1: mean_fd>0.2; mean_fd=0.4835, kept=304.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29150_ses-1_run-1: mean_fd=0.1410, kept=344.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29151_ses-1_run-1: mean_fd>0.2; mean_fd=0.2631, kept=296.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29152_ses-1_run-1: mean_fd=0.1395, kept=326.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29153_ses-1_run-1: mean_fd=0.1640, kept=318.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29154_ses-1_run-1: mean_fd=0.1143, kept=352.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29155_ses-1_run-1: mean_fd=0.1035, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29157_ses-1_run-1: mean_fd=0.0718, kept=354.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29158_ses-1_run-1: mean_fd>0.2; mean_fd=0.2594, kept=306.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29161_ses-1_run-1: mean_fd>0.2; mean_fd=0.2471, kept=312.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29163_ses-1_run-1: mean_fd=0.1312, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29166_ses-1_run-1: mean_fd=0.1539, kept=310.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29169_ses-1_run-1: mean_fd=0.1158, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29172_ses-1_run-1: mean_fd=0.0751, kept=354.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29173_ses-1_run-1: mean_fd>0.2; mean_fd=0.2047, kept=326.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_2_sub-29176_ses-1_run-1: mean_fd>0.2; mean_fd=0.2474, kept=292.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29180_ses-1_run-1: mean_fd>0.2; mean_fd=0.4415, kept=208.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29181_ses-1_run-1: mean_fd=0.1539, kept=342.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29183_ses-1_run-1: mean_fd>0.2; mean_fd=0.2581, kept=322.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29184_ses-1_run-1: mean_fd=0.1338, kept=346.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29192_ses-1_run-1: mean_fd=0.1334, kept=344.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29195_ses-1_run-1: mean_fd=0.1322, kept=352.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29197_ses-1_run-1: mean_fd=0.0837, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29203_ses-1_run-1: mean_fd=0.0593, kept=356.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29207_ses-1_run-1: mean_fd>0.2; mean_fd=0.2380, kept=334.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29209_ses-1_run-1: mean_fd=0.1461, kept=350.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29210_ses-1_run-1: mean_fd=0.1714, kept=326.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29213_ses-1_run-1: mean_fd>0.2; mean_fd=0.2331, kept=336.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29221_ses-1_run-1: mean_fd=0.1222, kept=338.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29224_ses-1_run-1: mean_fd=0.0779, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29228_ses-1_run-1: mean_fd=0.1913, kept=328.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29229_ses-1_run-1: mean_fd>0.2; mean_fd=0.2320, kept=306.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29232_ses-1_run-1: mean_fd=0.1480, kept=338.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29236_ses-1_run-1: mean_fd=0.0769, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29237_ses-1_run-1: mean_fd=0.1192, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29246_ses-1_run-1: mean_fd=0.0814, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29247_ses-1_run-1: mean_fd=0.0965, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-NYU_1_sub-29250_ses-1_run-1: mean_fd=0.1180, kept=348.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29273_ses-1_run-1: mean_fd>0.2; mean_fd=0.2061, kept=302.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29275_ses-1_run-1: mean_fd=0.0857, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29276_ses-1_run-1: mean_fd>0.2; mean_fd=0.2202, kept=272.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29277_ses-1_run-1: mean_fd=0.1058, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29278_ses-1_run-1: mean_fd>0.2; mean_fd=0.3722, kept=250.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29279_ses-1_run-1: mean_fd>0.2; mean_fd=0.5170, kept=152.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29280_ses-1_run-1: mean_fd>0.2; mean_fd=0.3837, kept=237.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29281_ses-1_run-1: mean_fd>0.2; mean_fd=0.2083, kept=310.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29282_ses-1_run-1: mean_fd>0.2; mean_fd=0.3467, kept=235.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29283_ses-1_run-1: mean_fd=0.1283, kept=295.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29284_ses-1_run-1: mean_fd>0.2; mean_fd=0.2363, kept=280.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29285_ses-1_run-1: mean_fd>0.2; mean_fd=0.2532, kept=260.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29287_ses-1_run-1: mean_fd>0.2; mean_fd=0.2146, kept=340.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29288_ses-1_run-1: mean_fd>0.2; mean_fd=0.2911, kept=275.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29289_ses-1_run-1: mean_fd=0.1151, kept=387.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29290_ses-1_run-1: mean_fd>0.2; mean_fd=0.3269, kept=320.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29291_ses-1_run-1: mean_fd>0.2; mean_fd=0.2819, kept=340.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29292_ses-1_run-1: mean_fd>0.2; mean_fd=0.2697, kept=295.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29293_ses-1_run-1: mean_fd>0.2; mean_fd=0.2058, kept=377.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29294_ses-1_run-1: mean_fd>0.2; mean_fd=0.3511, kept=247.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29295_ses-1_run-1: mean_fd>0.2; mean_fd=0.3102, kept=260.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29296_ses-1_run-1: mean_fd=0.1735, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29297_ses-1_run-1: mean_fd=0.0788, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29298_ses-1_run-1: mean_fd=0.0865, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29299_ses-1_run-1: mean_fd>0.2; mean_fd=0.2790, kept=255.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29300_ses-1_run-1: mean_fd>0.2; mean_fd=0.2762, kept=272.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29301_ses-1_run-1: mean_fd=0.0855, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29302_ses-1_run-1: mean_fd=0.1199, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29304_ses-1_run-1: mean_fd=0.0749, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29305_ses-1_run-1: mean_fd=0.1538, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29306_ses-1_run-1: mean_fd=0.1272, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29307_ses-1_run-1: mean_fd>0.2; mean_fd=0.2954, kept=247.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29308_ses-1_run-1: mean_fd=0.1087, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29309_ses-1_run-1: mean_fd=0.1205, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29310_ses-1_run-1: mean_fd>0.2; mean_fd=0.2865, kept=262.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29311_ses-1_run-1: mean_fd>0.2; mean_fd=0.3167, kept=260.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29312_ses-1_run-1: mean_fd=0.0782, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29313_ses-1_run-1: mean_fd>0.2; mean_fd=0.2325, kept=297.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29314_ses-1_run-1: mean_fd=0.1508, kept=305.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29315_ses-1_run-1: mean_fd=0.0864, kept=315.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29316_ses-1_run-1: mean_fd>0.2; mean_fd=0.2276, kept=300.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29317_ses-1_run-1: mean_fd=0.0656, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29318_ses-1_run-1: mean_fd>0.2; mean_fd=0.2929, kept=242.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29319_ses-1_run-1: mean_fd>0.2; mean_fd=0.2830, kept=265.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29320_ses-1_run-1: mean_fd=0.1207, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29321_ses-1_run-1: mean_fd=0.1670, kept=315.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29322_ses-1_run-1: mean_fd>0.2; mean_fd=0.2253, kept=305.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29324_ses-1_run-1: mean_fd=0.0668, kept=317.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29325_ses-1_run-1: mean_fd=0.0894, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29326_ses-1_run-1: mean_fd>0.2; mean_fd=0.2112, kept=285.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29327_ses-1_run-1: mean_fd=0.1990, kept=287.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29328_ses-1_run-1: mean_fd>0.2; mean_fd=0.2034, kept=307.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29329_ses-1_run-1: mean_fd=0.0862, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29330_ses-1_run-1: mean_fd=0.1251, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29332_ses-1_run-1: mean_fd=0.1407, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29333_ses-1_run-1: mean_fd=0.1374, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29334_ses-1_run-1: mean_fd=0.1104, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29336_ses-1_run-1: mean_fd=0.0874, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29337_ses-1_run-1: mean_fd=0.1299, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29338_ses-1_run-1: mean_fd>0.2; mean_fd=0.2642, kept=335.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29339_ses-1_run-1: mean_fd=0.1442, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29340_ses-1_run-1: mean_fd=0.1559, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29341_ses-1_run-1: mean_fd=0.1044, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29343_ses-1_run-1: mean_fd=0.1386, kept=380.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29344_ses-1_run-1: mean_fd>0.2; mean_fd=0.2515, kept=347.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29345_ses-1_run-1: mean_fd>0.2; mean_fd=0.2085, kept=365.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29347_ses-1_run-1: mean_fd>0.2; mean_fd=0.2261, kept=345.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29348_ses-1_run-1: mean_fd>0.2; mean_fd=0.3968, kept=255.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29349_ses-1_run-1: mean_fd=0.1630, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29350_ses-1_run-1: mean_fd=0.0960, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29351_ses-1_run-1: mean_fd=0.1973, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29352_ses-1_run-1: mean_fd=0.1744, kept=362.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29354_ses-1_run-1: mean_fd=0.1796, kept=340.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29355_ses-1_run-1: mean_fd=0.0908, kept=387.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29356_ses-1_run-1: mean_fd>0.2; mean_fd=0.2833, kept=342.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29357_ses-1_run-1: mean_fd=0.1068, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29358_ses-1_run-1: mean_fd=0.0860, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29359_ses-1_run-1: mean_fd=0.0473, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29360_ses-1_run-1: mean_fd>0.2; mean_fd=0.3194, kept=267.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29361_ses-1_run-1: mean_fd>0.2; mean_fd=0.3162, kept=310.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29362_ses-1_run-1: mean_fd>0.2; mean_fd=0.2022, kept=375.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29363_ses-1_run-1: mean_fd>0.2; mean_fd=0.2871, kept=290.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29364_ses-1_run-1: mean_fd=0.1459, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29365_ses-1_run-1: mean_fd=0.1185, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29366_ses-1_run-1: mean_fd=0.1213, kept=387.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29367_ses-1_run-1: mean_fd>0.2; mean_fd=0.4211, kept=217.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29368_ses-1_run-1: mean_fd=0.1414, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29370_ses-1_run-1: mean_fd=0.0746, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29371_ses-1_run-1: mean_fd=0.0944, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29372_ses-1_run-1: mean_fd>0.2; mean_fd=0.3295, kept=267.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29373_ses-1_run-1: mean_fd=0.1237, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29375_ses-1_run-1: mean_fd=0.1158, kept=372.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29376_ses-1_run-1: mean_fd>0.2; mean_fd=0.2695, kept=305.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29377_ses-1_run-1: mean_fd>0.2; mean_fd=0.3798, kept=220.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29378_ses-1_run-1: mean_fd=0.1837, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29379_ses-1_run-1: mean_fd=0.1554, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29380_ses-1_run-1: mean_fd=0.1585, kept=387.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29381_ses-1_run-1: mean_fd>0.2; mean_fd=0.2790, kept=295.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29382_ses-1_run-1: mean_fd=0.1703, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29383_ses-1_run-1: mean_fd=0.1348, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29384_ses-1_run-1: mean_fd=0.1979, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29385_ses-1_run-1: mean_fd=0.1590, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29386_ses-1_run-1: mean_fd=0.1576, kept=340.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29387_ses-1_run-1: mean_fd>0.2; mean_fd=0.2970, kept=327.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29389_ses-1_run-1: mean_fd>0.2; mean_fd=0.2037, kept=360.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29390_ses-1_run-1: mean_fd>0.2; mean_fd=0.2386, kept=362.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29391_ses-1_run-1: mean_fd>0.2; mean_fd=0.8480, kept=102.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29392_ses-1_run-1: mean_fd=0.1675, kept=362.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29393_ses-1_run-1: mean_fd=0.1117, kept=377.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29394_ses-1_run-1: mean_fd>0.2; mean_fd=0.3241, kept=252.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29396_ses-1_run-1: mean_fd=0.1505, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29397_ses-1_run-1: mean_fd=0.1094, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29399_ses-1_run-1: mean_fd=0.1373, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29400_ses-1_run-1: mean_fd=0.1228, kept=372.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29401_ses-1_run-1: mean_fd>0.2; mean_fd=0.3880, kept=240.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29403_ses-1_run-1: mean_fd>0.2; mean_fd=0.2091, kept=362.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29404_ses-1_run-1: mean_fd>0.2; mean_fd=0.2362, kept=342.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29405_ses-1_run-1: mean_fd=0.0819, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29407_ses-1_run-1: mean_fd>0.2; mean_fd=0.3959, kept=327.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29408_ses-1_run-1: mean_fd>0.2; mean_fd=0.2791, kept=357.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29409_ses-1_run-1: mean_fd>0.2; mean_fd=0.9414, kept=95.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29410_ses-1_run-1: mean_fd>0.2; mean_fd=0.7368, kept=92.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29411_ses-1_run-1: mean_fd>0.2; mean_fd=0.3693, kept=257.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29412_ses-1_run-1: mean_fd>0.2; mean_fd=0.4741, kept=252.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29413_ses-1_run-1: mean_fd>0.2; mean_fd=0.7850, kept=90.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29414_ses-1_run-1: mean_fd>0.2; mean_fd=0.2874, kept=287.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29415_ses-1_run-1: mean_fd=0.1517, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29416_ses-1_run-1: mean_fd=0.1148, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29417_ses-1_run-1: mean_fd>0.2; mean_fd=0.8774, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29418_ses-1_run-1: mean_fd>0.2; mean_fd=0.2338, kept=337.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29419_ses-1_run-1: mean_fd=0.1578, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29420_ses-1_run-1: mean_fd=0.1892, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29421_ses-1_run-1: mean_fd=0.1800, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29422_ses-1_run-1: mean_fd=0.1866, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29423_ses-1_run-1: mean_fd=0.1574, kept=382.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29424_ses-1_run-1: mean_fd>0.2; mean_fd=0.2615, kept=347.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29425_ses-1_run-1: mean_fd>0.2; mean_fd=0.2405, kept=317.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29427_ses-1_run-1: mean_fd>0.2; mean_fd=0.2246, kept=352.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29428_ses-1_run-1: mean_fd>0.2; mean_fd=0.9045, kept=75.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29429_ses-1_run-1: mean_fd=0.1732, kept=355.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29430_ses-1_run-1: mean_fd>0.2; mean_fd=0.2350, kept=332.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29431_ses-1_run-1: mean_fd>0.2; mean_fd=0.2233, kept=362.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29432_ses-1_run-1: mean_fd=0.0596, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29434_ses-1_run-1: mean_fd>0.2; mean_fd=0.2440, kept=342.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29435_ses-1_run-1: mean_fd=0.1138, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29436_ses-1_run-1: mean_fd=0.1848, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29437_ses-1_run-1: mean_fd=0.1280, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29438_ses-1_run-1: mean_fd>0.2; mean_fd=0.2420, kept=315.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29439_ses-1_run-1: mean_fd>0.2; mean_fd=0.2923, kept=292.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29441_ses-1_run-1: mean_fd=0.1276, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29442_ses-1_run-1: mean_fd=0.0777, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29443_ses-1_run-1: mean_fd=0.0712, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29444_ses-1_run-1: mean_fd>0.2; mean_fd=0.2575, kept=332.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29445_ses-1_run-1: mean_fd=0.1432, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29446_ses-1_run-1: mean_fd=0.1300, kept=385.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29447_ses-1_run-1: mean_fd>0.2; mean_fd=0.4212, kept=277.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29448_ses-1_run-1: mean_fd>0.2; mean_fd=0.5009, kept=237.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29449_ses-1_run-1: mean_fd>0.2; mean_fd=0.2868, kept=307.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29450_ses-1_run-1: mean_fd>0.2; mean_fd=0.2163, kept=377.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29451_ses-1_run-1: mean_fd=0.0699, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29453_ses-1_run-1: mean_fd=0.1110, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29454_ses-1_run-1: mean_fd=0.1234, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29455_ses-1_run-1: mean_fd=0.0655, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29456_ses-1_run-1: mean_fd=0.1970, kept=352.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29457_ses-1_run-1: mean_fd>0.2; mean_fd=0.3387, kept=265.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29458_ses-1_run-1: mean_fd>0.2; mean_fd=0.2165, kept=355.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29459_ses-1_run-1: mean_fd=0.0718, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29460_ses-1_run-1: mean_fd=0.0674, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29461_ses-1_run-1: mean_fd>0.2; mean_fd=0.5795, kept=202.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29462_ses-1_run-1: mean_fd=0.1796, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29463_ses-1_run-1: mean_fd=0.1043, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29464_ses-1_run-1: mean_fd>0.2; mean_fd=0.2146, kept=350.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29465_ses-1_run-1: mean_fd=0.0764, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29466_ses-1_run-1: mean_fd=0.1953, kept=365.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29467_ses-1_run-1: mean_fd>0.2; mean_fd=0.2521, kept=330.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29468_ses-1_run-1: mean_fd=0.1486, kept=367.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29469_ses-1_run-1: mean_fd>0.2; mean_fd=0.2139, kept=330.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29470_ses-1_run-1: mean_fd=0.0745, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29471_ses-1_run-1: mean_fd=0.1041, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29472_ses-1_run-1: mean_fd=0.1154, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29473_ses-1_run-1: mean_fd=0.1601, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29474_ses-1_run-1: mean_fd=0.1188, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29475_ses-1_run-1: mean_fd=0.0646, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29476_ses-1_run-1: mean_fd>0.2; mean_fd=0.4175, kept=287.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29477_ses-1_run-1: mean_fd>0.2; mean_fd=0.2454, kept=357.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29478_ses-1_run-1: mean_fd=0.0670, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29479_ses-1_run-1: mean_fd=0.1317, kept=377.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29480_ses-1_run-1: mean_fd>0.2; mean_fd=0.4286, kept=217.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29481_ses-1_run-1: mean_fd=0.1808, kept=357.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29482_ses-1_run-1: mean_fd>0.2; mean_fd=0.2698, kept=300.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29483_ses-1_run-1: mean_fd=0.1566, kept=367.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29484_ses-1_run-1: mean_fd>0.2; mean_fd=0.5941, kept=197.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KKI_1_sub-29485_ses-1_run-1: mean_fd=0.0775, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-USM_1_sub-29504_ses-1_run-1: mean_fd=0.1971, kept=472.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29580_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0702, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29580_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0724, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29580_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0766, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29581_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0412, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29581_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0395, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29581_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0454, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29582_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0900, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29582_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0677, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29583_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0864, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29583_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0992, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29583_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0910, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29584_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1825, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29584_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0975, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29584_ses-1_run-3: mean_fd>0.2; mean_fd=0.2565, kept=178.2s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29585_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0739, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29585_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0712, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29585_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0743, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29587_ses-1_run-1: mean_fd>0.2; mean_fd=0.3758, kept=137.7s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29587_ses-1_run-2: mean_fd>0.2; mean_fd=0.2229, kept=210.6s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29587_ses-1_run-3: mean_fd>0.2; mean_fd=0.2089, kept=216.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29588_ses-1_run-1: mean_fd>0.2; mean_fd=0.2021, kept=216.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29588_ses-1_run-2: mean_fd>0.2; mean_fd=0.2518, kept=197.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29588_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1058, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29589_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0660, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29589_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0704, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29590_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0464, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29590_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0518, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29590_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0560, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29591_ses-1_run-1: mean_fd>0.2; mean_fd=0.9970, kept=48.6s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29591_ses-1_run-2: mean_fd>0.2; mean_fd=0.3312, kept=148.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29591_ses-1_run-3: mean_fd>0.2; mean_fd=0.4793, kept=116.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29592_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0934, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29592_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1617, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29592_ses-1_run-3: mean_fd>0.2; mean_fd=0.5445, kept=140.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29593_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0697, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29593_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0830, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29593_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0983, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29594_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0728, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29594_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0731, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29594_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1028, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29595_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1292, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29595_ses-1_run-2: mean_fd>0.2; mean_fd=0.2683, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29595_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1005, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29596_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0737, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29596_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0810, kept=218.7s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29596_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1156, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29596_ses-1_run-4: kept_time_sec<240.0; mean_fd=0.0921, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29597_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0765, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29597_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0805, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29597_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0592, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29598_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1081, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29598_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1002, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29598_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1062, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29600_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0850, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29600_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0780, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29600_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1037, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29601_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0920, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29601_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0820, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29601_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1475, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29602_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0638, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29602_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0752, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29602_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0783, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29603_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1082, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29603_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0873, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29603_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1030, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29604_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0574, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29604_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0706, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29604_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0852, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29605_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0680, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29605_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0745, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29605_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0610, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29606_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0888, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29606_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1097, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29607_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0583, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29607_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0641, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29607_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0622, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29608_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0620, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29608_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0675, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29608_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0591, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29609_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1784, kept=213.3s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29609_ses-1_run-2: mean_fd>0.2; mean_fd=0.4119, kept=189.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29610_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0701, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29610_ses-1_run-2: mean_fd>0.2; mean_fd=0.2568, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29610_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1981, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29611_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0719, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29611_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0703, kept=216.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29611_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0851, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29612_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0711, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29612_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0787, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29612_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1268, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29613_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1128, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29613_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0739, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29613_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1373, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29614_ses-1_run-1: mean_fd>0.2; mean_fd=0.3422, kept=186.3s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29614_ses-1_run-2: mean_fd>0.2; mean_fd=0.4981, kept=118.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29614_ses-1_run-3: mean_fd>0.2; mean_fd=0.9703, kept=35.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29618_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1644, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29618_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1969, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29618_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1627, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29619_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0540, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29619_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0496, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29619_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0940, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29620_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0931, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29620_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1235, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29620_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1074, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29621_ses-1_run-1: mean_fd>0.2; mean_fd=0.3459, kept=167.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29621_ses-1_run-2: mean_fd>0.2; mean_fd=0.3546, kept=140.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29621_ses-1_run-3: mean_fd>0.2; mean_fd=1.0777, kept=102.6s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29623_ses-1_run-1: mean_fd>0.2; mean_fd=0.5688, kept=86.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29623_ses-1_run-2: mean_fd>0.2; mean_fd=0.7066, kept=0.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29623_ses-1_run-3: mean_fd>0.2; mean_fd=2.7563, kept=0.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29624_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0861, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29624_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0700, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29624_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0756, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29625_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0709, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29625_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1121, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29625_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1402, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29627_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0629, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29627_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0553, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29627_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0608, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29628_ses-1_run-1: mean_fd>0.2; mean_fd=1.0593, kept=145.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29628_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1977, kept=218.7s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29628_ses-1_run-3: mean_fd>0.2; mean_fd=0.7200, kept=178.2s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29629_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1992, kept=199.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29629_ses-1_run-2: mean_fd>0.2; mean_fd=0.2575, kept=183.6s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29629_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1393, kept=213.3s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29631_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0580, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29631_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0550, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29631_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0447, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29632_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1280, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29632_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1900, kept=210.6s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29632_ses-1_run-3: mean_fd>0.2; mean_fd=0.2665, kept=199.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29633_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1556, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29633_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1286, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29633_ses-1_run-3: mean_fd>0.2; mean_fd=0.2971, kept=159.3s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29634_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1706, kept=213.3s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29634_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1744, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-IP_1_sub-29634_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1704, kept=210.6s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29656_ses-1_run-1: mean_fd=0.1396, kept=392.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29657_ses-1_run-1: mean_fd>0.2; mean_fd=0.2172, kept=367.5s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29658_ses-1_run-1: mean_fd=0.1264, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29659_ses-1_run-1: mean_fd=0.0654, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29660_ses-1_run-1: mean_fd=0.0599, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29661_ses-1_run-1: mean_fd=0.1076, kept=400.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29662_ses-1_run-1: mean_fd=0.1438, kept=402.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29664_ses-1_run-1: mean_fd=0.1042, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29665_ses-1_run-1: mean_fd=0.0775, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29666_ses-1_run-1: mean_fd=0.0725, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29667_ses-1_run-1: mean_fd=0.1120, kept=400.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29668_ses-1_run-1: mean_fd=0.1023, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29669_ses-1_run-1: mean_fd=0.0533, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29670_ses-1_run-1: mean_fd=0.1024, kept=405.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29671_ses-1_run-1: mean_fd>0.2; mean_fd=0.3138, kept=315.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29675_ses-1_run-1: mean_fd=0.0866, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29676_ses-1_run-1: mean_fd=0.1001, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29677_ses-1_run-1: mean_fd=0.1177, kept=402.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29678_ses-1_run-1: mean_fd=0.0803, kept=392.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29679_ses-1_run-1: mean_fd=0.1762, kept=405.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29728_ses-1_run-1: mean_fd>0.2; mean_fd=0.8568, kept=0.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29730_ses-1_run-1: mean_fd=0.0884, kept=360.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29732_ses-1_run-1: mean_fd>0.2; mean_fd=0.2054, kept=288.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29734_ses-1_run-1: mean_fd=0.1697, kept=333.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29736_ses-1_run-1: mean_fd>0.2; mean_fd=0.2944, kept=270.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29737_ses-1_run-1: mean_fd=0.1227, kept=357.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29740_ses-1_run-1: mean_fd=0.1308, kept=351.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29743_ses-1_run-1: mean_fd>0.2; mean_fd=0.5066, kept=126.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29746_ses-1_run-1: mean_fd=0.0705, kept=360.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29749_ses-1_run-1: mean_fd>0.2; mean_fd=0.3120, kept=282.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29750_ses-1_run-1: mean_fd=0.1159, kept=348.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29751_ses-1_run-1: mean_fd>0.2; mean_fd=0.2045, kept=303.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29755_ses-1_run-1: mean_fd>0.2; mean_fd=0.2872, kept=252.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCLA_1_sub-29758_ses-1_run-1: mean_fd>0.2; mean_fd=0.4907, kept=288.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29794_ses-1_run-1: mean_fd=0.1023, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29796_ses-1_run-1: mean_fd=0.0679, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29797_ses-1_run-1: mean_fd=0.1148, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-KUL_3_sub-29798_ses-1_run-1: mean_fd=0.1938, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29864_ses-1_run-1: mean_fd=0.1716, kept=308.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29865_ses-1_run-1: mean_fd=0.1594, kept=310.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29867_ses-1_run-1: mean_fd=0.0686, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29868_ses-1_run-1: mean_fd=0.1957, kept=278.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29869_ses-1_run-1: mean_fd=0.1031, kept=314.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29870_ses-1_run-1: mean_fd=0.1245, kept=316.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29871_ses-1_run-1: mean_fd>0.2; mean_fd=0.4371, kept=162.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29874_ses-1_run-1: mean_fd=0.1398, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29876_ses-1_run-1: mean_fd=0.1090, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29877_ses-1_run-1: mean_fd=0.0975, kept=318.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29878_ses-1_run-1: mean_fd>0.2; mean_fd=1.0306, kept=68.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29879_ses-1_run-1: mean_fd=0.0529, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29881_ses-1_run-1: mean_fd=0.1637, kept=302.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29882_ses-1_run-1: mean_fd>0.2; mean_fd=0.2417, kept=306.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29883_ses-1_run-1: mean_fd>0.2; mean_fd=1.5874, kept=140.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29884_ses-1_run-1: mean_fd>0.2; mean_fd=0.4258, kept=210.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29885_ses-1_run-1: mean_fd=0.1664, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29886_ses-1_run-1: mean_fd>0.2; mean_fd=0.6640, kept=170.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29887_ses-1_run-1: mean_fd>0.2; mean_fd=50.9447, kept=26.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29888_ses-1_run-1: mean_fd>0.2; mean_fd=27.8386, kept=118.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29889_ses-1_run-1: mean_fd>0.2; mean_fd=0.5870, kept=208.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29892_ses-1_run-1: mean_fd>0.2; mean_fd=0.2110, kept=288.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29896_ses-1_run-1: mean_fd=0.1751, kept=318.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29897_ses-1_run-1: mean_fd>0.2; mean_fd=0.7083, kept=168.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29898_ses-1_run-1: mean_fd>0.2; mean_fd=0.4102, kept=248.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29899_ses-1_run-1: mean_fd>0.2; mean_fd=0.3050, kept=282.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29900_ses-1_run-1: mean_fd>0.2; mean_fd=0.5926, kept=168.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29902_ses-1_run-1: mean_fd>0.2; mean_fd=0.4976, kept=184.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29903_ses-1_run-1: mean_fd>0.2; mean_fd=0.8184, kept=166.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29904_ses-1_run-1: mean_fd=0.1134, kept=310.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29905_ses-1_run-1: mean_fd=0.0751, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29906_ses-1_run-1: mean_fd=0.0697, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29907_ses-1_run-1: mean_fd=0.0995, kept=314.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29908_ses-1_run-1: mean_fd=0.1199, kept=310.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29910_ses-1_run-1: mean_fd>0.2; mean_fd=0.8210, kept=204.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29911_ses-1_run-1: mean_fd=0.1293, kept=294.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29912_ses-1_run-1: mean_fd=0.0965, kept=316.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29913_ses-1_run-1: mean_fd>0.2; mean_fd=0.3290, kept=250.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29914_ses-1_run-1: mean_fd>0.2; mean_fd=1.0414, kept=78.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-EMC_1_sub-29916_ses-1_run-1: mean_fd=0.1672, kept=316.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-29999_ses-1_run-1: mean_fd>0.2; mean_fd=0.6333, kept=172.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30000_ses-1_run-1: mean_fd=0.1204, kept=292.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30001_ses-1_run-1: mean_fd=0.1036, kept=302.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30002_ses-1_run-1: mean_fd>0.2; mean_fd=0.4594, kept=208.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30003_ses-1_run-1: mean_fd>0.2; mean_fd=0.2781, kept=264.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30004_ses-1_run-1: mean_fd=0.1142, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30005_ses-1_run-1: mean_fd=0.1898, kept=282.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30006_ses-1_run-1: mean_fd=0.1744, kept=292.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30007_ses-1_run-1: mean_fd=0.1692, kept=278.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30008_ses-1_run-1: mean_fd=0.0727, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30010_ses-1_run-1: mean_fd=0.0576, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30011_ses-1_run-1: mean_fd=0.1610, kept=284.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30012_ses-1_run-1: mean_fd=0.0780, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30013_ses-1_run-1: mean_fd=0.1618, kept=294.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30015_ses-1_run-1: mean_fd=0.1775, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30017_ses-1_run-1: mean_fd=0.1266, kept=296.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30018_ses-1_run-1: mean_fd=0.1215, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30019_ses-1_run-1: mean_fd=0.0694, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30021_ses-1_run-1: mean_fd=0.0928, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30022_ses-1_run-1: mean_fd>0.2; mean_fd=0.2934, kept=260.0s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30023_ses-1_run-1: mean_fd>0.2; mean_fd=0.2705, kept=266.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30024_ses-1_run-1: mean_fd=0.0587, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30026_ses-1_run-1: mean_fd=0.1311, kept=298.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30027_ses-1_run-1: mean_fd>0.2; mean_fd=0.2921, kept=260.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-UCD_1_sub-30028_ses-1_run-1: mean_fd=0.0734, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-BNI_1_sub-30146_ses-1_run-1: mean_fd=0.1175, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30154_ses-1_run-1: mean_fd=0.0465, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30154_ses-1_run-2: mean_fd=0.0557, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30154_ses-1_run-3: mean_fd=0.0526, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30156_ses-1_run-1: mean_fd=0.1211, kept=282.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30156_ses-1_run-2: mean_fd>0.2; mean_fd=0.2231, kept=257.5s
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30156_ses-1_run-3: mean_fd>0.2; mean_fd=0.4399, kept=250.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30158_ses-1_run-1: mean_fd=0.0820, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30158_ses-1_run-2: mean_fd=0.1213, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30158_ses-1_run-3: mean_fd=0.1103, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30160_ses-1_run-1: mean_fd=0.0588, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30160_ses-1_run-2: mean_fd=0.0714, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30160_ses-1_run-3: mean_fd=0.1563, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30161_ses-1_run-1: mean_fd=0.0478, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30161_ses-1_run-2: mean_fd=0.0649, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30161_ses-1_run-3: mean_fd=0.0785, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30163_ses-1_run-1: mean_fd=0.1149, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30163_ses-1_run-2: mean_fd=0.1297, kept=292.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30163_ses-1_run-3: mean_fd>0.2; mean_fd=0.2558, kept=245.0s
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30164_ses-1_run-1: mean_fd=0.0653, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30164_ses-1_run-2: mean_fd=0.0635, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30164_ses-1_run-3: mean_fd=0.0569, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30165_ses-1_run-1: mean_fd=0.1537, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30165_ses-1_run-2: mean_fd=0.1292, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30165_ses-1_run-3: mean_fd=0.1461, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30167_ses-1_run-1: mean_fd=0.0694, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30167_ses-1_run-2: mean_fd=0.1698, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.2] ABIDEII-OHSU_1_sub-30167_ses-1_run-3: mean_fd=0.0941, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50002_ses-1_run-1: mean_fd=0.1609, kept=298.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50002_ses-2_run-1: mean_fd=0.1223, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50005_ses-1_run-1: mean_fd=0.2112, kept=280.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50005_ses-2_run-1: mean_fd=0.0730, kept=298.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50006_ses-1_run-1: mean_fd=0.1474, kept=295.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50006_ses-2_run-1: mean_fd=0.1758, kept=298.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50007_ses-1_run-1: mean_fd=0.2462, kept=259.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50007_ses-2_run-1: mean_fd=0.1520, kept=288.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] PITT_sub-50013_ses-1_run-1: mean_fd>0.3; mean_fd=0.3539, kept=259.5s
+EXCLUDE [ABIDE2 fd<0.3] PITT_sub-50013_ses-2_run-1: mean_fd>0.3; mean_fd=0.3992, kept=190.5s
+EXCLUDE [ABIDE2 fd<0.3] PITT_sub-50026_ses-1_run-1: mean_fd>0.3; mean_fd=0.4844, kept=55.5s
+WROTE [ABIDE2 fd<0.3] PITT_sub-50026_ses-2_run-1: mean_fd=0.2894, kept=270.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50027_ses-1_run-1: mean_fd=0.2330, kept=268.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50027_ses-2_run-1: mean_fd=0.1343, kept=294.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] PITT_sub-50028_ses-1_run-1: mean_fd>0.3; mean_fd=0.3478, kept=210.0s
+WROTE [ABIDE2 fd<0.3] PITT_sub-50028_ses-2_run-1: mean_fd=0.2309, kept=280.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50029_ses-1_run-1: mean_fd=0.1320, kept=291.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50029_ses-2_run-1: mean_fd=0.1666, kept=289.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50031_ses-1_run-1: mean_fd=0.2342, kept=268.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50031_ses-2_run-1: mean_fd=0.1346, kept=283.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50035_ses-1_run-1: mean_fd=0.2650, kept=279.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50035_ses-2_run-1: mean_fd=0.1712, kept=291.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50038_ses-1_run-1: mean_fd=0.2170, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50038_ses-2_run-1: mean_fd=0.2287, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50047_ses-1_run-1: mean_fd=0.1849, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50047_ses-2_run-1: mean_fd=0.2869, kept=255.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] PITT_sub-50048_ses-1_run-1: mean_fd>0.3; mean_fd=0.3211, kept=228.0s
+WROTE [ABIDE2 fd<0.3] PITT_sub-50048_ses-2_run-1: mean_fd=0.2283, kept=270.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] PITT_sub-50049_ses-1_run-1: mean_fd>0.3; mean_fd=0.3046, kept=280.5s
+WROTE [ABIDE2 fd<0.3] PITT_sub-50049_ses-2_run-1: mean_fd=0.0870, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50050_ses-1_run-1: mean_fd=0.1564, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50050_ses-2_run-1: mean_fd=0.1860, kept=280.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50051_ses-1_run-1: mean_fd=0.1748, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] PITT_sub-50051_ses-2_run-1: mean_fd=0.1586, kept=297.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_1_sub-51270_ses-1_run-1: mean_fd=0.0853, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_1_sub-51270_ses-2_run-1: mean_fd=0.0808, kept=360.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] UCLA_2_sub-51292_ses-1_run-1: mean_fd>0.3; mean_fd=0.8248, kept=150.0s
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51292_ses-2_run-1: mean_fd=0.1147, kept=336.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51312_ses-1_run-1: mean_fd=0.1479, kept=321.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51312_ses-2_run-1: mean_fd=0.0964, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51313_ses-1_run-1: mean_fd=0.0774, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51313_ses-2_run-1: mean_fd=0.1086, kept=342.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51315_ses-1_run-1: mean_fd=0.0853, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] UCLA_2_sub-51315_ses-2_run-1: mean_fd=0.1161, kept=351.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28743_ses-1_run-1: mean_fd=0.1363, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28746_ses-1_run-1: mean_fd=0.0616, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28747_ses-1_run-1: mean_fd=0.1250, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28748_ses-1_run-1: mean_fd=0.0933, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28749_ses-1_run-1: mean_fd=0.1216, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28750_ses-1_run-1: mean_fd=0.1979, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28752_ses-1_run-1: mean_fd=0.0946, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28753_ses-1_run-1: mean_fd=0.1033, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28754_ses-1_run-1: mean_fd=0.1692, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28760_ses-1_run-1: mean_fd=0.0729, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28784_ses-1_run-1: mean_fd>0.3; mean_fd=0.7452, kept=150.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28785_ses-1_run-1: mean_fd=0.1698, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28787_ses-1_run-1: mean_fd=0.0861, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28790_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.2957, kept=232.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28791_ses-1_run-1: mean_fd=0.1147, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28792_ses-1_run-1: mean_fd=0.0883, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28795_ses-1_run-1: mean_fd=0.0574, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28797_ses-1_run-1: mean_fd=0.0966, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28798_ses-1_run-1: mean_fd=0.1951, kept=286.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28800_ses-1_run-1: mean_fd>0.3; mean_fd=0.3062, kept=268.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28801_ses-1_run-1: mean_fd=0.1344, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28803_ses-1_run-1: mean_fd=0.1248, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28804_ses-1_run-1: mean_fd=0.1382, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28805_ses-1_run-1: mean_fd=0.1856, kept=282.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28806_ses-1_run-1: mean_fd=0.1181, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28807_ses-1_run-1: mean_fd=0.1230, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28808_ses-1_run-1: mean_fd=0.2001, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28809_ses-1_run-1: mean_fd=0.2584, kept=260.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28810_ses-1_run-1: mean_fd=0.0822, kept=302.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28811_ses-1_run-1: mean_fd>0.3; mean_fd=0.4072, kept=262.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28812_ses-1_run-1: mean_fd>0.3; mean_fd=0.6422, kept=162.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28814_ses-1_run-1: mean_fd=0.1670, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28815_ses-1_run-1: mean_fd=0.2552, kept=260.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28817_ses-1_run-1: mean_fd=0.2020, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28819_ses-1_run-1: mean_fd>0.3; mean_fd=1.3382, kept=86.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28820_ses-1_run-1: mean_fd=0.1387, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28821_ses-1_run-1: mean_fd>0.3; mean_fd=0.4428, kept=242.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28822_ses-1_run-1: mean_fd=0.1864, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28824_ses-1_run-1: mean_fd=0.1181, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28825_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.2863, kept=238.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28826_ses-1_run-1: mean_fd=0.1396, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28827_ses-1_run-1: mean_fd=0.1238, kept=296.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28828_ses-1_run-1: mean_fd=0.0847, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28829_ses-1_run-1: mean_fd=0.1032, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28830_ses-1_run-1: mean_fd>0.3; mean_fd=0.4351, kept=230.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28831_ses-1_run-1: mean_fd>0.3; mean_fd=0.8358, kept=82.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28834_ses-1_run-1: mean_fd>0.3; mean_fd=0.6461, kept=158.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28835_ses-1_run-1: mean_fd=0.2070, kept=274.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28836_ses-1_run-1: mean_fd=0.2232, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28837_ses-1_run-1: mean_fd=0.0721, kept=304.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28838_ses-1_run-1: mean_fd=0.2118, kept=272.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28840_ses-1_run-1: mean_fd>0.3; mean_fd=0.5988, kept=236.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28841_ses-1_run-1: mean_fd>0.3; mean_fd=0.3288, kept=254.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28842_ses-1_run-1: mean_fd=0.2660, kept=262.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28844_ses-1_run-1: mean_fd=0.1196, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28845_ses-1_run-1: mean_fd=0.0926, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28846_ses-1_run-1: mean_fd=0.1325, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-GU_1_sub-28847_ses-1_run-1: mean_fd=0.1412, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28920_ses-1_run-1: mean_fd=0.1346, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28920_ses-1_run-2: mean_fd=0.1229, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28920_ses-1_run-3: mean_fd=0.1480, kept=277.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28924_ses-1_run-1: mean_fd=0.0913, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28924_ses-1_run-2: mean_fd=0.1043, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28924_ses-1_run-3: mean_fd=0.0722, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28925_ses-1_run-1: mean_fd=0.1709, kept=267.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28925_ses-1_run-2: mean_fd>0.3; mean_fd=0.3725, kept=205.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28925_ses-1_run-3: mean_fd>0.3; mean_fd=1.1869, kept=100.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28931_ses-1_run-1: mean_fd>0.3; mean_fd=0.5203, kept=175.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28931_ses-1_run-2: mean_fd=0.2051, kept=270.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28931_ses-1_run-3: mean_fd>0.3; mean_fd=0.7105, kept=130.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28933_ses-1_run-1: mean_fd=0.1975, kept=285.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28933_ses-1_run-2: mean_fd>0.3; mean_fd=0.5838, kept=190.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28933_ses-1_run-3: mean_fd>0.3; mean_fd=0.6185, kept=175.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28934_ses-1_run-1: mean_fd=0.1796, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28934_ses-1_run-2: mean_fd=0.1514, kept=290.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28934_ses-1_run-3: mean_fd>0.3; mean_fd=0.4165, kept=155.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28935_ses-1_run-1: mean_fd=0.0841, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28935_ses-1_run-2: mean_fd=0.1454, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28935_ses-1_run-3: mean_fd=0.1576, kept=292.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28937_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.2726, kept=225.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28937_ses-1_run-2: mean_fd>0.3; mean_fd=0.3328, kept=225.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28937_ses-1_run-3: mean_fd=0.1983, kept=285.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28939_ses-1_run-1: mean_fd=0.1270, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28939_ses-1_run-2: mean_fd=0.1006, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28939_ses-1_run-3: mean_fd=0.0861, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28940_ses-1_run-1: mean_fd=0.1230, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28940_ses-1_run-2: mean_fd=0.0755, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28940_ses-1_run-3: mean_fd=0.1196, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28943_ses-1_run-1: mean_fd=0.0866, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28943_ses-1_run-2: mean_fd=0.1217, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28943_ses-1_run-3: mean_fd=0.1199, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28945_ses-1_run-1: mean_fd=0.1894, kept=267.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28945_ses-1_run-2: mean_fd=0.0618, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28945_ses-1_run-3: mean_fd=0.0850, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28946_ses-1_run-1: mean_fd>0.3; mean_fd=0.3687, kept=215.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28946_ses-1_run-2: mean_fd=0.0637, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28946_ses-1_run-3: mean_fd=0.0554, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28949_ses-1_run-1: mean_fd=0.1552, kept=292.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28949_ses-1_run-2: mean_fd>0.3; mean_fd=0.8988, kept=107.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28949_ses-1_run-3: mean_fd=0.2389, kept=262.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28956_ses-1_run-1: mean_fd=0.1540, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28956_ses-1_run-2: mean_fd=0.1722, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28956_ses-1_run-3: mean_fd=0.1551, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28963_ses-1_run-1: mean_fd=0.2010, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28963_ses-1_run-2: mean_fd=0.1855, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28963_ses-1_run-3: mean_fd=0.2133, kept=275.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28969_ses-1_run-1: mean_fd=0.1711, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28969_ses-1_run-2: mean_fd=0.1672, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28969_ses-1_run-3: mean_fd=0.1630, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28971_ses-1_run-1: mean_fd>0.3; mean_fd=0.3331, kept=225.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28971_ses-1_run-2: mean_fd=0.2477, kept=252.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28971_ses-1_run-3: mean_fd=0.0926, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28976_ses-1_run-1: mean_fd=0.1705, kept=282.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28976_ses-1_run-2: mean_fd>0.3; mean_fd=0.3410, kept=260.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28976_ses-1_run-3: mean_fd=0.1711, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28977_ses-1_run-1: mean_fd=0.1469, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28977_ses-1_run-2: mean_fd=0.1208, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28977_ses-1_run-3: mean_fd=0.1124, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28980_ses-1_run-1: mean_fd=0.1086, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28980_ses-1_run-2: mean_fd=0.1034, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28980_ses-1_run-3: mean_fd=0.1026, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28983_ses-1_run-1: mean_fd=0.1666, kept=265.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28983_ses-1_run-2: mean_fd>0.3; mean_fd=0.3190, kept=197.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28983_ses-1_run-3: mean_fd=0.1283, kept=270.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28984_ses-1_run-1: mean_fd=0.0891, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28984_ses-1_run-2: mean_fd=0.1032, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28984_ses-1_run-3: mean_fd=0.0872, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28992_ses-1_run-1: mean_fd=0.1984, kept=260.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28992_ses-1_run-2: mean_fd>0.3; mean_fd=0.5005, kept=185.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28992_ses-1_run-3: mean_fd=0.1840, kept=275.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28995_ses-1_run-1: mean_fd=0.0670, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28995_ses-1_run-2: mean_fd=0.0674, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28995_ses-1_run-3: mean_fd=0.0731, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28999_ses-1_run-1: mean_fd=0.0949, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28999_ses-1_run-2: mean_fd=0.0974, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-28999_ses-1_run-3: mean_fd=0.1011, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29000_ses-1_run-1: mean_fd=0.1389, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29000_ses-1_run-2: mean_fd=0.1430, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29000_ses-1_run-3: mean_fd=0.1508, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29003_ses-1_run-1: mean_fd=0.1272, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29003_ses-1_run-2: mean_fd=0.2726, kept=267.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29003_ses-1_run-3: mean_fd=0.1851, kept=267.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29004_ses-1_run-1: mean_fd=0.0845, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29004_ses-1_run-2: mean_fd=0.0890, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-29004_ses-1_run-3: mean_fd=0.0518, kept=300.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29006_ses-1_run-1: mean_fd>0.3; mean_fd=0.3173, kept=246.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29007_ses-1_run-1: mean_fd=0.1070, kept=357.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29008_ses-1_run-1: mean_fd=0.2450, kept=357.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29009_ses-1_run-1: mean_fd=0.1952, kept=339.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29010_ses-1_run-1: mean_fd=0.2000, kept=306.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29011_ses-1_run-1: mean_fd=0.1818, kept=294.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29012_ses-1_run-1: mean_fd>0.3; mean_fd=0.8062, kept=15.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29013_ses-1_run-1: mean_fd=0.0885, kept=357.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29014_ses-1_run-1: mean_fd=0.1857, kept=342.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29028_ses-1_run-1: mean_fd>0.3; mean_fd=0.3796, kept=309.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29039_ses-1_run-1: mean_fd>0.3; mean_fd=0.3102, kept=270.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-29040_ses-1_run-1: mean_fd=0.2274, kept=330.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29057_ses-1_run-1: mean_fd=0.1369, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29058_ses-1_run-1: mean_fd=0.1516, kept=410.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29059_ses-1_run-1: mean_fd=0.0820, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29060_ses-1_run-1: mean_fd=0.1763, kept=378.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29064_ses-1_run-1: mean_fd>0.3; mean_fd=0.8462, kept=182.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29065_ses-1_run-1: mean_fd>0.3; mean_fd=0.9557, kept=118.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29066_ses-1_run-1: mean_fd=0.1063, kept=420.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29067_ses-1_run-1: mean_fd>0.3; mean_fd=0.8726, kept=206.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29068_ses-1_run-1: mean_fd>0.3; mean_fd=0.8562, kept=268.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29069_ses-1_run-1: mean_fd>0.3; mean_fd=0.9785, kept=168.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29071_ses-1_run-1: mean_fd=0.1392, kept=410.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29073_ses-1_run-1: mean_fd=0.1206, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29074_ses-1_run-1: mean_fd=0.0862, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29076_ses-1_run-1: mean_fd=0.0944, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29077_ses-1_run-1: mean_fd=0.1465, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29078_ses-1_run-1: mean_fd=0.1193, kept=402.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29079_ses-1_run-1: mean_fd>0.3; mean_fd=0.7873, kept=120.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29080_ses-1_run-1: mean_fd=0.1282, kept=410.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29081_ses-1_run-1: mean_fd=0.2389, kept=372.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29082_ses-1_run-1: mean_fd=0.1715, kept=406.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29084_ses-1_run-1: mean_fd=0.1417, kept=412.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29086_ses-1_run-1: mean_fd=0.2193, kept=406.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29087_ses-1_run-1: mean_fd=0.1506, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29088_ses-1_run-1: mean_fd=0.2789, kept=366.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29089_ses-1_run-1: mean_fd=0.2785, kept=364.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29090_ses-1_run-1: mean_fd=0.0643, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29091_ses-1_run-1: mean_fd=0.2896, kept=346.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29092_ses-1_run-1: mean_fd=0.0804, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29093_ses-1_run-1: mean_fd=0.1614, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-ETH_1_sub-29094_ses-1_run-1: mean_fd=0.1251, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29096_ses-1_run-1: mean_fd=0.2688, kept=380.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29097_ses-1_run-1: mean_fd>0.3; mean_fd=0.9866, kept=152.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29098_ses-1_run-1: mean_fd>0.3; mean_fd=0.6585, kept=116.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29099_ses-1_run-1: mean_fd=0.2606, kept=386.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29100_ses-1_run-1: mean_fd>0.3; mean_fd=0.7548, kept=220.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29101_ses-1_run-1: mean_fd>0.3; mean_fd=0.4074, kept=300.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29102_ses-1_run-1: mean_fd>0.3; mean_fd=2.5024, kept=82.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29103_ses-1_run-1: mean_fd=0.2635, kept=350.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29104_ses-1_run-1: mean_fd=0.1240, kept=318.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29105_ses-1_run-1: mean_fd=0.1292, kept=416.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29106_ses-1_run-1: mean_fd>0.3; mean_fd=0.4617, kept=320.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29107_ses-1_run-1: mean_fd=0.1033, kept=416.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29108_ses-1_run-1: mean_fd>0.3; mean_fd=0.4079, kept=264.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29109_ses-1_run-1: mean_fd=0.2310, kept=378.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29110_ses-1_run-1: mean_fd>0.3; mean_fd=1.0836, kept=110.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29111_ses-1_run-1: mean_fd=0.1469, kept=398.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29112_ses-1_run-1: mean_fd=0.0947, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29113_ses-1_run-1: mean_fd=0.2213, kept=394.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29114_ses-1_run-1: mean_fd=0.1533, kept=402.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29115_ses-1_run-1: mean_fd=0.1217, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29116_ses-1_run-1: mean_fd=0.1868, kept=392.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29117_ses-1_run-1: mean_fd=0.1365, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29118_ses-1_run-1: mean_fd=0.1905, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29119_ses-1_run-1: mean_fd=0.1118, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29120_ses-1_run-1: mean_fd=0.1158, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29121_ses-1_run-1: mean_fd=0.1601, kept=414.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29122_ses-1_run-1: mean_fd=0.1457, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29123_ses-1_run-1: mean_fd=0.2005, kept=378.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29124_ses-1_run-1: mean_fd=0.0886, kept=418.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29125_ses-1_run-1: mean_fd>0.3; mean_fd=0.3304, kept=282.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29126_ses-1_run-1: mean_fd>0.3; mean_fd=0.7827, kept=142.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29127_ses-1_run-1: mean_fd=0.0985, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29128_ses-1_run-1: mean_fd=0.1171, kept=418.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29129_ses-1_run-1: mean_fd=0.1979, kept=378.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29130_ses-1_run-1: mean_fd=0.1216, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29131_ses-1_run-1: mean_fd=0.1546, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29132_ses-1_run-1: mean_fd=0.1502, kept=416.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29133_ses-1_run-1: mean_fd=0.1883, kept=400.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29134_ses-1_run-1: mean_fd>0.3; mean_fd=0.7764, kept=146.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29135_ses-1_run-1: mean_fd=0.1004, kept=420.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29136_ses-1_run-1: mean_fd=0.2389, kept=358.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-TCD_1_sub-29137_ses-1_run-1: mean_fd>0.3; mean_fd=0.4835, kept=304.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29150_ses-1_run-1: mean_fd=0.1410, kept=344.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29151_ses-1_run-1: mean_fd=0.2631, kept=296.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29152_ses-1_run-1: mean_fd=0.1395, kept=326.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29153_ses-1_run-1: mean_fd=0.1640, kept=318.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29154_ses-1_run-1: mean_fd=0.1143, kept=352.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29155_ses-1_run-1: mean_fd=0.1035, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29157_ses-1_run-1: mean_fd=0.0718, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29158_ses-1_run-1: mean_fd=0.2594, kept=306.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29161_ses-1_run-1: mean_fd=0.2471, kept=312.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29163_ses-1_run-1: mean_fd=0.1312, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29166_ses-1_run-1: mean_fd=0.1539, kept=310.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29169_ses-1_run-1: mean_fd=0.1158, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29172_ses-1_run-1: mean_fd=0.0751, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29173_ses-1_run-1: mean_fd=0.2047, kept=326.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_2_sub-29176_ses-1_run-1: mean_fd=0.2474, kept=292.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29180_ses-1_run-1: mean_fd>0.3; mean_fd=0.4415, kept=208.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29181_ses-1_run-1: mean_fd=0.1539, kept=342.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29183_ses-1_run-1: mean_fd=0.2581, kept=322.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29184_ses-1_run-1: mean_fd=0.1338, kept=346.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29192_ses-1_run-1: mean_fd=0.1334, kept=344.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29195_ses-1_run-1: mean_fd=0.1322, kept=352.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29197_ses-1_run-1: mean_fd=0.0837, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29203_ses-1_run-1: mean_fd=0.0593, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29207_ses-1_run-1: mean_fd=0.2380, kept=334.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29209_ses-1_run-1: mean_fd=0.1461, kept=350.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29210_ses-1_run-1: mean_fd=0.1714, kept=326.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29213_ses-1_run-1: mean_fd=0.2331, kept=336.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29221_ses-1_run-1: mean_fd=0.1222, kept=338.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29224_ses-1_run-1: mean_fd=0.0779, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29228_ses-1_run-1: mean_fd=0.1913, kept=328.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29229_ses-1_run-1: mean_fd=0.2320, kept=306.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29232_ses-1_run-1: mean_fd=0.1480, kept=338.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29236_ses-1_run-1: mean_fd=0.0769, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29237_ses-1_run-1: mean_fd=0.1192, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29246_ses-1_run-1: mean_fd=0.0814, kept=356.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29247_ses-1_run-1: mean_fd=0.0965, kept=354.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-NYU_1_sub-29250_ses-1_run-1: mean_fd=0.1180, kept=348.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29273_ses-1_run-1: mean_fd=0.2061, kept=302.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29275_ses-1_run-1: mean_fd=0.0857, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29276_ses-1_run-1: mean_fd=0.2202, kept=272.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29277_ses-1_run-1: mean_fd=0.1058, kept=320.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29278_ses-1_run-1: mean_fd>0.3; mean_fd=0.3722, kept=250.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29279_ses-1_run-1: mean_fd>0.3; mean_fd=0.5170, kept=152.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29280_ses-1_run-1: mean_fd>0.3; mean_fd=0.3837, kept=237.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29281_ses-1_run-1: mean_fd=0.2083, kept=310.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29282_ses-1_run-1: mean_fd>0.3; mean_fd=0.3467, kept=235.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29283_ses-1_run-1: mean_fd=0.1283, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29284_ses-1_run-1: mean_fd=0.2363, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29285_ses-1_run-1: mean_fd=0.2532, kept=260.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29287_ses-1_run-1: mean_fd=0.2146, kept=340.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29288_ses-1_run-1: mean_fd=0.2911, kept=275.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29289_ses-1_run-1: mean_fd=0.1151, kept=387.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29290_ses-1_run-1: mean_fd>0.3; mean_fd=0.3269, kept=320.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29291_ses-1_run-1: mean_fd=0.2819, kept=340.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29292_ses-1_run-1: mean_fd=0.2697, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29293_ses-1_run-1: mean_fd=0.2058, kept=377.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29294_ses-1_run-1: mean_fd>0.3; mean_fd=0.3511, kept=247.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29295_ses-1_run-1: mean_fd>0.3; mean_fd=0.3102, kept=260.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29296_ses-1_run-1: mean_fd=0.1735, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29297_ses-1_run-1: mean_fd=0.0788, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29298_ses-1_run-1: mean_fd=0.0865, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29299_ses-1_run-1: mean_fd=0.2790, kept=255.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29300_ses-1_run-1: mean_fd=0.2762, kept=272.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29301_ses-1_run-1: mean_fd=0.0855, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29302_ses-1_run-1: mean_fd=0.1199, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29304_ses-1_run-1: mean_fd=0.0749, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29305_ses-1_run-1: mean_fd=0.1538, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29306_ses-1_run-1: mean_fd=0.1272, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29307_ses-1_run-1: mean_fd=0.2954, kept=247.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29308_ses-1_run-1: mean_fd=0.1087, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29309_ses-1_run-1: mean_fd=0.1205, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29310_ses-1_run-1: mean_fd=0.2865, kept=262.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29311_ses-1_run-1: mean_fd>0.3; mean_fd=0.3167, kept=260.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29312_ses-1_run-1: mean_fd=0.0782, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29313_ses-1_run-1: mean_fd=0.2325, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29314_ses-1_run-1: mean_fd=0.1508, kept=305.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29315_ses-1_run-1: mean_fd=0.0864, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29316_ses-1_run-1: mean_fd=0.2276, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29317_ses-1_run-1: mean_fd=0.0656, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29318_ses-1_run-1: mean_fd=0.2929, kept=242.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29319_ses-1_run-1: mean_fd=0.2830, kept=265.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29320_ses-1_run-1: mean_fd=0.1207, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29321_ses-1_run-1: mean_fd=0.1670, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29322_ses-1_run-1: mean_fd=0.2253, kept=305.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29324_ses-1_run-1: mean_fd=0.0668, kept=317.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29325_ses-1_run-1: mean_fd=0.0894, kept=320.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29326_ses-1_run-1: mean_fd=0.2112, kept=285.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29327_ses-1_run-1: mean_fd=0.1990, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29328_ses-1_run-1: mean_fd=0.2034, kept=307.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29329_ses-1_run-1: mean_fd=0.0862, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29330_ses-1_run-1: mean_fd=0.1251, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29332_ses-1_run-1: mean_fd=0.1407, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29333_ses-1_run-1: mean_fd=0.1374, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29334_ses-1_run-1: mean_fd=0.1104, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29336_ses-1_run-1: mean_fd=0.0874, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29337_ses-1_run-1: mean_fd=0.1299, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29338_ses-1_run-1: mean_fd=0.2642, kept=335.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29339_ses-1_run-1: mean_fd=0.1442, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29340_ses-1_run-1: mean_fd=0.1559, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29341_ses-1_run-1: mean_fd=0.1044, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29343_ses-1_run-1: mean_fd=0.1386, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29344_ses-1_run-1: mean_fd=0.2515, kept=347.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29345_ses-1_run-1: mean_fd=0.2085, kept=365.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29347_ses-1_run-1: mean_fd=0.2261, kept=345.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29348_ses-1_run-1: mean_fd>0.3; mean_fd=0.3968, kept=255.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29349_ses-1_run-1: mean_fd=0.1630, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29350_ses-1_run-1: mean_fd=0.0960, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29351_ses-1_run-1: mean_fd=0.1973, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29352_ses-1_run-1: mean_fd=0.1744, kept=362.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29354_ses-1_run-1: mean_fd=0.1796, kept=340.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29355_ses-1_run-1: mean_fd=0.0908, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29356_ses-1_run-1: mean_fd=0.2833, kept=342.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29357_ses-1_run-1: mean_fd=0.1068, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29358_ses-1_run-1: mean_fd=0.0860, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29359_ses-1_run-1: mean_fd=0.0473, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29360_ses-1_run-1: mean_fd>0.3; mean_fd=0.3194, kept=267.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29361_ses-1_run-1: mean_fd>0.3; mean_fd=0.3162, kept=310.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29362_ses-1_run-1: mean_fd=0.2022, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29363_ses-1_run-1: mean_fd=0.2871, kept=290.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29364_ses-1_run-1: mean_fd=0.1459, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29365_ses-1_run-1: mean_fd=0.1185, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29366_ses-1_run-1: mean_fd=0.1213, kept=387.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29367_ses-1_run-1: mean_fd>0.3; mean_fd=0.4211, kept=217.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29368_ses-1_run-1: mean_fd=0.1414, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29370_ses-1_run-1: mean_fd=0.0746, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29371_ses-1_run-1: mean_fd=0.0944, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29372_ses-1_run-1: mean_fd>0.3; mean_fd=0.3295, kept=267.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29373_ses-1_run-1: mean_fd=0.1237, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29375_ses-1_run-1: mean_fd=0.1158, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29376_ses-1_run-1: mean_fd=0.2695, kept=305.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29377_ses-1_run-1: mean_fd>0.3; mean_fd=0.3798, kept=220.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29378_ses-1_run-1: mean_fd=0.1837, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29379_ses-1_run-1: mean_fd=0.1554, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29380_ses-1_run-1: mean_fd=0.1585, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29381_ses-1_run-1: mean_fd=0.2790, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29382_ses-1_run-1: mean_fd=0.1703, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29383_ses-1_run-1: mean_fd=0.1348, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29384_ses-1_run-1: mean_fd=0.1979, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29385_ses-1_run-1: mean_fd=0.1590, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29386_ses-1_run-1: mean_fd=0.1576, kept=340.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29387_ses-1_run-1: mean_fd=0.2970, kept=327.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29389_ses-1_run-1: mean_fd=0.2037, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29390_ses-1_run-1: mean_fd=0.2386, kept=362.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29391_ses-1_run-1: mean_fd>0.3; mean_fd=0.8480, kept=102.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29392_ses-1_run-1: mean_fd=0.1675, kept=362.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29393_ses-1_run-1: mean_fd=0.1117, kept=377.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29394_ses-1_run-1: mean_fd>0.3; mean_fd=0.3241, kept=252.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29396_ses-1_run-1: mean_fd=0.1505, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29397_ses-1_run-1: mean_fd=0.1094, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29399_ses-1_run-1: mean_fd=0.1373, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29400_ses-1_run-1: mean_fd=0.1228, kept=372.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29401_ses-1_run-1: mean_fd>0.3; mean_fd=0.3880, kept=240.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29403_ses-1_run-1: mean_fd=0.2091, kept=362.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29404_ses-1_run-1: mean_fd=0.2362, kept=342.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29405_ses-1_run-1: mean_fd=0.0819, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29407_ses-1_run-1: mean_fd>0.3; mean_fd=0.3959, kept=327.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29408_ses-1_run-1: mean_fd=0.2791, kept=357.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29409_ses-1_run-1: mean_fd>0.3; mean_fd=0.9414, kept=95.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29410_ses-1_run-1: mean_fd>0.3; mean_fd=0.7368, kept=92.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29411_ses-1_run-1: mean_fd>0.3; mean_fd=0.3693, kept=257.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29412_ses-1_run-1: mean_fd>0.3; mean_fd=0.4741, kept=252.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29413_ses-1_run-1: mean_fd>0.3; mean_fd=0.7850, kept=90.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29414_ses-1_run-1: mean_fd=0.2874, kept=287.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29415_ses-1_run-1: mean_fd=0.1517, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29416_ses-1_run-1: mean_fd=0.1148, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29417_ses-1_run-1: mean_fd>0.3; mean_fd=0.8774, kept=202.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29418_ses-1_run-1: mean_fd=0.2338, kept=337.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29419_ses-1_run-1: mean_fd=0.1578, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29420_ses-1_run-1: mean_fd=0.1892, kept=375.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29421_ses-1_run-1: mean_fd=0.1800, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29422_ses-1_run-1: mean_fd=0.1866, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29423_ses-1_run-1: mean_fd=0.1574, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29424_ses-1_run-1: mean_fd=0.2615, kept=347.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29425_ses-1_run-1: mean_fd=0.2405, kept=317.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29427_ses-1_run-1: mean_fd=0.2246, kept=352.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29428_ses-1_run-1: mean_fd>0.3; mean_fd=0.9045, kept=75.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29429_ses-1_run-1: mean_fd=0.1732, kept=355.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29430_ses-1_run-1: mean_fd=0.2350, kept=332.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29431_ses-1_run-1: mean_fd=0.2233, kept=362.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29432_ses-1_run-1: mean_fd=0.0596, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29434_ses-1_run-1: mean_fd=0.2440, kept=342.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29435_ses-1_run-1: mean_fd=0.1138, kept=380.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29436_ses-1_run-1: mean_fd=0.1848, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29437_ses-1_run-1: mean_fd=0.1280, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29438_ses-1_run-1: mean_fd=0.2420, kept=315.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29439_ses-1_run-1: mean_fd=0.2923, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29441_ses-1_run-1: mean_fd=0.1276, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29442_ses-1_run-1: mean_fd=0.0777, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29443_ses-1_run-1: mean_fd=0.0712, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29444_ses-1_run-1: mean_fd=0.2575, kept=332.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29445_ses-1_run-1: mean_fd=0.1432, kept=382.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29446_ses-1_run-1: mean_fd=0.1300, kept=385.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29447_ses-1_run-1: mean_fd>0.3; mean_fd=0.4212, kept=277.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29448_ses-1_run-1: mean_fd>0.3; mean_fd=0.5009, kept=237.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29449_ses-1_run-1: mean_fd=0.2868, kept=307.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29450_ses-1_run-1: mean_fd=0.2163, kept=377.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29451_ses-1_run-1: mean_fd=0.0699, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29453_ses-1_run-1: mean_fd=0.1110, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29454_ses-1_run-1: mean_fd=0.1234, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29455_ses-1_run-1: mean_fd=0.0655, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29456_ses-1_run-1: mean_fd=0.1970, kept=352.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29457_ses-1_run-1: mean_fd>0.3; mean_fd=0.3387, kept=265.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29458_ses-1_run-1: mean_fd=0.2165, kept=355.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29459_ses-1_run-1: mean_fd=0.0718, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29460_ses-1_run-1: mean_fd=0.0674, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29461_ses-1_run-1: mean_fd>0.3; mean_fd=0.5795, kept=202.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29462_ses-1_run-1: mean_fd=0.1796, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29463_ses-1_run-1: mean_fd=0.1043, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29464_ses-1_run-1: mean_fd=0.2146, kept=350.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29465_ses-1_run-1: mean_fd=0.0764, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29466_ses-1_run-1: mean_fd=0.1953, kept=365.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29467_ses-1_run-1: mean_fd=0.2521, kept=330.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29468_ses-1_run-1: mean_fd=0.1486, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29469_ses-1_run-1: mean_fd=0.2139, kept=330.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29470_ses-1_run-1: mean_fd=0.0745, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29471_ses-1_run-1: mean_fd=0.1041, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29472_ses-1_run-1: mean_fd=0.1154, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29473_ses-1_run-1: mean_fd=0.1601, kept=370.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29474_ses-1_run-1: mean_fd=0.1188, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29475_ses-1_run-1: mean_fd=0.0646, kept=390.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29476_ses-1_run-1: mean_fd>0.3; mean_fd=0.4175, kept=287.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29477_ses-1_run-1: mean_fd=0.2454, kept=357.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29478_ses-1_run-1: mean_fd=0.0670, kept=385.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29479_ses-1_run-1: mean_fd=0.1317, kept=377.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29480_ses-1_run-1: mean_fd>0.3; mean_fd=0.4286, kept=217.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29481_ses-1_run-1: mean_fd=0.1808, kept=357.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29482_ses-1_run-1: mean_fd=0.2698, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29483_ses-1_run-1: mean_fd=0.1566, kept=367.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29484_ses-1_run-1: mean_fd>0.3; mean_fd=0.5941, kept=197.5s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KKI_1_sub-29485_ses-1_run-1: mean_fd=0.0775, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-USM_1_sub-29504_ses-1_run-1: mean_fd=0.1971, kept=472.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29580_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0702, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29580_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0724, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29580_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0766, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29581_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0412, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29581_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0395, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29581_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0454, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29582_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0900, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29582_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0677, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29583_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0864, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29583_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0992, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29583_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0910, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29584_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1825, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29584_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0975, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29584_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.2565, kept=178.2s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29585_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0739, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29585_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0712, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29585_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0743, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29587_ses-1_run-1: mean_fd>0.3; mean_fd=0.3758, kept=137.7s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29587_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.2229, kept=210.6s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29587_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.2089, kept=216.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29588_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.2021, kept=216.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29588_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.2518, kept=197.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29588_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1058, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29589_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0660, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29589_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0704, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29590_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0464, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29590_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0518, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29590_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0560, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29591_ses-1_run-1: mean_fd>0.3; mean_fd=0.9970, kept=48.6s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29591_ses-1_run-2: mean_fd>0.3; mean_fd=0.3312, kept=148.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29591_ses-1_run-3: mean_fd>0.3; mean_fd=0.4793, kept=116.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29592_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0934, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29592_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1617, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29592_ses-1_run-3: mean_fd>0.3; mean_fd=0.5445, kept=140.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29593_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0697, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29593_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0830, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29593_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0983, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29594_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0728, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29594_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0731, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29594_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1028, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29595_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1292, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29595_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.2683, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29595_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1005, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29596_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0737, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29596_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0810, kept=218.7s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29596_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1156, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29596_ses-1_run-4: kept_time_sec<240.0; mean_fd=0.0921, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29597_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0765, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29597_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0805, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29597_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0592, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29598_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1081, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29598_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1002, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29598_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1062, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29600_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0850, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29600_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0780, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29600_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1037, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29601_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0920, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29601_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0820, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29601_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1475, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29602_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0638, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29602_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0752, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29602_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0783, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29603_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1082, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29603_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0873, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29603_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1030, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29604_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0574, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29604_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0706, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29604_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0852, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29605_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0680, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29605_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0745, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29605_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0610, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29606_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0888, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29606_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1097, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29607_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0583, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29607_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0641, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29607_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0622, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29608_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0620, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29608_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0675, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29608_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0591, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29609_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1784, kept=213.3s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29609_ses-1_run-2: mean_fd>0.3; mean_fd=0.4119, kept=189.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29610_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0701, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29610_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.2568, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29610_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1981, kept=202.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29611_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0719, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29611_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0703, kept=216.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29611_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0851, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29612_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0711, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29612_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0787, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29612_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1268, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29613_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1128, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29613_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0739, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29613_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1373, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29614_ses-1_run-1: mean_fd>0.3; mean_fd=0.3422, kept=186.3s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29614_ses-1_run-2: mean_fd>0.3; mean_fd=0.4981, kept=118.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29614_ses-1_run-3: mean_fd>0.3; mean_fd=0.9703, kept=35.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29618_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1644, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29618_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1969, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29618_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1627, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29619_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0540, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29619_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0496, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29619_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0940, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29620_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0931, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29620_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1235, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29620_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1074, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29621_ses-1_run-1: mean_fd>0.3; mean_fd=0.3459, kept=167.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29621_ses-1_run-2: mean_fd>0.3; mean_fd=0.3546, kept=140.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29621_ses-1_run-3: mean_fd>0.3; mean_fd=1.0777, kept=102.6s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29623_ses-1_run-1: mean_fd>0.3; mean_fd=0.5688, kept=86.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29623_ses-1_run-2: mean_fd>0.3; mean_fd=0.7066, kept=0.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29623_ses-1_run-3: mean_fd>0.3; mean_fd=2.7563, kept=0.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29624_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0861, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29624_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0700, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29624_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0756, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29625_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0709, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29625_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1121, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29625_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1402, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29627_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0629, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29627_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0553, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29627_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0608, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29628_ses-1_run-1: mean_fd>0.3; mean_fd=1.0593, kept=145.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29628_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1977, kept=218.7s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29628_ses-1_run-3: mean_fd>0.3; mean_fd=0.7200, kept=178.2s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29629_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1992, kept=199.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29629_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.2575, kept=183.6s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29629_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1393, kept=213.3s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29631_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.0580, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29631_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.0550, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29631_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.0447, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29632_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1280, kept=229.5s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29632_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1900, kept=210.6s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29632_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.2665, kept=199.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29633_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1556, kept=224.1s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29633_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1286, kept=226.8s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29633_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.2971, kept=159.3s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29634_ses-1_run-1: kept_time_sec<240.0; mean_fd=0.1706, kept=213.3s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29634_ses-1_run-2: kept_time_sec<240.0; mean_fd=0.1744, kept=221.4s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-IP_1_sub-29634_ses-1_run-3: kept_time_sec<240.0; mean_fd=0.1704, kept=210.6s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29656_ses-1_run-1: mean_fd=0.1396, kept=392.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29657_ses-1_run-1: mean_fd=0.2172, kept=367.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29658_ses-1_run-1: mean_fd=0.1264, kept=387.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29659_ses-1_run-1: mean_fd=0.0654, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29660_ses-1_run-1: mean_fd=0.0599, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29661_ses-1_run-1: mean_fd=0.1076, kept=400.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29662_ses-1_run-1: mean_fd=0.1438, kept=402.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29664_ses-1_run-1: mean_fd=0.1042, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29665_ses-1_run-1: mean_fd=0.0775, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29666_ses-1_run-1: mean_fd=0.0725, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29667_ses-1_run-1: mean_fd=0.1120, kept=400.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29668_ses-1_run-1: mean_fd=0.1023, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29669_ses-1_run-1: mean_fd=0.0533, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29670_ses-1_run-1: mean_fd=0.1024, kept=405.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29671_ses-1_run-1: mean_fd>0.3; mean_fd=0.3138, kept=315.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29675_ses-1_run-1: mean_fd=0.0866, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29676_ses-1_run-1: mean_fd=0.1001, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29677_ses-1_run-1: mean_fd=0.1177, kept=402.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29678_ses-1_run-1: mean_fd=0.0803, kept=392.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29679_ses-1_run-1: mean_fd=0.1762, kept=405.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29728_ses-1_run-1: mean_fd>0.3; mean_fd=0.8568, kept=0.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29730_ses-1_run-1: mean_fd=0.0884, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29732_ses-1_run-1: mean_fd=0.2054, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29734_ses-1_run-1: mean_fd=0.1697, kept=333.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29736_ses-1_run-1: mean_fd=0.2944, kept=270.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29737_ses-1_run-1: mean_fd=0.1227, kept=357.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29740_ses-1_run-1: mean_fd=0.1308, kept=351.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29743_ses-1_run-1: mean_fd>0.3; mean_fd=0.5066, kept=126.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29746_ses-1_run-1: mean_fd=0.0705, kept=360.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29749_ses-1_run-1: mean_fd>0.3; mean_fd=0.3120, kept=282.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29750_ses-1_run-1: mean_fd=0.1159, kept=348.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29751_ses-1_run-1: mean_fd=0.2045, kept=303.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29755_ses-1_run-1: mean_fd=0.2872, kept=252.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-UCLA_1_sub-29758_ses-1_run-1: mean_fd>0.3; mean_fd=0.4907, kept=288.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29794_ses-1_run-1: mean_fd=0.1023, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29796_ses-1_run-1: mean_fd=0.0679, kept=405.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29797_ses-1_run-1: mean_fd=0.1148, kept=390.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-KUL_3_sub-29798_ses-1_run-1: mean_fd=0.1938, kept=372.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29864_ses-1_run-1: mean_fd=0.1716, kept=308.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29865_ses-1_run-1: mean_fd=0.1594, kept=310.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29867_ses-1_run-1: mean_fd=0.0686, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29868_ses-1_run-1: mean_fd=0.1957, kept=278.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29869_ses-1_run-1: mean_fd=0.1031, kept=314.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29870_ses-1_run-1: mean_fd=0.1245, kept=316.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29871_ses-1_run-1: mean_fd>0.3; mean_fd=0.4371, kept=162.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29874_ses-1_run-1: mean_fd=0.1398, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29876_ses-1_run-1: mean_fd=0.1090, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29877_ses-1_run-1: mean_fd=0.0975, kept=318.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29878_ses-1_run-1: mean_fd>0.3; mean_fd=1.0306, kept=68.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29879_ses-1_run-1: mean_fd=0.0529, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29881_ses-1_run-1: mean_fd=0.1637, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29882_ses-1_run-1: mean_fd=0.2417, kept=306.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29883_ses-1_run-1: mean_fd>0.3; mean_fd=1.5874, kept=140.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29884_ses-1_run-1: mean_fd>0.3; mean_fd=0.4258, kept=210.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29885_ses-1_run-1: mean_fd=0.1664, kept=304.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29886_ses-1_run-1: mean_fd>0.3; mean_fd=0.6640, kept=170.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29887_ses-1_run-1: mean_fd>0.3; mean_fd=50.9447, kept=26.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29888_ses-1_run-1: mean_fd>0.3; mean_fd=27.8386, kept=118.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29889_ses-1_run-1: mean_fd>0.3; mean_fd=0.5870, kept=208.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29892_ses-1_run-1: mean_fd=0.2110, kept=288.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29896_ses-1_run-1: mean_fd=0.1751, kept=318.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29897_ses-1_run-1: mean_fd>0.3; mean_fd=0.7083, kept=168.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29898_ses-1_run-1: mean_fd>0.3; mean_fd=0.4102, kept=248.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29899_ses-1_run-1: mean_fd>0.3; mean_fd=0.3050, kept=282.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29900_ses-1_run-1: mean_fd>0.3; mean_fd=0.5926, kept=168.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29902_ses-1_run-1: mean_fd>0.3; mean_fd=0.4976, kept=184.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29903_ses-1_run-1: mean_fd>0.3; mean_fd=0.8184, kept=166.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29904_ses-1_run-1: mean_fd=0.1134, kept=310.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29905_ses-1_run-1: mean_fd=0.0751, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29906_ses-1_run-1: mean_fd=0.0697, kept=316.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29907_ses-1_run-1: mean_fd=0.0995, kept=314.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29908_ses-1_run-1: mean_fd=0.1199, kept=310.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29910_ses-1_run-1: mean_fd>0.3; mean_fd=0.8210, kept=204.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29911_ses-1_run-1: mean_fd=0.1293, kept=294.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29912_ses-1_run-1: mean_fd=0.0965, kept=316.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29913_ses-1_run-1: mean_fd>0.3; mean_fd=0.3290, kept=250.0s
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29914_ses-1_run-1: mean_fd>0.3; mean_fd=1.0414, kept=78.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-EMC_1_sub-29916_ses-1_run-1: mean_fd=0.1672, kept=316.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-29999_ses-1_run-1: mean_fd>0.3; mean_fd=0.6333, kept=172.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30000_ses-1_run-1: mean_fd=0.1204, kept=292.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30001_ses-1_run-1: mean_fd=0.1036, kept=302.0s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30002_ses-1_run-1: mean_fd>0.3; mean_fd=0.4594, kept=208.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30003_ses-1_run-1: mean_fd=0.2781, kept=264.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30004_ses-1_run-1: mean_fd=0.1142, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30005_ses-1_run-1: mean_fd=0.1898, kept=282.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30006_ses-1_run-1: mean_fd=0.1744, kept=292.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30007_ses-1_run-1: mean_fd=0.1692, kept=278.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30008_ses-1_run-1: mean_fd=0.0727, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30010_ses-1_run-1: mean_fd=0.0576, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30011_ses-1_run-1: mean_fd=0.1610, kept=284.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30012_ses-1_run-1: mean_fd=0.0780, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30013_ses-1_run-1: mean_fd=0.1618, kept=294.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30015_ses-1_run-1: mean_fd=0.1775, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30017_ses-1_run-1: mean_fd=0.1266, kept=296.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30018_ses-1_run-1: mean_fd=0.1215, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30019_ses-1_run-1: mean_fd=0.0694, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30021_ses-1_run-1: mean_fd=0.0928, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30022_ses-1_run-1: mean_fd=0.2934, kept=260.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30023_ses-1_run-1: mean_fd=0.2705, kept=266.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30024_ses-1_run-1: mean_fd=0.0587, kept=302.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30026_ses-1_run-1: mean_fd=0.1311, kept=298.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30027_ses-1_run-1: mean_fd=0.2921, kept=260.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-UCD_1_sub-30028_ses-1_run-1: mean_fd=0.0734, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-BNI_1_sub-30146_ses-1_run-1: mean_fd=0.1175, kept=360.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30154_ses-1_run-1: mean_fd=0.0465, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30154_ses-1_run-2: mean_fd=0.0557, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30154_ses-1_run-3: mean_fd=0.0526, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30156_ses-1_run-1: mean_fd=0.1211, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30156_ses-1_run-2: mean_fd=0.2231, kept=257.5s, rois=200, confounds=32
+EXCLUDE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30156_ses-1_run-3: mean_fd>0.3; mean_fd=0.4399, kept=250.0s
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30158_ses-1_run-1: mean_fd=0.0820, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30158_ses-1_run-2: mean_fd=0.1213, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30158_ses-1_run-3: mean_fd=0.1103, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30160_ses-1_run-1: mean_fd=0.0588, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30160_ses-1_run-2: mean_fd=0.0714, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30160_ses-1_run-3: mean_fd=0.1563, kept=282.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30161_ses-1_run-1: mean_fd=0.0478, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30161_ses-1_run-2: mean_fd=0.0649, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30161_ses-1_run-3: mean_fd=0.0785, kept=297.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30163_ses-1_run-1: mean_fd=0.1149, kept=295.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30163_ses-1_run-2: mean_fd=0.1297, kept=292.5s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30163_ses-1_run-3: mean_fd=0.2558, kept=245.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30164_ses-1_run-1: mean_fd=0.0653, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30164_ses-1_run-2: mean_fd=0.0635, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30164_ses-1_run-3: mean_fd=0.0569, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30165_ses-1_run-1: mean_fd=0.1537, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30165_ses-1_run-2: mean_fd=0.1292, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30165_ses-1_run-3: mean_fd=0.1461, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30167_ses-1_run-1: mean_fd=0.0694, kept=300.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30167_ses-1_run-2: mean_fd=0.1698, kept=280.0s, rois=200, confounds=32
+WROTE [ABIDE2 fd<0.3] ABIDEII-OHSU_1_sub-30167_ses-1_run-3: mean_fd=0.0941, kept=300.0s, rois=200, confounds=32
