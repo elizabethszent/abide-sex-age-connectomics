@@ -3,46 +3,72 @@ import glob
 import pandas as pd
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
+ROOT = Path(__file__).resolve().parents[3]
 
-# --- where your ABIDE1 CC200 connectomes live (.npy) ---
-CONN_DIR = ROOT / "connectomes" / "CC200" / "ABIDE1" / "FDpersubject"
+CONN_DIR = ROOT / "results" / "connectomes" / "ABIDE12" / "ABIDE12" / "fd_0p3" / "matrices"
 
-# --- where your phenotype CSVs live ---
-PHENO_DIR = ROOT / "phenotypes" / "ABIDE1"
 
-# --- requested bins ---
+PHENO_DIR = ROOT / "phenotypes" 
+
 BINS   = [0, 10, 13, 18, 200]
 LABELS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
 
-# ABIDE conventions
 SEX_MAP = {1: "Male", 2: "Female"}
 DX_MAP = {1: "ASD", 2: "Control"}
 
-THRESHOLDS = ["0.2"]
+THRESHOLDS = ["0.3"]
+
+def read_csv_flexible(fp: Path) -> pd.DataFrame:
+    for enc in ["utf-8", "utf-8-sig", "cp1252", "latin1"]:
+        try:
+            return pd.read_csv(fp, encoding=enc)
+        except UnicodeDecodeError:
+            continue
+    raise UnicodeDecodeError(
+        "read_csv_flexible",
+        b"",
+        0,
+        1,
+        f"Could not decode {fp} with utf-8, utf-8-sig, cp1252, or latin1",
+    )
 
 
 def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
-    files = sorted(glob.glob(str(pheno_dir / "Phenotypic_*.csv")))
+    files = sorted(pheno_dir.rglob("*.csv"))
     if not files:
-        files = sorted(glob.glob(str(pheno_dir / "phenotypic_*.csv")))
-        if not files:
-            raise FileNotFoundError(f"No phenotypic_*.csv found in {pheno_dir}")
+        raise FileNotFoundError(f"No CSV files found in {pheno_dir}")
 
     dfs = []
+    need = {"SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"}
+
     for fp in files:
-        df = pd.read_csv(fp)
-        df.columns = [c.upper() for c in df.columns] 
-        
-        need = {"SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"}
-        if not need.issubset(df.columns):
-            print(f"[WARN] Skipping {Path(fp).name} (missing {need - set(df.columns)})")
+        name = fp.name.lower()
+
+        if "site_lookup" in name or "lookup" in name:
+            print(f"[INFO] Skipping helper file {fp.name}")
             continue
-            
+
+        try:
+            df = read_csv_flexible(fp)
+        except Exception as e:
+            print(f"[WARN] Could not read {fp.name}: {e}")
+            continue
+
+        df.columns = [c.upper().strip() for c in df.columns]
+
+        if df.columns.duplicated().any():
+            dupes = df.columns[df.columns.duplicated()].tolist()
+            print(f"[WARN] {fp.name} has duplicate columns after normalization: {dupes}")
+            df = df.loc[:, ~df.columns.duplicated()].copy()
+
+        if not need.issubset(df.columns):
+            print(f"[WARN] Skipping {fp.name} (missing {need - set(df.columns)})")
+            continue
+
         keep = ["SITE_ID", "SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"]
         keep = [c for c in keep if c in df.columns]
         df = df[keep].copy()
-        df["source_file"] = Path(fp).name
+        df["source_file"] = fp.name
         dfs.append(df)
 
     if not dfs:
@@ -50,22 +76,19 @@ def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
 
     ph = pd.concat(dfs, ignore_index=True)
 
-    # Normalize types and drop rows missing critical info
     ph["SUB_ID"] = pd.to_numeric(ph["SUB_ID"], errors="coerce")
     ph["SEX"] = pd.to_numeric(ph["SEX"], errors="coerce")
     ph["AGE_AT_SCAN"] = pd.to_numeric(ph["AGE_AT_SCAN"], errors="coerce")
     ph["DX_GROUP"] = pd.to_numeric(ph["DX_GROUP"], errors="coerce")
-    
+
     ph = ph.dropna(subset=["SUB_ID", "SEX", "AGE_AT_SCAN", "DX_GROUP"]).copy()
-    
+
     ph["SUB_ID"] = ph["SUB_ID"].astype(int)
     ph["SEX"] = ph["SEX"].astype(int)
     ph["DX_GROUP"] = ph["DX_GROUP"].astype(int)
 
-    # De-duplicate subjects across site files
     ph = ph.drop_duplicates(subset=["SUB_ID"], keep="first")
 
-    # Bin ages
     ph["age_group"] = pd.cut(
         ph["AGE_AT_SCAN"],
         bins=BINS,
@@ -74,7 +97,6 @@ def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
         include_lowest=True,
     )
 
-    # Label Sex and Diagnosis, then combine them
     ph["sex_name"] = ph["SEX"].map(SEX_MAP).fillna(ph["SEX"].astype(str))
     ph["dx_name"] = ph["DX_GROUP"].map(DX_MAP).fillna(ph["DX_GROUP"].astype(str))
     ph["group_label"] = ph["sex_name"] + "_" + ph["dx_name"]
@@ -84,7 +106,7 @@ def load_phenotypes(pheno_dir: Path) -> pd.DataFrame:
 
 def subject_ids_with_threshold(conn_dir: Path) -> set[int]:
     """Finds unique SUB_IDs from the .npy files."""
-    files = list(conn_dir.rglob("sub-*_task-rest_run-1.npy"))
+    files = list(conn_dir.rglob("*.npy"))
 
     ids = set()
     rx = re.compile(r"sub-(\d+)")
