@@ -1,0 +1,2 @@
+family,tier,scenario,sex,age_group,metric,module,dominant_yeo,is_main_module,is_secondary_module,n_ASD,n_CTL,mean_ASD,mean_CTL,median_ASD,median_CTL,note
+family_05_teen_male_pc_all,core,OVERALL_ageSexMatched_fd-0.3,male,teen_13_17,PC,7,DefaultMode,True,False,132,135,0.8418744188657428,0.838324144151421,0.8431656742211878,0.8396689786538253,core family

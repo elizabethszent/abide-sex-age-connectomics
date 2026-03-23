@@ -1,0 +1,3 @@
+family,tier,scenario,sex,age_group,metric,module,dominant_yeo,is_main_module,is_secondary_module,n_ASD,n_CTL,mean_ASD,mean_CTL,median_ASD,median_CTL,note
+family_02_adult_male_pc_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,PC_pos,4,Frontoparietal,True,False,140,156,0.8215431032905491,0.8186529957204659,0.8255180988053983,0.8201855838801515,"core family; module 4 is the main hit, module 7 is weaker"
+family_02_adult_male_pc_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,PC_pos,7,DefaultMode,False,True,140,156,0.802673923023465,0.8013933192201939,0.8131581590519072,0.8112158571599657,"core family; module 4 is the main hit, module 7 is weaker"

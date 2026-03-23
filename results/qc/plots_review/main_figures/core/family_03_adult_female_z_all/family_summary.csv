@@ -1,0 +1,2 @@
+family,tier,scenario,sex,age_group,metric,module,dominant_yeo,is_main_module,is_secondary_module,n_ASD,n_CTL,mean_ASD,mean_CTL,median_ASD,median_CTL,note
+family_03_adult_female_z_all,core,OVERALL_ageSexMatched_fd-0.3,female,adult_18_plus,Z,1,Somatomotor,True,False,15,23,-0.010366425012449576,0.20716616859093567,-0.0230533998227509,0.2239973636313087,core family

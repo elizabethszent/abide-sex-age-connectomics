@@ -1,0 +1,4 @@
+family,tier,scenario,sex,age_group,metric,module,dominant_yeo,is_main_module,is_secondary_module,n_ASD,n_CTL,mean_ASD,mean_CTL,median_ASD,median_CTL,note
+family_06_child_male_pc_all,secondary,OVERALL_ageSexMatched_fd-0.3,male,child_0_9,PC,6,Visual,True,False,84,88,0.8478786610090429,0.8459452830199293,0.8482348889302311,0.8468878602253191,secondary family; interesting but less stable across models
+family_06_child_male_pc_all,secondary,OVERALL_ageSexMatched_fd-0.3,male,child_0_9,PC,7,DefaultMode,True,False,84,88,0.8440421894586783,0.8425661678054728,0.8451801635301,0.8442722215396534,secondary family; interesting but less stable across models
+family_06_child_male_pc_all,secondary,OVERALL_ageSexMatched_fd-0.3,male,child_0_9,PC,8,DorsalAttention,True,False,84,88,0.8482474790254321,0.8475376346931331,0.8482479130258294,0.8478852906180783,secondary family; interesting but less stable across models

@@ -1,0 +1,6 @@
+#!/work/ioannou_lab/elizabeth.szentmiklo/abide-sex-age-connectomics/.venv_clean/bin/python
+import sys
+from fontTools.subset import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

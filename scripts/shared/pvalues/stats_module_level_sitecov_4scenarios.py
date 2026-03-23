@@ -20,7 +20,6 @@ OUT_DIR.mkdir(exist_ok=True, parents=True)
 
 SEXES = ["female", "male"]
 AGE_GROUPS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
-N_MOD = 7
 
 METRIC_ALIASES = {
     "PC": ["PC", "pc"],
@@ -64,6 +63,11 @@ def resolve_metric_column(df: pd.DataFrame, aliases: list[str]) -> str | None:
     return None
 
 
+def get_modules_present(df: pd.DataFrame) -> list[int]:
+    mods = pd.to_numeric(df["module"], errors="coerce").dropna().astype(int).unique().tolist()
+    return sorted(mods)
+
+
 def joint_term_pvalue(model, prefix: str) -> float:
     pnames = list(model.params.index)
     idx = [i for i, name in enumerate(pnames) if name.startswith(prefix)]
@@ -80,7 +84,12 @@ def joint_term_pvalue(model, prefix: str) -> float:
         return np.nan
 
 
-def build_subject_level_table(subdf: pd.DataFrame, metric_name: str, colname: str) -> pd.DataFrame:
+def build_subject_level_table(
+    subdf: pd.DataFrame,
+    metric_name: str,
+    colname: str,
+    modules_present: list[int],
+) -> pd.DataFrame:
     group_cols = ["SUB_ID", "DX_GROUP", "AGE_AT_SCAN", "SITE_ID"]
 
     wide = (
@@ -89,11 +98,11 @@ def build_subject_level_table(subdf: pd.DataFrame, metric_name: str, colname: st
         .unstack("module")
     )
 
-    for m in range(1, N_MOD + 1):
+    for m in modules_present:
         if m not in wide.columns:
             wide[m] = np.nan
 
-    wide = wide[[m for m in range(1, N_MOD + 1)]]
+    wide = wide[modules_present]
     wide.columns = [f"{metric_name}_M{int(m)}" for m in wide.columns]
     wide = wide.reset_index()
 
@@ -186,7 +195,7 @@ def fit_one_model(tmp: pd.DataFrame, col: str, include_iq: bool, include_rh: boo
     return beta, p_dx, p_site, p_iq, p_right_handed, note, n_model, n_model_asd, n_model_ctl
 
 
-def run_one_group(df: pd.DataFrame, scenario: str, sex: str, age_group: str):
+def run_one_group(df: pd.DataFrame, scenario: str, sex: str, age_group: str, modules_present: list[int]):
     subdf = df[(df["sex_label"] == sex) & (df["AGE_GROUP"] == age_group)].copy()
     if subdf.empty:
         print(f"[SKIP] {scenario} | {sex} | {age_group}: no rows")
@@ -217,7 +226,7 @@ def run_one_group(df: pd.DataFrame, scenario: str, sex: str, age_group: str):
             print(f"  [WARN] missing column for {metric_name}, skipping")
             continue
 
-        subj_df = build_subject_level_table(subdf, metric_name, colname)
+        subj_df = build_subject_level_table(subdf, metric_name, colname, modules_present)
         wide_tables[metric_name] = subj_df
         used_metrics.append(metric_name)
 
@@ -230,7 +239,7 @@ def run_one_group(df: pd.DataFrame, scenario: str, sex: str, age_group: str):
     for metric_name in used_metrics:
         subj_df = wide_tables[metric_name]
 
-        for m in range(1, N_MOD + 1):
+        for m in modules_present:
             col = f"{metric_name}_M{m}"
             if col not in subj_df.columns:
                 continue
@@ -242,7 +251,6 @@ def run_one_group(df: pd.DataFrame, scenario: str, sex: str, age_group: str):
                 base_cols.append("RIGHT_HANDED")
 
             tmp = subj_df[base_cols].copy()
-
             tmp_basic = tmp.dropna(subset=[col, "DX_GROUP", "AGE_AT_SCAN", "SITE_ID"]).copy()
 
             n_asd = int((tmp_basic["DX_GROUP"] == 1).sum())
@@ -369,9 +377,12 @@ def main():
 
         df["AGE_GROUP"] = df["AGE_GROUP"].astype(str).str.strip()
 
+        modules_present = get_modules_present(df)
+        print(f"\n[INFO] {scenario}: modules present = {modules_present}")
+
         for sex in SEXES:
             for age_group in AGE_GROUPS:
-                run_one_group(df, scenario, sex, age_group)
+                run_one_group(df, scenario, sex, age_group, modules_present)
 
     print("\n[DONE] nested module stats rebuilt.")
 

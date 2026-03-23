@@ -1,0 +1,2 @@
+family,tier,scenario,sex,age_group,metric,module,dominant_yeo,is_main_module,is_secondary_module,n_ASD,n_CTL,mean_ASD,mean_CTL,median_ASD,median_CTL,note
+family_08_child_male_strength_pos,secondary,OVERALL_ageSexMatched_fd-0.3,male,child_0_9,Strength_pos,2,Visual,True,False,84,88,38.65376406615302,39.96953615977825,37.35148316557752,37.13337860922911,secondary family; only one model variant currently

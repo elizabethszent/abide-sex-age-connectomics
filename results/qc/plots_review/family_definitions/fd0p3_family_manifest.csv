@@ -1,0 +1,10 @@
+family,tier,scenario,sex,age_group,metric,modules,main_modules,secondary_modules,module_yeo,note
+family_01_adult_male_strength_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,Strength_pos,"2,4,6","2,6",4,2:Visual; 4:Frontoparietal; 6:Visual,core family; modules 2 and 6 are strongest and repeat across models
+family_02_adult_male_pc_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,PC_pos,"4,7",4,7,4:Frontoparietal; 7:DefaultMode,"core family; module 4 is the main hit, module 7 is weaker"
+family_03_adult_female_z_all,core,OVERALL_ageSexMatched_fd-0.3,female,adult_18_plus,Z,1,1,,1:Somatomotor,core family
+family_04_child_female_strength_neg,core,OVERALL_ageSexMatched_fd-0.3,female,child_0_9,Strength_neg,"2,3",2,3,2:Visual; 3:Limbic,"core family; module 2 is strongest, module 3 is secondary"
+family_05_teen_male_pc_all,core,OVERALL_ageSexMatched_fd-0.3,male,teen_13_17,PC,7,7,,7:DefaultMode,core family
+family_06_child_male_pc_all,secondary,OVERALL_ageSexMatched_fd-0.3,male,child_0_9,PC,"6,7,8","6,7,8",,6:Visual; 7:DefaultMode; 8:DorsalAttention,secondary family; interesting but less stable across models
+family_07_child_female_pc_all,secondary,OVERALL_ageSexMatched_fd-0.3,female,child_0_9,PC,"4,7","4,7",,4:Frontoparietal; 7:DefaultMode,secondary family; mainly site-model level
+family_08_child_male_strength_pos,secondary,OVERALL_ageSexMatched_fd-0.3,male,child_0_9,Strength_pos,2,2,,2:Visual,secondary family; only one model variant currently
+family_09_teen_female_pc_neg,sensitivity,OVERALL_ageSexMatched_fd-0.3,female,teen_13_17,PC_neg,"1,2,3,4,7,8","1,2,3,4,7,8",,1:Somatomotor; 2:Visual; 3:Limbic; 4:Frontoparietal; 7:DefaultMode; 8:DorsalAttention,sensitivity family; outlier-dependent due to subject 50127 robustness failure

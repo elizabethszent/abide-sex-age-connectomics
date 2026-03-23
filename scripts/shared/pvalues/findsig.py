@@ -12,116 +12,180 @@ def find_repo_root(start: Path) -> Path:
 
 
 ROOT = find_repo_root(Path(__file__).resolve().parent)
-
-SEARCH_DIR = ROOT / "results" / "hubs_organized"
+SCAN_DIR = ROOT / "results" / "hubs_organized"
 OUT_CSV = ROOT / "results" / "qc" / "significant_module_summary.csv"
 OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
 
+INCLUDE_TABLES = False
+FDR_ALPHA = 0.05
 
-def load_csv(fp: Path) -> pd.DataFrame | None:
-    try:
-        df = pd.read_csv(fp)
-        df.columns = [str(c).strip() for c in df.columns]
-        return df
-    except Exception as e:
-        print(f"[WARN] Could not read {fp}: {e}")
+MODULE_TO_YEO = {
+    "OVERALL_ageSexMatched_fd-0.3": {
+        1: "Somatomotor",
+        2: "Visual",
+        3: "Limbic",
+        4: "Frontoparietal",
+        5: "VentralAttention",
+        6: "Visual",
+        7: "DefaultMode",
+        8: "DorsalAttention",
+    },
+    "OVERALL_ageSexMatched_fd-0.2": {
+        1: "unmapped_fd0p2",
+        2: "unmapped_fd0p2",
+        3: "unmapped_fd0p2",
+        4: "unmapped_fd0p2",
+        5: "unmapped_fd0p2",
+        6: "unmapped_fd0p2",
+        7: "unmapped_fd0p2",
+        8: "unmapped_fd0p2",
+    },
+}
+
+
+def metric_from_parts(metric_folder: str, sign_folder: str) -> str:
+    if metric_folder == "PC":
+        if sign_folder == "all":
+            return "PC"
+        if sign_folder == "pos":
+            return "PC_pos"
+        if sign_folder == "neg":
+            return "PC_neg"
+    if metric_folder == "Z":
+        if sign_folder == "all":
+            return "Z"
+        if sign_folder == "pos":
+            return "Z_pos"
+        if sign_folder == "neg":
+            return "Z_neg"
+    if metric_folder == "Strength":
+        if sign_folder == "pos":
+            return "Strength_pos"
+        if sign_folder == "neg":
+            return "Strength_neg"
+    return f"{metric_folder}_{sign_folder}"
+
+
+def parse_file_context(fp: Path) -> dict | None:
+    rel = fp.relative_to(SCAN_DIR)
+    parts = rel.parts
+
+    if len(parts) < 7:
         return None
 
+    scenario = parts[0]
+    metric_folder = parts[1]
+    sign_folder = parts[2]
+    age_group = parts[3]
+    sex = parts[4]
+    model = parts[5]
+    filename = parts[6]
 
-def find_sig_column(df: pd.DataFrame) -> str | None:
-    candidates = ["sig_DX_FDR", "DX_FDR_significant"]
-    for c in candidates:
-        if c in df.columns:
-            return c
-    return None
+    metric = metric_from_parts(metric_folder, sign_folder)
+
+    return {
+        "scenario": scenario,
+        "metric_folder": metric_folder,
+        "sign_folder": sign_folder,
+        "metric": metric,
+        "age_group": age_group,
+        "sex": sex,
+        "model": model,
+        "filename": filename,
+    }
 
 
-def mask_significant(df: pd.DataFrame, sig_col: str) -> pd.Series:
-    if sig_col == "sig_DX_FDR":
-        return df[sig_col].astype(str).str.strip().eq("*")
-    if sig_col == "DX_FDR_significant":
-        vals = df[sig_col]
-        if vals.dtype == bool:
-            return vals.fillna(False)
-        return vals.astype(str).str.strip().str.lower().isin(["true", "1", "yes"])
-    return pd.Series([False] * len(df), index=df.index)
-
-
-def summarize_file(fp: Path) -> list[dict]:
-    df = load_csv(fp)
-    if df is None or df.empty:
+def scan_one_file(fp: Path) -> list[dict]:
+    ctx = parse_file_context(fp)
+    if ctx is None:
         return []
 
-    if "module" not in df.columns:
+    df = pd.read_csv(fp)
+    df.columns = [str(c).strip() for c in df.columns]
+
+    required = {"module", "p_DX", "p_DX_FDR", "beta_CTL_minus_ASD"}
+    if not required.issubset(df.columns):
         return []
 
-    sig_col = find_sig_column(df)
-    if sig_col is None:
+    df["module"] = pd.to_numeric(df["module"], errors="coerce")
+    df["p_DX"] = pd.to_numeric(df["p_DX"], errors="coerce")
+    df["p_DX_FDR"] = pd.to_numeric(df["p_DX_FDR"], errors="coerce")
+    df["beta_CTL_minus_ASD"] = pd.to_numeric(df["beta_CTL_minus_ASD"], errors="coerce")
+
+    hits = df[df["p_DX_FDR"] <= FDR_ALPHA].copy()
+    if hits.empty:
         return []
 
-    sig_mask = mask_significant(df, sig_col)
-    sig_df = df[sig_mask].copy()
-
-    if sig_df.empty:
-        return []
-
-    sig_df["module"] = pd.to_numeric(sig_df["module"], errors="coerce")
-    sig_df = sig_df.dropna(subset=["module"]).copy()
-    sig_df["module"] = sig_df["module"].astype(int)
+    module_map = MODULE_TO_YEO.get(ctx["scenario"], {})
 
     rows = []
-    for _, row in sig_df.iterrows():
+    for _, row in hits.iterrows():
+        module = int(row["module"])
         rows.append(
             {
                 "full_path": str(fp.resolve()),
-                "file_name": fp.name,
-                "module": int(row["module"]),
-                "beta_CTL_minus_ASD": row["beta_CTL_minus_ASD"] if "beta_CTL_minus_ASD" in row else None,
-                "p_DX": row["p_DX"] if "p_DX" in row else None,
-                "p_DX_FDR": row["p_DX_FDR"] if "p_DX_FDR" in row else None,
-                "sig_marker": row[sig_col],
+                "file": fp.name,
+                "scenario": ctx["scenario"],
+                "metric_folder": ctx["metric_folder"],
+                "sign_folder": ctx["sign_folder"],
+                "metric": ctx["metric"],
+                "age_group": ctx["age_group"],
+                "sex": ctx["sex"],
+                "model": ctx["model"],
+                "module": module,
+                "module_yeo_label": module_map.get(module, "unmapped"),
+                "beta_CTL_minus_ASD": row["beta_CTL_minus_ASD"],
+                "p_DX": row["p_DX"],
+                "p_DX_FDR": row["p_DX_FDR"],
             }
         )
-
     return rows
 
 
 def main():
-    if not SEARCH_DIR.exists():
-        raise FileNotFoundError(f"Search dir not found: {SEARCH_DIR}")
+    print(f"[INFO] scanning: {SCAN_DIR}")
 
-    csv_files = sorted(SEARCH_DIR.rglob("*.csv"))
-    if not csv_files:
-        raise FileNotFoundError(f"No CSVs found under {SEARCH_DIR}")
+    if not SCAN_DIR.exists():
+        raise FileNotFoundError(f"Missing scan dir: {SCAN_DIR}")
+
+    patterns = ["module_stats_sitecov.csv"]
+    if INCLUDE_TABLES:
+        patterns.append("table.csv")
+
+    files = []
+    for pattern in patterns:
+        files.extend(sorted(SCAN_DIR.rglob(pattern)))
 
     all_rows = []
-
-    print(f"[INFO] scanning: {SEARCH_DIR}\n")
-
-    for fp in csv_files:
-        rows = summarize_file(fp)
-        if not rows:
-            continue
-
-        for r in rows:
-            print(f"FULL PATH : {r['full_path']}")
-            print(f"FILE      : {r['file_name']}")
-            print(f"MODULE    : {r['module']}")
-            print(f"BETA      : {r['beta_CTL_minus_ASD']}")
-            print(f"p_DX      : {r['p_DX']}")
-            print(f"p_DX_FDR  : {r['p_DX_FDR']}")
-            print("-" * 80)
-
-        all_rows.extend(rows)
+    for fp in files:
+        all_rows.extend(scan_one_file(fp))
 
     if not all_rows:
-        print("[INFO] No significant modules found.")
+        print("[INFO] no FDR-significant hits found")
+        pd.DataFrame().to_csv(OUT_CSV, index=False)
         return
 
     out_df = pd.DataFrame(all_rows)
-    out_df = out_df.sort_values(["full_path", "module"]).reset_index(drop=True)
-    out_df.to_csv(OUT_CSV, index=False)
+    out_df = out_df.sort_values(
+        ["scenario", "metric", "age_group", "sex", "model", "module", "p_DX_FDR", "p_DX"]
+    ).reset_index(drop=True)
 
+    for _, row in out_df.iterrows():
+        print()
+        print(f"FULL PATH : {row['full_path']}")
+        print(f"FILE      : {row['file']}")
+        print(f"SCENARIO  : {row['scenario']}")
+        print(f"METRIC    : {row['metric']}")
+        print(f"AGE       : {row['age_group']}")
+        print(f"SEX       : {row['sex']}")
+        print(f"MODEL     : {row['model']}")
+        print(f"MODULE    : {row['module']} ({row['module_yeo_label']})")
+        print(f"BETA      : {row['beta_CTL_minus_ASD']}")
+        print(f"p_DX      : {row['p_DX']}")
+        print(f"p_DX_FDR  : {row['p_DX_FDR']}")
+        print("-" * 80)
+
+    out_df.to_csv(OUT_CSV, index=False)
     print(f"\n[SAVED] {OUT_CSV}")
 
 

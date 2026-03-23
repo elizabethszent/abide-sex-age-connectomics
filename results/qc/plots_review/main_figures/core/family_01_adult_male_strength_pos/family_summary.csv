@@ -1,0 +1,4 @@
+family,tier,scenario,sex,age_group,metric,module,dominant_yeo,is_main_module,is_secondary_module,n_ASD,n_CTL,mean_ASD,mean_CTL,median_ASD,median_CTL,note
+family_01_adult_male_strength_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,Strength_pos,2,Visual,True,False,140,156,42.84950297571755,39.10893012191118,39.15921373054152,36.06449232707382,core family; modules 2 and 6 are strongest and repeat across models
+family_01_adult_male_strength_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,Strength_pos,4,Frontoparietal,False,True,140,156,50.21799843770565,47.05345461225334,47.820390892011346,44.93707317870576,core family; modules 2 and 6 are strongest and repeat across models
+family_01_adult_male_strength_pos,core,OVERALL_ageSexMatched_fd-0.3,male,adult_18_plus,Strength_pos,6,Visual,True,False,140,156,52.051840178038326,47.678697565865896,48.497232216759585,44.970797665184364,core family; modules 2 and 6 are strongest and repeat across models

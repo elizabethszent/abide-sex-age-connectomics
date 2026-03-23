@@ -1,0 +1,9 @@
+module,dominant_yeo,yeo_mapping_threshold
+1,Somatomotor,fd-0.2
+2,Visual,fd-0.2
+3,DefaultMode,fd-0.2
+4,DorsalAttention,fd-0.2
+5,Visual,fd-0.2
+6,Frontoparietal,fd-0.2
+7,Limbic,fd-0.2
+8,VentralAttention,fd-0.2
