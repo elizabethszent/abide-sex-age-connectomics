@@ -121,7 +121,7 @@ def counts_table(ph: pd.DataFrame, ids: set[int], thr: str) -> pd.DataFrame:
     sub = ph[ph["SUB_ID"].isin(ids)].copy()
     sub = sub.dropna(subset=["age_group"])
 
-    # Group by age_group and our new combined group_label
+    # group by age_group and new combined group_label
     g = (
         sub.groupby(["age_group", "group_label"])["SUB_ID"]
         .nunique()
@@ -135,7 +135,7 @@ def counts_table(ph: pd.DataFrame, ids: set[int], thr: str) -> pd.DataFrame:
         .reset_index()
     )
 
-    # Ensure all 4 core columns exist even if a category has 0 subjects
+    # ensure all 4 core columns exist even if a category has 0 subjects
     expected_cols = ["Female_ASD", "Female_Control", "Male_ASD", "Male_Control"]
     for col in expected_cols:
         if col not in wide.columns:
@@ -147,7 +147,7 @@ def counts_table(ph: pd.DataFrame, ids: set[int], thr: str) -> pd.DataFrame:
     wide["age_group"] = pd.Categorical(wide["age_group"], categories=LABELS, ordered=True)
     wide = wide.sort_values("age_group").reset_index(drop=True)
 
-    # Reorder columns for readability
+    # reorder columns for readability
     col_order = ["fd_threshold", "age_group"] + expected_cols + ["Total"]
     final_cols = [c for c in col_order if c in wide.columns]
     

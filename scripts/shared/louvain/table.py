@@ -4,7 +4,7 @@ csv_path = r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\results\louvain_be
 
 df = pd.read_csv(csv_path)
 
-# Make sure first column is the module id
+# first column is the module id
 if "Louvain_module" not in df.columns:
     # sometimes pandas reads an unnamed first column
     df = df.rename(columns={df.columns[0]: "Louvain_module"})

@@ -14,22 +14,22 @@ def find_repo_root(start: Path) -> Path:
 ROOT = find_repo_root(Path(__file__).resolve().parent)
 PHENO_DIR = ROOT / "phenotypes"
 
-# Explicitly use only the combined phenotype files
+# explicitly only combined phenotype files
 ABIDE1_PHENO = PHENO_DIR / "ABIDE_phenotypes_combined.csv"
 ABIDE2_PHENO = PHENO_DIR / "ABIDE2_phenotypes_combined.csv"
 
-# Connectome folders for each FD cutoff
+# connectome folders each FD cutoff
 CONNECTOME_DIRS = {
     "fd_0p2": ROOT / "results" / "connectomes" / "ABIDE12" / "ABIDE12" / "fd_0p2",
     "fd_0p3": ROOT / "results" / "connectomes" / "ABIDE12" / "ABIDE12" / "fd_0p3",
 }
 
-# Output locations
+# output locations
 FEMALE_DIR = ROOT / "data" / "female"
 MALE_DIR = ROOT / "data" / "male"
 COMBINED_OUT = ROOT / "data" / "metadata" / "ABIDE12_phenotypes_combined.csv"
 
-# Requested bins
+# requested bins
 BINS = [0, 10, 13, 18, 200]
 LABELS = ["child_0_9", "preteen_10_12", "teen_13_17", "adult_18_plus"]
 RIGHT = False
@@ -171,7 +171,7 @@ def write_outputs(df: pd.DataFrame) -> None:
     FEMALE_DIR.mkdir(parents=True, exist_ok=True)
     MALE_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Save full combined phenotype table
+    # save full combined phenotype table
     df.to_csv(COMBINED_OUT, index=False)
     print(f"[SAVED] {COMBINED_OUT}")
 

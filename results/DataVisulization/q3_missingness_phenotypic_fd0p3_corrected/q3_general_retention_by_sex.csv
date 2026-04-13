@@ -1,0 +1,7 @@
+sex_label,requirement_set,base_n,n_retained,pct_retained
+Female,Total cohort,249,249,100.0
+Female,FIQ only,249,236,94.77911646586345
+Female,FIQ + handedness,249,196,78.714859437751
+Male,Total cohort,1001,1001,100.0
+Male,FIQ only,1001,926,92.5074925074925
+Male,FIQ + handedness,1001,768,76.72327672327673

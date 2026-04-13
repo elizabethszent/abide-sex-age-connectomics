@@ -9,16 +9,16 @@ from matplotlib.colors import ListedColormap
 
 ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
-# Where compare_louvain_methods.py saved best partitions:
+# compare_louvain_methods.py saved best partitions:
 MODULE_DIR = ROOT / r"results\louvain_compare"
 
-# Where to save outputs:
+# save outputs:
 OUT_DIR = ROOT / r"results\qc\module_maps"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 EXPECTED_N = 200
 
-# We will process these four labels (must match compare script output filenames):
+# process these four labels (must match compare script output filenames):
 WANTED_LABELS = [
     "OVERALL_sexbalanced_fd-0.2",
     "OVERALL_sexbalanced_fd-0.3",
@@ -27,7 +27,7 @@ WANTED_LABELS = [
 ]
 
 def find_cc200_atlas(root: Path) -> Path:
-    # Your real atlas path is here:
+    # real atlas path is here:
     candidates = [
         root / r"atlases\cc200\cc200_roi_atlas.nii.gz",
         root / r"abide\preprocessing\resources\abide_rois\CC200.nii.gz",
@@ -76,7 +76,7 @@ def build_module_map(atlas_img: nib.Nifti1Image, modules: np.ndarray) -> nib.Nif
 
     out = np.zeros_like(atlas_data, dtype=np.int16)
 
-    # Robust mapping: if labels are 1..N use direct, else map by sorted label order.
+    # robust mapping: if labels are 1..N use direct, else map by sorted label order.
     is_1_to_n = np.array_equal(roi_labels[: len(modules)], np.arange(1, len(modules) + 1))
     if is_1_to_n:
         for roi_label in range(1, len(modules) + 1):
@@ -162,7 +162,7 @@ def main():
         cmap = fixed_module_cmap(K)
         vmin, vmax = 0.5, K + 0.5  # crisp integer binning
 
-        # No nilearn colorbar (it looks gradient-y). We output a categorical legend PNG instead.
+        # no nilearn colorbar (it looks gradient-y). We output a categorical legend PNG instead.
         out_glass = out_sub / f"{label}_K{K}_glass.png"
         disp = plotting.plot_glass_brain(
             mod_img,

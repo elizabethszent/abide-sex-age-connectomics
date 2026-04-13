@@ -1,0 +1,9 @@
+analysis_block,field,field_label,predictor,cramers_v,p_value,n_rows,n_levels_predictor
+general_fields_full_cohort,FIQ,FIQ,Site,0.8917088063456862,2.3962928259196367e-195,1250,32
+general_fields_full_cohort,FIQ,FIQ,Age group,0.08630112098480552,0.00640873788811759,1250,4
+general_fields_full_cohort,FIQ,FIQ,Diagnosis,0.0,0.47512939244192565,1250,2
+general_fields_full_cohort,FIQ,FIQ,Sex,0.013963190583666636,0.2646403213245002,1250,2
+general_fields_full_cohort,RIGHT_HANDED,Right-handed,Site,0.9474753690799405,2.0089571383275056e-222,1250,32
+general_fields_full_cohort,RIGHT_HANDED,Right-handed,Age group,0.08372969405553891,0.008257114592026337,1250,4
+general_fields_full_cohort,RIGHT_HANDED,Right-handed,Diagnosis,0.0,0.5736551251765312,1250,2
+general_fields_full_cohort,RIGHT_HANDED,Right-handed,Sex,0.0,0.5364900725750492,1250,2

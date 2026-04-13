@@ -70,7 +70,7 @@ for name, meta_path, dx in GROUPS:
     if len(counts) > 1:
         print("[NOTE] Some subjects have odd-sized matrices and will be excluded from the group mean.")
 
-    #Second pass actually collect only matrices with target_shape
+    #second pass actually collect only matrices with target_shape
     mats = []
     used_subs = []
     skipped_shape = 0

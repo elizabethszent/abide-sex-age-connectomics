@@ -6,7 +6,7 @@ ROOT = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject")
 
 CONN_DIR = ROOT / r"data\connectomes\cpac\nofilt_noglobal\cc200_z"
 
-# Use cleaned if available, else fallback
+# use cleaned if available, else fallback
 PHENO_CLEAN = ROOT / r"data\Phenotypic_V1_0b_preprocessed1_clean.csv"
 PHENO_RAW   = ROOT / r"data\Phenotypic_V1_0b_preprocessed1.csv"
 PHENO_CSV = PHENO_CLEAN if PHENO_CLEAN.exists() else PHENO_RAW

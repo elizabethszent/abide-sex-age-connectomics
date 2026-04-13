@@ -1,0 +1,17 @@
+age_label,sex_label,dx_label,n
+Adult,Female,ASD,15
+Adult,Female,CTL,23
+Adult,Male,ASD,140
+Adult,Male,CTL,156
+Child,Female,ASD,20
+Child,Female,CTL,57
+Child,Male,ASD,84
+Child,Male,CTL,88
+Preteen,Female,ASD,20
+Preteen,Female,CTL,50
+Preteen,Male,ASD,115
+Preteen,Male,CTL,151
+Teen,Female,ASD,18
+Teen,Female,CTL,46
+Teen,Male,ASD,132
+Teen,Male,CTL,135

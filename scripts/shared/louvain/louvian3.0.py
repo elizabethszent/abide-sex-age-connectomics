@@ -20,7 +20,7 @@ INPUT_MATRICES = {
 
 OUT_DIR = ROOT / "results" / "group_connectomes" / "ABIDE12_CC200"
 
-# Map the optimized gammas to their respective FD cutoffs
+# map the optimized gammas to their respective FD cutoffs
 GAMMAS = {
     "0.2": 1.65,
     "0.3": 1.60
@@ -85,7 +85,7 @@ def run_louvain_ensemble(W: np.ndarray, gamma: float):
     for t in range(N_TRIALS):
         seed = SEED_BASE + t
         try:
-            # We use seed=seed directly in the BCT function for consistency
+            # use seed=seed directly in the BCT function for consistency
             ci, Q = bct.community_louvain(W, gamma=float(gamma), B="negative_asym", seed=seed)
             ci_fixed = consolidate_small_modules(W, ci, MIN_SIZE)
             k = len(np.unique(ci_fixed))
@@ -98,7 +98,7 @@ def run_louvain_ensemble(W: np.ndarray, gamma: float):
 
     print(f"Completed {len(cands)} / {N_TRIALS} iterations (failures={failures})")
 
-    # Force exact match for K_TARGET
+    # force exact match for K_TARGET
     matches = [c for c in cands if c["k"] == K_TARGET]
     
     if matches:

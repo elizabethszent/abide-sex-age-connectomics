@@ -1,0 +1,31 @@
+analysis_block,field,field_label,predictor,cramers_v,p_value,n_rows,n_levels_predictor
+clinical_fields_asd_only,ADOS_MODULE,ADOS module,Site,0.853475790391536,1.8427970095631836e-71,544,31
+clinical_fields_asd_only,ADOS_MODULE,ADOS module,Age group,0.20748444796210627,7.934822923730279e-06,544,4
+clinical_fields_asd_only,ADOS_MODULE,ADOS module,Sex,0.0,0.7012087825871629,544,2
+clinical_fields_asd_only,ADOS_TOTAL,ADOS total,Site,0.9265278072522704,7.281759771598608e-86,544,31
+clinical_fields_asd_only,ADOS_TOTAL,ADOS total,Age group,0.07752426643766487,0.09923371556515931,544,4
+clinical_fields_asd_only,ADOS_TOTAL,ADOS total,Sex,0.0,0.5039517398118694,544,2
+clinical_fields_asd_only,ADOS_COMM,ADOS communication,Site,0.9293273031236371,1.9229245293256526e-86,544,31
+clinical_fields_asd_only,ADOS_COMM,ADOS communication,Age group,0.0,0.7398792800253238,544,4
+clinical_fields_asd_only,ADOS_COMM,ADOS communication,Sex,0.0,1.0,544,2
+clinical_fields_asd_only,ADOS_SOCIAL,ADOS social,Site,0.9254786927416724,1.1979699819121145e-85,544,31
+clinical_fields_asd_only,ADOS_SOCIAL,ADOS social,Age group,0.0,0.7324504670323109,544,4
+clinical_fields_asd_only,ADOS_SOCIAL,ADOS social,Sex,0.0,1.0,544,2
+clinical_fields_asd_only,ADOS_STEREO_BEHAV,ADOS stereotyped behaviour,Site,0.9377418402935371,3.421043878741005e-88,544,31
+clinical_fields_asd_only,ADOS_STEREO_BEHAV,ADOS stereotyped behaviour,Age group,0.0,0.4739602880827868,544,4
+clinical_fields_asd_only,ADOS_STEREO_BEHAV,ADOS stereotyped behaviour,Sex,0.0,1.0,544,2
+clinical_fields_asd_only,ADOS_RSRCH_RELIABLE,ADOS research reliable,Site,0.8982858231057559,3.8681571371940875e-80,544,31
+clinical_fields_asd_only,ADOS_RSRCH_RELIABLE,ADOS research reliable,Age group,0.2595751893759414,1.300041382553044e-08,544,4
+clinical_fields_asd_only,ADOS_RSRCH_RELIABLE,ADOS research reliable,Sex,0.02379156063780802,0.25253965835212255,544,2
+clinical_fields_asd_only,ADOS_GOTHAM_SOCAFFECT,Gotham social affect,Site,0.7803623722997847,2.2418382312810066e-58,544,31
+clinical_fields_asd_only,ADOS_GOTHAM_SOCAFFECT,Gotham social affect,Age group,0.4115778335041336,1.8578939170361042e-20,544,4
+clinical_fields_asd_only,ADOS_GOTHAM_SOCAFFECT,Gotham social affect,Sex,0.0,0.682438352593769,544,2
+clinical_fields_asd_only,ADOS_GOTHAM_RRB,Gotham RRB,Site,0.7941991476975424,9.479010410841938e-61,544,31
+clinical_fields_asd_only,ADOS_GOTHAM_RRB,Gotham RRB,Age group,0.419557445123112,3.1256503413308726e-21,544,4
+clinical_fields_asd_only,ADOS_GOTHAM_RRB,Gotham RRB,Sex,0.0,0.4209596157202571,544,2
+clinical_fields_asd_only,ADOS_GOTHAM_TOTAL,Gotham total,Site,0.8025165012152656,3.363264019364098e-62,544,31
+clinical_fields_asd_only,ADOS_GOTHAM_TOTAL,Gotham total,Age group,0.4035396107653517,1.0801026271482272e-19,544,4
+clinical_fields_asd_only,ADOS_GOTHAM_TOTAL,Gotham total,Sex,0.0,0.4658094803231584,544,2
+clinical_fields_asd_only,ADOS_GOTHAM_SEVERITY,Gotham severity,Site,0.8025165012152656,3.363264019364098e-62,544,31
+clinical_fields_asd_only,ADOS_GOTHAM_SEVERITY,Gotham severity,Age group,0.4035396107653517,1.0801026271482272e-19,544,4
+clinical_fields_asd_only,ADOS_GOTHAM_SEVERITY,Gotham severity,Sex,0.0,0.4658094803231584,544,2

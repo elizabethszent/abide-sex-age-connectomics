@@ -1,5 +1,0 @@
-s3://fcp-indi/data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-28743/ses-1/func/sub-28743_ses-1_task-rest_run-1
-s3://fcp-indi/data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-28746/ses-1/func/sub-28746_ses-1_task-rest_run-1
-s3://fcp-indi/data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-28747/ses-1/func/sub-28747_ses-1_task-rest_run-1
-s3://fcp-indi/data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-28748/ses-1/func/sub-28748_ses-1_task-rest_run-1
-s3://fcp-indi/data/Projects/ABIDE2/Outputs/fmriprep/fmriprep/sub-28749/ses-1/func/sub-28749_ses-1_task-rest_run-1

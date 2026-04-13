@@ -49,7 +49,7 @@ def load_z(fp: Path) -> np.ndarray:
         raise ValueError(f"{fp.name}: expected (200,200), got {z.shape}")
     return z
 
-# ---- Load all phenotype CSVs (site-split) ----
+# ---- load all phenotype CSVs (site-split) ----
 dfs = []
 for fp in sorted(PHENO_DIR.glob("phenotypic_*.csv")):
     df = pd.read_csv(fp)
@@ -76,7 +76,7 @@ pheno = pd.concat(dfs, ignore_index=True)
 print(f"[INFO] Loaded phenotype rows: {len(pheno)}")
 print("[INFO] Unique sites:", pheno["SITE_ID"].nunique())
 
-# ---- Build group means (across all sites) ----
+# ---- build group means (across all sites) ----
 for fd in FD_LIST:
     print(f"\n=== FD {fd} ===")
 

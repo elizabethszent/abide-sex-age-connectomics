@@ -1,0 +1,13 @@
+age_label,requirement_set,base_n,n_retained,pct_retained
+Child (0–9),Total cohort,249,249,100.0
+Child (0–9),FIQ only,249,225,90.36144578313252
+Child (0–9),FIQ + handedness,249,182,73.09236947791165
+Preteen (10–12),Total cohort,336,336,100.0
+Preteen (10–12),FIQ only,336,326,97.02380952380952
+Preteen (10–12),FIQ + handedness,336,280,83.33333333333333
+Teen (13–17),Total cohort,331,331,100.0
+Teen (13–17),FIQ only,331,305,92.14501510574019
+Teen (13–17),FIQ + handedness,331,253,76.43504531722054
+Adult (18+),Total cohort,334,334,100.0
+Adult (18+),FIQ only,334,306,91.61676646706587
+Adult (18+),FIQ + handedness,334,249,74.55089820359281

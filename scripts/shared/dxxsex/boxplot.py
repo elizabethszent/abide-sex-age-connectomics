@@ -16,9 +16,7 @@ def find_repo_root(start: Path) -> Path:
 
 ROOT = find_repo_root(Path(__file__).resolve().parent)
 
-# ----------------------------
-# CONFIG
-# ----------------------------
+# config
 HIT_MODE = "fdr"   # "fdr" or "nominal"
 WRITE_SITE_COLORED = False
 RNG_SEED = 42
@@ -54,9 +52,7 @@ GROUP_ORDER = [
     ("ASD female", 1, 2),
 ]
 
-# ----------------------------
-# THRESHOLD-SPECIFIC MODULE LABELS
-# ----------------------------
+# threshold-specific module labels (for better plot titles)
 FD02_MODULE_LABELS = {
     1: "M1 Somatomotor",
     2: "M2 Visual-A",

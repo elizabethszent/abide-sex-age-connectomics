@@ -1,0 +1,4 @@
+requirement_set,n_retained,pct_retained,n_lost,pct_lost
+Total cohort,1250,100.0,0,0.0
+FIQ only,1162,92.96,88,7.040000000000006
+FIQ + handedness,964,77.12,286,22.879999999999995

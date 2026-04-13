@@ -1,0 +1,5 @@
+field,field_label,diagnosis,pct_missing
+FIQ,FIQ,ASD,7.720588235294118
+FIQ,FIQ,Control,6.515580736543909
+RIGHT_HANDED,Right-handed,ASD,18.38235294117647
+RIGHT_HANDED,Right-handed,Control,16.997167138810198

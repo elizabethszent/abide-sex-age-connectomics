@@ -1,0 +1,9 @@
+age_label,sex_label,mean_pct_missing_clinical,n_subjects
+Child (0–9),Female,60.5,20
+Child (0–9),Male,50.23809523809524,84
+Preteen (10–12),Female,45.0,20
+Preteen (10–12),Male,47.21739130434783,115
+Teen (13–17),Female,51.666666666666664,18
+Teen (13–17),Male,48.93939393939394,132
+Adult (18+),Female,54.666666666666664,15
+Adult (18+),Male,70.14285714285714,140

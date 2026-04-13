@@ -1,7 +1,7 @@
 import numpy as np
 from pathlib import Path
 
-# Updated path to point directly to where your new .npy files are stored
+# updated path to point directly to where your new .npy files are stored
 IN_DIR = Path(r"C:\Users\eliza\CPSC_599_CONNECTOMICS\TERMProject\connectomes\CC200\ABIDE1\FDpersubject2")
 OUT_DIR = IN_DIR  # This will save the overall average in the same folder
 
